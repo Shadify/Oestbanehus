@@ -1,8 +1,13 @@
 App.xbf
 Styles\Custom.xbf
+Views\Buildings.xbf
 Views\Busy.xbf
+Views\Conditions.xbf
 Views\DetailPage.xbf
 Views\MainPage.xbf
+Views\Payments.xbf
+Views\Requests.xbf
+Views\Residents.xbf
 Views\SettingsPage.xbf
 Views\Shell.xbf
 Views\Splash.xbf

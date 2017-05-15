@@ -50,9 +50,9 @@
     <RootType FullName="Template10.Controls.PageHeader">
       <RootProperty Name="VisualStateNarrowMinWidth" />
       <RootProperty Name="VisualStateNormalMinWidth" />
-      <RootProperty Name="Frame" />
       <RootProperty Name="Text" />
       <RootProperty Name="SecondaryCommands" />
+      <RootProperty Name="Frame" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -72,6 +72,55 @@
       <RootProperty Name="ElementControl" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Oestbanehus.ViewModels.MainPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootMethod Name="GetAlignLeftWithPanel" />
+      <RootMethod Name="SetAlignLeftWithPanel" />
+      <RootMethod Name="GetAlignRightWithPanel" />
+      <RootMethod Name="SetAlignRightWithPanel" />
+      <RootMethod Name="GetAlignTopWithPanel" />
+      <RootMethod Name="SetAlignTopWithPanel" />
+      <RootMethod Name="GetAlignBottomWithPanel" />
+      <RootMethod Name="SetAlignBottomWithPanel" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
+      <RootMethod Name="GetAlignBottomWith" />
+      <RootMethod Name="SetAlignBottomWith" />
+      <RootMethod Name="GetRightOf" />
+      <RootMethod Name="SetRightOf" />
+      <RootMethod Name="GetAlignLeftWith" />
+      <RootMethod Name="SetAlignLeftWith" />
+      <RootMethod Name="GetAlignRightWith" />
+      <RootMethod Name="SetAlignRightWith" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Label" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="FallbackValue" />
+    </RootType>
+    <RootType FullName="Oestbanehus.Views.Buildings" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
@@ -80,15 +129,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Child" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="Background" />
-      <RootMethod Name="GetColumn" />
-      <RootMethod Name="SetColumn" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
@@ -115,42 +155,9 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="MaxWidth" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="FallbackValue" />
-    </RootType>
     <RootType FullName="Oestbanehus.Views.Busy" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Resources" />
-      <RootProperty Name="Background" />
-    </RootType>
+    <RootType FullName="Oestbanehus.Views.Conditions" />
     <RootType FullName="Oestbanehus.ViewModels.DetailPageViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
-      <RootProperty Name="Background" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="DataContext" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootMethod Name="GetAlignLeftWithPanel" />
-      <RootMethod Name="SetAlignLeftWithPanel" />
-      <RootMethod Name="GetAlignRightWithPanel" />
-      <RootMethod Name="SetAlignRightWithPanel" />
-      <RootMethod Name="GetAlignTopWithPanel" />
-      <RootMethod Name="SetAlignTopWithPanel" />
-      <RootMethod Name="GetAlignBottomWithPanel" />
-      <RootMethod Name="SetAlignBottomWithPanel" />
-      <RootMethod Name="GetBelow" />
-      <RootMethod Name="SetBelow" />
-      <RootMethod Name="GetAlignBottomWith" />
-      <RootMethod Name="SetAlignBottomWith" />
-      <RootMethod Name="GetRightOf" />
-      <RootMethod Name="SetRightOf" />
-      <RootMethod Name="GetAlignLeftWith" />
-      <RootMethod Name="SetAlignLeftWith" />
-      <RootMethod Name="GetAlignRightWith" />
-      <RootMethod Name="SetAlignRightWith" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
@@ -180,7 +187,6 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.DetailPage" />
-    <RootType FullName="Oestbanehus.ViewModels.MainPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
@@ -220,11 +226,10 @@
       <RootProperty Name="MethodName" />
       <RootProperty Name="TargetObject" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Label" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Oestbanehus.Views.MainPage" />
+    <RootType FullName="Oestbanehus.Views.Payments" />
+    <RootType FullName="Oestbanehus.Views.Requests" />
+    <RootType FullName="Oestbanehus.Views.Residents" />
     <RootType FullName="Oestbanehus.ViewModels.SettingsPageViewModel" />
     <RootType FullName="Template10.Converters.ValueWhenConverter">
       <RootProperty Name="When" />

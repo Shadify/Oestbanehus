@@ -26,7 +26,67 @@
                                Text="Home" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
-        </Controls:HamburgerMenu.PrimaryButtons>
+
+        <Controls:HamburgerButtonInfo ClearHistory="True"
+                                      PageType="views:Buildings">
+          <StackPanel Orientation="Horizontal">
+            <SymbolIcon Width="48"
+                        Height="48"
+                        Symbol="Calculator" />
+            <TextBlock Margin="12,0,0,0"
+                       VerticalAlignment="Center"
+                       Text="Buildings" />
+          </StackPanel>
+        </Controls:HamburgerButtonInfo>
+
+        <Controls:HamburgerButtonInfo ClearHistory="True"
+                                      PageType="views:Residents">
+          <StackPanel Orientation="Horizontal">
+            <SymbolIcon Width="48"
+                        Height="48"
+                      Symbol="ContactInfo" />
+            <TextBlock Margin="12,0,0,0"
+                       VerticalAlignment="Center"
+                       Text="Residents" />
+          </StackPanel>
+        </Controls:HamburgerButtonInfo>
+      <Controls:HamburgerButtonInfo ClearHistory="True"
+                                    PageType="views:Payments">
+        <StackPanel Orientation="Horizontal">
+          <SymbolIcon Width="48"
+                      Height="48"
+                      Symbol="Mail" />
+          <TextBlock Margin="12,0,0,0"
+                     VerticalAlignment="Center"
+                     Text="Payments" />
+        </StackPanel>
+      </Controls:HamburgerButtonInfo>
+          
+      <Controls:HamburgerButtonInfo ClearHistory="True"
+                                    PageType="views:Conditions">
+        <StackPanel Orientation="Horizontal">
+          <SymbolIcon Width="48"
+                      Height="48"
+                      Symbol="MapDrive" />
+          <TextBlock Margin="12,0,0,0"
+                     VerticalAlignment="Center"
+                     Text="Conditions" />
+        </StackPanel>
+      </Controls:HamburgerButtonInfo>
+
+      <Controls:HamburgerButtonInfo ClearHistory="True"
+                                    PageType="views:Requests">
+        <StackPanel Orientation="Horizontal">
+          <SymbolIcon Width="48"
+                      Height="48"
+                      Symbol="NewWindow" />
+          <TextBlock Margin="12,0,0,0"
+                     VerticalAlignment="Center"
+                     Text="Requests" />
+        </StackPanel>
+      </Controls:HamburgerButtonInfo>
+
+    </Controls:HamburgerMenu.PrimaryButtons>
 
         <Controls:HamburgerMenu.SecondaryButtons>
             <!--  profile button  -->
@@ -66,7 +126,9 @@
                                Text="Settings" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
-        </Controls:HamburgerMenu.SecondaryButtons>
+
+      
+    </Controls:HamburgerMenu.SecondaryButtons>
 
     </Controls:HamburgerMenu>
 

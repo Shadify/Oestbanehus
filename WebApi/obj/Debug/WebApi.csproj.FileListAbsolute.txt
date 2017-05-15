@@ -121,6 +121,5 @@ C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\bin\System.Web.WebPages.xml
 C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\bin\System.Web.WebPages.Razor.xml
 C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\bin\Antlr3.Runtime.pdb
-C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
 C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\obj\Debug\WebApi.dll
 C:\Users\Andy\Source\Repos\Oestbanehus3\WebApi\obj\Debug\WebApi.pdb

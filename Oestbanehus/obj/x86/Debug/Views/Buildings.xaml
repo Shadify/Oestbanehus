@@ -12,7 +12,7 @@
       xmlns:vm="using:Oestbanehus.ViewModels">
 
   <Page.DataContext>
-    <vm:MainPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
+    <vm:BuildingsViewModel x:ConnectionId='2' x:Name="ViewModel" />
   </Page.DataContext>
 
   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -24,15 +24,30 @@
 
       <!--  secondary commands  -->
       <controls:PageHeader.SecondaryCommands>
-        <AppBarButton x:ConnectionId='4'                                        
+        <AppBarButton x:ConnectionId='6'                                        
                       Label="Settings" />
-        <AppBarButton x:ConnectionId='5'                                       
+        <AppBarButton x:ConnectionId='7'                                       
                       Label="Privacy" />
-        <AppBarButton x:ConnectionId='6'                                     
+        <AppBarButton x:ConnectionId='8'                                     
                       Label="About" />
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
+    <TextBlock x:ConnectionId='4'                                     />
+    <ListView x:ConnectionId='5'                                           >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <StackPanel>
+            <TextBlock Text="{Binding Path=Street}" />
+            <TextBlock Text="{Binding Path=ZipCode}" />
+            <TextBlock Text="{Binding Path=Id}" />
+          </StackPanel>
+          
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    
+    
   </Grid>
 </Page>
 

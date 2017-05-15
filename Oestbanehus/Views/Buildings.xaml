@@ -12,7 +12,7 @@
       xmlns:vm="using:Oestbanehus.ViewModels">
 
   <Page.DataContext>
-    <vm:MainPageViewModel x:Name="ViewModel" />
+    <vm:BuildingsViewModel x:Name="ViewModel" />
   </Page.DataContext>
 
   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -33,5 +33,20 @@
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
+    <TextBlock Text="{x:Bind ViewModel.buildings}" />
+    <ListView ItemsSource="{x:Bind ViewModel.buildings}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <StackPanel>
+            <TextBlock Text="{Binding Path=Street}" />
+            <TextBlock Text="{Binding Path=ZipCode}" />
+            <TextBlock Text="{Binding Path=Id}" />
+          </StackPanel>
+          
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    
+    
   </Grid>
 </Page>

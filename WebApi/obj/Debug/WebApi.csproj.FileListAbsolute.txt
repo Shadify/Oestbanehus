@@ -58,5 +58,6 @@ C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\bin\System.Web.WebPages.xml
 C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\bin\System.Web.WebPages.Deployment.xml
 C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\bin\System.Web.WebPages.Razor.xml
 C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\bin\Antlr3.Runtime.pdb
+C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache
 C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\obj\Debug\WebApi.dll
 C:\Users\VSPC1\Desktop\Oestbanehus\WebApi\obj\Debug\WebApi.pdb

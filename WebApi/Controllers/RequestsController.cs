@@ -8,12 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
     public class RequestsController : ApiController
     {
-        private DataContext db = new DataContext();
+        private ViewContext db = new ViewContext();
 
         // GET: api/Requests
         public IQueryable<Request> GetRequests()

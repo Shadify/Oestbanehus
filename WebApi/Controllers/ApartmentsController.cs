@@ -9,11 +9,11 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 
-namespace WebApi.Controllers
+namespace WebApi.Models
 {
     public class ApartmentsController : ApiController
     {
-        private DataContext db = new DataContext();
+        private ViewContext db = new ViewContext();
 
         // GET: api/Apartments
         public IQueryable<Apartment> GetApartments()

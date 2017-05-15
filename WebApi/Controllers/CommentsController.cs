@@ -8,12 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
     public class CommentsController : ApiController
     {
-        private DataContext db = new DataContext();
+        private ViewContext db = new ViewContext();
 
         // GET: api/Comments
         public IQueryable<Comment> GetComments()

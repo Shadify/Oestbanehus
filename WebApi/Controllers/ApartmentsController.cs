@@ -11,6 +11,17 @@ using System.Web.Http.Description;
 
 namespace WebApi.Models
 {
+
+    public class BuildingDto
+    {
+        public int Id { get; set; }
+        public int Floor { get; set; }
+        public string Genre { get; set; }
+    }
+
+
+
+    [RoutePrefix("api/Apartments")]
     public class ApartmentsController : ApiController
     {
         private ViewContext db = new ViewContext();
@@ -19,6 +30,16 @@ namespace WebApi.Models
         public IQueryable<Apartment> GetApartments()
         {
             return db.Apartments;
+        }
+
+        [Route("{id:int}/buildingAps")]
+        public IQueryable<Apartment> GetBuildingApartments(int id)
+        {
+            var buildingAps = (from ap in db.Apartments
+                               where ap.BuildingId == id
+                               select ap);
+
+            return buildingAps;
         }
 
         // GET: api/Apartments/5

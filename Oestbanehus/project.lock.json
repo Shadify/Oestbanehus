@@ -22285,10 +22285,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus3\\Oestbanehus\\Oestbanehus.csproj",
+      "projectUniqueName": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus\\Oestbanehus\\Oestbanehus.csproj",
       "projectName": "Oestbanehus",
-      "projectPath": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus3\\Oestbanehus\\Oestbanehus.csproj",
-      "projectJsonPath": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus3\\Oestbanehus\\project.json",
+      "projectPath": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus\\Oestbanehus\\Oestbanehus.csproj",
+      "projectJsonPath": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus\\Oestbanehus\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

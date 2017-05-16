@@ -6,21 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-
+    
   xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:controls="using:Template10.Controls"
-      xmlns:vm="using:Oestbanehus.ViewModels">
+      xmlns:vm="using:Oestbanehus.ViewModels"
+  xmlns:model="using:Oestbanehus.Models">
 
   <Page.DataContext>
     <vm:BuildingsViewModel x:ConnectionId='2' x:Name="ViewModel" />
   </Page.DataContext>
 
   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel>
     <controls:PageHeader x:ConnectionId='3' x:Name="pageHeader"
                          RelativePanel.AlignLeftWithPanel="True"
                          RelativePanel.AlignRightWithPanel="True"
                          RelativePanel.AlignTopWithPanel="True"
                          Text="Buildings">
+  
 
       <!--  secondary commands  -->
       <controls:PageHeader.SecondaryCommands>
@@ -33,11 +36,13 @@
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
-    <TextBlock x:ConnectionId='4'                                     />
-    <ListView x:ConnectionId='5'                                           >
+    <ListView x:ConnectionId='4'                                           
+              SelectedItem="{Binding selectedBuilding, Mode=TwoWay}">
       <ListView.ItemTemplate>
-        <DataTemplate>
-          <StackPanel>
+        <DataTemplate                            >
+            <StackPanel 
+
+              >
             <TextBlock Text="{Binding Path=Street}" />
             <TextBlock Text="{Binding Path=ZipCode}" />
             <TextBlock Text="{Binding Path=Id}" />
@@ -46,7 +51,25 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    
+
+      
+      <ListView x:ConnectionId='5'                                            
+       >
+        <ListView.ItemTemplate>
+          <DataTemplate                             >
+            <StackPanel>
+              <TextBlock Text="{Binding Path=Id}" />
+              <TextBlock Text="{Binding Path=Floor}" />
+              <TextBlock Text="{Binding Path=Side}" />
+            </StackPanel>
+
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      
+      
+      <TextBlock Text="{Binding selectedBuilding.Id}" />
+    </StackPanel>
     
   </Grid>
 </Page>

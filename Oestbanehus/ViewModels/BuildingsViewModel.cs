@@ -20,6 +20,21 @@ namespace Oestbanehus.ViewModels
     {
 
         public ObservableCollection<Building> buildings { get; set; }
+        public ObservableCollection<Apartment> apartments = ApartmentsSingleton.Instance.ObservableCollection;
+
+        private Building _selectedBuilding;
+        public Building selectedBuilding
+        {
+            get
+            {
+                return _selectedBuilding;
+            }
+            set
+            {        
+                Set(ref _selectedBuilding, value);
+                ApartmentsSingleton.LoadApartmentsInBuildingAsync(_selectedBuilding.Id);
+            }
+        }
 
         public BuildingsViewModel()
         {
@@ -29,10 +44,17 @@ namespace Oestbanehus.ViewModels
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
             var a = BuildingsSingleton.Instance;
-            buildings = a.ObservableCollection;
-
-            
+            buildings = a.ObservableCollection; 
         }
+
+
+        DelegateCommand _LoadAptsCommand;
+        public DelegateCommand LoadAptsCommand = new DelegateCommand(() =>
+            {
+                ApartmentsSingleton.LoadApartmentsInBuildingAsync(1);
+            }, () => false);
+
+
         public void GotoSettings() =>
             NavigationService.Navigate(typeof(Views.SettingsPage), 0);
 

@@ -15,6 +15,7 @@ namespace Oestbanehus.Persistence
 {
     class Persistence
     {
+        //ALL BUILDINGS
         public static async Task<ObservableCollection<Building>> getBuildingsAsync()
         {
             ObservableCollection<Building> allBuildings = new ObservableCollection<Building>();
@@ -37,15 +38,6 @@ namespace Oestbanehus.Persistence
                         allBuildings = (ObservableCollection<Building>)JsonConvert.DeserializeObject(BuildingsData, typeof(ObservableCollection<Building>));
 
                         var a = allBuildings;
-
-                        //JArray json = JArray.Parse(BuildingsData);
-                        //foreach(JObject building in json.Children<JObject>())
-                        //{
-                        //    var a = JObject.Parse(building);
-                        //    //output.Add(building);
-                        //}
-
-                        
                     }
                     return allBuildings;
                 }
@@ -53,7 +45,71 @@ namespace Oestbanehus.Persistence
                 {
                     return null;
                 }
+            }
+        }
 
+
+        //ALL APARTMENTS
+        public static async Task<ObservableCollection<Apartment>> getApartmentsAsync()
+        {
+            ObservableCollection<Apartment> allApartments = new ObservableCollection<Apartment>();
+            const string ServerUrl = "http://localhost:8005";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync("api/Apartments").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string BuildingsData = response.Content.ReadAsStringAsync().Result;
+
+                        allApartments = (ObservableCollection<Apartment>)JsonConvert.DeserializeObject(BuildingsData, typeof(ObservableCollection<Apartment>));
+                    }
+                    return allApartments;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+
+
+        //ALL APARTMENTS IN ONE BUILDING
+        public static async Task<ObservableCollection<Apartment>> getApartmentsInBuilding(int buildingId)
+        {
+            ObservableCollection<Apartment> allApartments = new ObservableCollection<Apartment>();
+            const string ServerUrl = "http://localhost:8005";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/Apartments/{buildingId}/buildingAps").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string BuildingsData = response.Content.ReadAsStringAsync().Result;
+
+                        allApartments = (ObservableCollection<Apartment>)JsonConvert.DeserializeObject(BuildingsData, typeof(ObservableCollection<Apartment>));
+                    }
+                    return allApartments;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
             }
         }
     }

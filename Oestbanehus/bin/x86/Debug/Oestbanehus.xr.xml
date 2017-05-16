@@ -4,7 +4,10 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="selectedBuilding" />
     <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="Side" />
+    <RootPropertyPathName Name="Floor" />
     <RootPropertyPathName Name="ZipCode" />
     <RootPropertyPathName Name="Street" />
     <RootPropertyPathName Name="Value" />
@@ -91,6 +94,10 @@
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -115,6 +122,11 @@
       <RootMethod Name="GetAlignRightWith" />
       <RootMethod Name="SetAlignRightWith" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
@@ -127,9 +139,12 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="MaxWidth" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
@@ -137,17 +152,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
-      <RootProperty Name="Orientation" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />

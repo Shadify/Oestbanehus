@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b4d8cc25-fd58-4a0f-b94f-4e06b3c2046c</PackageIdentityName>
     <PackageIdentityPublisher>CN=VSPC1</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\bin\x86\Debug\Oestbanehus.exe">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Oestbanehus.exe">
       <PackagePath>entrypoint\Oestbanehus.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Andy\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -382,40 +382,40 @@
     <AppxPackagedFile Include="C:\Users\Andy\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library.dll">
       <PackagePath>Template10Library.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Help.htm">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Help.htm">
       <PackagePath>Help.htm</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\bin\x86\Debug\Oestbanehus.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Oestbanehus.xr.xml">
       <PackagePath>Oestbanehus.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -445,11 +445,11 @@
     <AppxPackagedFile Include="C:\Users\Andy\.nuget\packages\Template10\1.1.12\lib\uap10.0\Template10Library\Themes\Resizer.xaml">
       <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus3\Oestbanehus\bin\x86\Debug\Core\Oestbanehus.exe">
+    <AppxPackagedFile Include="C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Core\Oestbanehus.exe">
       <PackagePath>Oestbanehus.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

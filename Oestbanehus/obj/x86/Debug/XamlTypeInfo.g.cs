@@ -823,6 +823,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.Activator = Activate_49_BuildingsViewModel;
                 userType.AddMemberName("buildings");
+                userType.AddMemberName("selectedBuilding");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2170,290 +2171,300 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             var that = (global::Oestbanehus.Models.Building)instance;
             that.Street = (global::System.String)Value;
         }
-        private object get_87_ViewModelBase_NavigationService(object instance)
+        private object get_87_BuildingsViewModel_selectedBuilding(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
+            return that.selectedBuilding;
+        }
+        private void set_87_BuildingsViewModel_selectedBuilding(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
+            that.selectedBuilding = (global::Oestbanehus.Models.Building)Value;
+        }
+        private object get_88_ViewModelBase_NavigationService(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.NavigationService;
         }
-        private void set_87_ViewModelBase_NavigationService(object instance, object Value)
+        private void set_88_ViewModelBase_NavigationService(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.NavigationService = (global::Template10.Services.NavigationService.INavigationService)Value;
         }
-        private object get_88_ViewModelBase_Dispatcher(object instance)
+        private object get_89_ViewModelBase_Dispatcher(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.Dispatcher;
         }
-        private void set_88_ViewModelBase_Dispatcher(object instance, object Value)
+        private void set_89_ViewModelBase_Dispatcher(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.Dispatcher = (global::Template10.Common.IDispatcherWrapper)Value;
         }
-        private object get_89_ViewModelBase_SessionState(object instance)
+        private object get_90_ViewModelBase_SessionState(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.SessionState;
         }
-        private void set_89_ViewModelBase_SessionState(object instance, object Value)
+        private void set_90_ViewModelBase_SessionState(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.SessionState = (global::Template10.Common.IStateItems)Value;
         }
-        private object get_90_Busy_BusyText(object instance)
+        private object get_91_Busy_BusyText(object instance)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             return that.BusyText;
         }
-        private void set_90_Busy_BusyText(object instance, object Value)
+        private void set_91_Busy_BusyText(object instance, object Value)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             that.BusyText = (global::System.String)Value;
         }
-        private object get_91_Busy_IsBusy(object instance)
+        private object get_92_Busy_IsBusy(object instance)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             return that.IsBusy;
         }
-        private void set_91_Busy_IsBusy(object instance, object Value)
+        private void set_92_Busy_IsBusy(object instance, object Value)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             that.IsBusy = (global::System.Boolean)Value;
         }
-        private object get_92_MainPageViewModel_Value(object instance)
+        private object get_93_MainPageViewModel_Value(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.MainPageViewModel)instance;
             return that.Value;
         }
-        private void set_92_MainPageViewModel_Value(object instance, object Value)
+        private void set_93_MainPageViewModel_Value(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.MainPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_93_DetailPageViewModel_Value(object instance)
+        private object get_94_DetailPageViewModel_Value(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.DetailPageViewModel)instance;
             return that.Value;
         }
-        private void set_93_DetailPageViewModel_Value(object instance, object Value)
+        private void set_94_DetailPageViewModel_Value(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.DetailPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_94_Interaction_Behaviors(object instance)
+        private object get_95_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_94_Interaction_Behaviors(object instance, object Value)
+        private void set_95_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_95_KeyBehavior_Actions(object instance)
+        private object get_96_KeyBehavior_Actions(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.Actions;
         }
-        private object get_96_KeyBehavior_Key(object instance)
+        private object get_97_KeyBehavior_Key(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.Key;
         }
-        private void set_96_KeyBehavior_Key(object instance, object Value)
+        private void set_97_KeyBehavior_Key(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             that.Key = (global::Windows.System.VirtualKey)Value;
         }
-        private object get_97_KeyBehavior_AssociatedObject(object instance)
+        private object get_98_KeyBehavior_AssociatedObject(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_98_KeyBehavior_AndControl(object instance)
+        private object get_99_KeyBehavior_AndControl(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.AndControl;
         }
-        private void set_98_KeyBehavior_AndControl(object instance, object Value)
+        private void set_99_KeyBehavior_AndControl(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             that.AndControl = (global::System.Boolean)Value;
         }
-        private object get_99_KeyBehavior_AndAlt(object instance)
+        private object get_100_KeyBehavior_AndAlt(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.AndAlt;
         }
-        private void set_99_KeyBehavior_AndAlt(object instance, object Value)
+        private void set_100_KeyBehavior_AndAlt(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             that.AndAlt = (global::System.Boolean)Value;
         }
-        private object get_100_KeyBehavior_AndShift(object instance)
+        private object get_101_KeyBehavior_AndShift(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.AndShift;
         }
-        private void set_100_KeyBehavior_AndShift(object instance, object Value)
+        private void set_101_KeyBehavior_AndShift(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             that.AndShift = (global::System.Boolean)Value;
         }
-        private object get_101_KeyBehavior_Event(object instance)
+        private object get_102_KeyBehavior_Event(object instance)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             return that.Event;
         }
-        private void set_101_KeyBehavior_Event(object instance, object Value)
+        private void set_102_KeyBehavior_Event(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             that.Event = (global::Template10.Behaviors.KeyBehavior.Kinds)Value;
         }
-        private object get_102_EventTriggerBehavior_Actions(object instance)
+        private object get_103_EventTriggerBehavior_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.Actions;
         }
-        private object get_103_EventTriggerBehavior_EventName(object instance)
+        private object get_104_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_103_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_104_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_104_EventTriggerBehavior_SourceObject(object instance)
+        private object get_105_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_104_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_105_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_105_Behavior_AssociatedObject(object instance)
+        private object get_106_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_106_FocusAction_TargetObject(object instance)
+        private object get_107_FocusAction_TargetObject(object instance)
         {
             var that = (global::Template10.Behaviors.FocusAction)instance;
             return that.TargetObject;
         }
-        private void set_106_FocusAction_TargetObject(object instance, object Value)
+        private void set_107_FocusAction_TargetObject(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.FocusAction)instance;
             that.TargetObject = (global::Windows.UI.Xaml.Controls.Control)Value;
         }
-        private object get_107_CallMethodAction_MethodName(object instance)
+        private object get_108_CallMethodAction_MethodName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             return that.MethodName;
         }
-        private void set_107_CallMethodAction_MethodName(object instance, object Value)
+        private void set_108_CallMethodAction_MethodName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             that.MethodName = (global::System.String)Value;
         }
-        private object get_108_CallMethodAction_TargetObject(object instance)
+        private object get_109_CallMethodAction_TargetObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             return that.TargetObject;
         }
-        private void set_108_CallMethodAction_TargetObject(object instance, object Value)
+        private void set_109_CallMethodAction_TargetObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             that.TargetObject = (global::System.Object)Value;
         }
-        private object get_109_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_110_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_110_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_111_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_111_ValueWhenConverter_When(object instance)
+        private object get_112_ValueWhenConverter_When(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.When;
         }
-        private void set_111_ValueWhenConverter_When(object instance, object Value)
+        private void set_112_ValueWhenConverter_When(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.When = (global::System.Object)Value;
         }
-        private object get_112_ValueWhenConverter_Value(object instance)
+        private object get_113_ValueWhenConverter_Value(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Value;
         }
-        private void set_112_ValueWhenConverter_Value(object instance, object Value)
+        private void set_113_ValueWhenConverter_Value(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_113_ValueWhenConverter_Otherwise(object instance)
+        private object get_114_ValueWhenConverter_Otherwise(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Otherwise;
         }
-        private void set_113_ValueWhenConverter_Otherwise(object instance, object Value)
+        private void set_114_ValueWhenConverter_Otherwise(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Otherwise = (global::System.Object)Value;
         }
-        private object get_114_ValueWhenConverter_OtherwiseValueBack(object instance)
+        private object get_115_ValueWhenConverter_OtherwiseValueBack(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.OtherwiseValueBack;
         }
-        private void set_114_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
+        private void set_115_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.OtherwiseValueBack = (global::System.Object)Value;
         }
-        private object get_115_ValueWhenConverter_Debug(object instance)
+        private object get_116_ValueWhenConverter_Debug(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Debug;
         }
-        private void set_115_ValueWhenConverter_Debug(object instance, object Value)
+        private void set_116_ValueWhenConverter_Debug(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Debug = (global::System.Boolean)Value;
         }
-        private object get_116_MessageDialogAction_Title(object instance)
+        private object get_117_MessageDialogAction_Title(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.Title;
         }
-        private void set_116_MessageDialogAction_Title(object instance, object Value)
+        private void set_117_MessageDialogAction_Title(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_117_MessageDialogAction_Content(object instance)
+        private object get_118_MessageDialogAction_Content(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.Content;
         }
-        private void set_117_MessageDialogAction_Content(object instance, object Value)
+        private void set_118_MessageDialogAction_Content(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.Content = (global::System.String)Value;
         }
-        private object get_118_MessageDialogAction_OkText(object instance)
+        private object get_119_MessageDialogAction_OkText(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.OkText;
         }
-        private void set_118_MessageDialogAction_OkText(object instance, object Value)
+        private void set_119_MessageDialogAction_OkText(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.OkText = (global::System.String)Value;
@@ -3051,211 +3062,217 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlMember.Getter = get_86_Building_Street;
                 xamlMember.Setter = set_86_Building_Street;
                 break;
+            case "Oestbanehus.ViewModels.BuildingsViewModel.selectedBuilding":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedBuilding", "Oestbanehus.Models.Building");
+                xamlMember.Getter = get_87_BuildingsViewModel_selectedBuilding;
+                xamlMember.Setter = set_87_BuildingsViewModel_selectedBuilding;
+                break;
             case "Template10.Mvvm.ViewModelBase.NavigationService":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "NavigationService", "Template10.Services.NavigationService.INavigationService");
-                xamlMember.Getter = get_87_ViewModelBase_NavigationService;
-                xamlMember.Setter = set_87_ViewModelBase_NavigationService;
+                xamlMember.Getter = get_88_ViewModelBase_NavigationService;
+                xamlMember.Setter = set_88_ViewModelBase_NavigationService;
                 break;
             case "Template10.Mvvm.ViewModelBase.Dispatcher":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Dispatcher", "Template10.Common.IDispatcherWrapper");
-                xamlMember.Getter = get_88_ViewModelBase_Dispatcher;
-                xamlMember.Setter = set_88_ViewModelBase_Dispatcher;
+                xamlMember.Getter = get_89_ViewModelBase_Dispatcher;
+                xamlMember.Setter = set_89_ViewModelBase_Dispatcher;
                 break;
             case "Template10.Mvvm.ViewModelBase.SessionState":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "SessionState", "Template10.Common.IStateItems");
-                xamlMember.Getter = get_89_ViewModelBase_SessionState;
-                xamlMember.Setter = set_89_ViewModelBase_SessionState;
+                xamlMember.Getter = get_90_ViewModelBase_SessionState;
+                xamlMember.Setter = set_90_ViewModelBase_SessionState;
                 break;
             case "Oestbanehus.Views.Busy.BusyText":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Views.Busy");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "BusyText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_Busy_BusyText;
-                xamlMember.Setter = set_90_Busy_BusyText;
+                xamlMember.Getter = get_91_Busy_BusyText;
+                xamlMember.Setter = set_91_Busy_BusyText;
                 break;
             case "Oestbanehus.Views.Busy.IsBusy":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Views.Busy");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "IsBusy", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_Busy_IsBusy;
-                xamlMember.Setter = set_91_Busy_IsBusy;
+                xamlMember.Getter = get_92_Busy_IsBusy;
+                xamlMember.Setter = set_92_Busy_IsBusy;
                 break;
             case "Oestbanehus.ViewModels.MainPageViewModel.Value":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.MainPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Value", "String");
-                xamlMember.Getter = get_92_MainPageViewModel_Value;
-                xamlMember.Setter = set_92_MainPageViewModel_Value;
+                xamlMember.Getter = get_93_MainPageViewModel_Value;
+                xamlMember.Setter = set_93_MainPageViewModel_Value;
                 break;
             case "Oestbanehus.ViewModels.DetailPageViewModel.Value":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.DetailPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Value", "String");
-                xamlMember.Getter = get_93_DetailPageViewModel_Value;
-                xamlMember.Setter = set_93_DetailPageViewModel_Value;
+                xamlMember.Getter = get_94_DetailPageViewModel_Value;
+                xamlMember.Setter = set_94_DetailPageViewModel_Value;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_94_Interaction_Behaviors;
-                xamlMember.Setter = set_94_Interaction_Behaviors;
+                xamlMember.Getter = get_95_Interaction_Behaviors;
+                xamlMember.Setter = set_95_Interaction_Behaviors;
                 break;
             case "Template10.Behaviors.KeyBehavior.Actions":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_KeyBehavior_Actions;
+                xamlMember.Getter = get_96_KeyBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.KeyBehavior.Key":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Key", "Windows.System.VirtualKey");
-                xamlMember.Getter = get_96_KeyBehavior_Key;
-                xamlMember.Setter = set_96_KeyBehavior_Key;
+                xamlMember.Getter = get_97_KeyBehavior_Key;
+                xamlMember.Setter = set_97_KeyBehavior_Key;
                 break;
             case "Template10.Behaviors.KeyBehavior.AssociatedObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_97_KeyBehavior_AssociatedObject;
+                xamlMember.Getter = get_98_KeyBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.KeyBehavior.AndControl":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AndControl", "Boolean");
-                xamlMember.Getter = get_98_KeyBehavior_AndControl;
-                xamlMember.Setter = set_98_KeyBehavior_AndControl;
+                xamlMember.Getter = get_99_KeyBehavior_AndControl;
+                xamlMember.Setter = set_99_KeyBehavior_AndControl;
                 break;
             case "Template10.Behaviors.KeyBehavior.AndAlt":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AndAlt", "Boolean");
-                xamlMember.Getter = get_99_KeyBehavior_AndAlt;
-                xamlMember.Setter = set_99_KeyBehavior_AndAlt;
+                xamlMember.Getter = get_100_KeyBehavior_AndAlt;
+                xamlMember.Setter = set_100_KeyBehavior_AndAlt;
                 break;
             case "Template10.Behaviors.KeyBehavior.AndShift":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AndShift", "Boolean");
-                xamlMember.Getter = get_100_KeyBehavior_AndShift;
-                xamlMember.Setter = set_100_KeyBehavior_AndShift;
+                xamlMember.Getter = get_101_KeyBehavior_AndShift;
+                xamlMember.Setter = set_101_KeyBehavior_AndShift;
                 break;
             case "Template10.Behaviors.KeyBehavior.Event":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.KeyBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Event", "Template10.Behaviors.KeyBehavior.Kinds");
-                xamlMember.Getter = get_101_KeyBehavior_Event;
-                xamlMember.Setter = set_101_KeyBehavior_Event;
+                xamlMember.Getter = get_102_KeyBehavior_Event;
+                xamlMember.Setter = set_102_KeyBehavior_Event;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_102_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_103_EventTriggerBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_103_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_104_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_104_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_104_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_105_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_105_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_105_Behavior_AssociatedObject;
+                xamlMember.Getter = get_106_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.FocusAction.TargetObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.FocusAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "TargetObject", "Windows.UI.Xaml.Controls.Control");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_FocusAction_TargetObject;
-                xamlMember.Setter = set_106_FocusAction_TargetObject;
+                xamlMember.Getter = get_107_FocusAction_TargetObject;
+                xamlMember.Setter = set_107_FocusAction_TargetObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.CallMethodAction.MethodName":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "MethodName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_CallMethodAction_MethodName;
-                xamlMember.Setter = set_107_CallMethodAction_MethodName;
+                xamlMember.Getter = get_108_CallMethodAction_MethodName;
+                xamlMember.Setter = set_108_CallMethodAction_MethodName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.CallMethodAction.TargetObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_CallMethodAction_TargetObject;
-                xamlMember.Setter = set_108_CallMethodAction_TargetObject;
+                xamlMember.Getter = get_109_CallMethodAction_TargetObject;
+                xamlMember.Setter = set_109_CallMethodAction_TargetObject;
                 break;
             case "Oestbanehus.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "Oestbanehus.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_109_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_110_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "Oestbanehus.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_110_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_111_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Converters.ValueWhenConverter.When":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "When", "Object");
-                xamlMember.Getter = get_111_ValueWhenConverter_When;
-                xamlMember.Setter = set_111_ValueWhenConverter_When;
+                xamlMember.Getter = get_112_ValueWhenConverter_When;
+                xamlMember.Setter = set_112_ValueWhenConverter_When;
                 break;
             case "Template10.Converters.ValueWhenConverter.Value":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Value", "Object");
-                xamlMember.Getter = get_112_ValueWhenConverter_Value;
-                xamlMember.Setter = set_112_ValueWhenConverter_Value;
+                xamlMember.Getter = get_113_ValueWhenConverter_Value;
+                xamlMember.Setter = set_113_ValueWhenConverter_Value;
                 break;
             case "Template10.Converters.ValueWhenConverter.Otherwise":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Otherwise", "Object");
-                xamlMember.Getter = get_113_ValueWhenConverter_Otherwise;
-                xamlMember.Setter = set_113_ValueWhenConverter_Otherwise;
+                xamlMember.Getter = get_114_ValueWhenConverter_Otherwise;
+                xamlMember.Setter = set_114_ValueWhenConverter_Otherwise;
                 break;
             case "Template10.Converters.ValueWhenConverter.OtherwiseValueBack":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "OtherwiseValueBack", "Object");
-                xamlMember.Getter = get_114_ValueWhenConverter_OtherwiseValueBack;
-                xamlMember.Setter = set_114_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Getter = get_115_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Setter = set_115_ValueWhenConverter_OtherwiseValueBack;
                 break;
             case "Template10.Converters.ValueWhenConverter.Debug":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Debug", "Boolean");
-                xamlMember.Getter = get_115_ValueWhenConverter_Debug;
-                xamlMember.Setter = set_115_ValueWhenConverter_Debug;
+                xamlMember.Getter = get_116_ValueWhenConverter_Debug;
+                xamlMember.Setter = set_116_ValueWhenConverter_Debug;
                 break;
             case "Template10.Behaviors.MessageDialogAction.Title":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Title", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_MessageDialogAction_Title;
-                xamlMember.Setter = set_116_MessageDialogAction_Title;
+                xamlMember.Getter = get_117_MessageDialogAction_Title;
+                xamlMember.Setter = set_117_MessageDialogAction_Title;
                 break;
             case "Template10.Behaviors.MessageDialogAction.Content":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Content", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_MessageDialogAction_Content;
-                xamlMember.Setter = set_117_MessageDialogAction_Content;
+                xamlMember.Getter = get_118_MessageDialogAction_Content;
+                xamlMember.Setter = set_118_MessageDialogAction_Content;
                 break;
             case "Template10.Behaviors.MessageDialogAction.OkText":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "OkText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_118_MessageDialogAction_OkText;
-                xamlMember.Setter = set_118_MessageDialogAction_OkText;
+                xamlMember.Getter = get_119_MessageDialogAction_OkText;
+                xamlMember.Setter = set_119_MessageDialogAction_OkText;
                 break;
             }
             return xamlMember;

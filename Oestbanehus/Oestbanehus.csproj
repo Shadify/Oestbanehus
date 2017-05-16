@@ -98,6 +98,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Apartment.cs" />
+    <Compile Include="Models\ApartmentsSingleton.cs" />
     <Compile Include="Models\Building.cs" />
     <Compile Include="Models\BuildingsSingleton.cs" />
     <Compile Include="Models\City.cs" />

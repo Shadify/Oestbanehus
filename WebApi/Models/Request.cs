@@ -11,9 +11,7 @@ namespace WebApi.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(40)]
-        public string Author { get; set; }
+        public int AuthorId { get; set; }
 
         public int ApartmentId { get; set; }
 
@@ -30,5 +28,7 @@ namespace WebApi.Models
         public string Picture { get; set; }
 
         public virtual Apartment Apartment { get; set; }
+
+        public virtual Person Person { get; set; }
     }
 }

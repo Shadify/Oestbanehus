@@ -8,7 +8,7 @@ namespace WebApi.Models
     public partial class Context : DbContext
     {
         public Context()
-            : base("name=Context")
+            : base("name=Context1")
         {
             base.Configuration.ProxyCreationEnabled = false;
         }
@@ -126,9 +126,11 @@ namespace WebApi.Models
                 .WithRequired(e => e.Person)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Request>()
-                .Property(e => e.Author)
-                .IsFixedLength();
+            modelBuilder.Entity<Person>()
+                .HasMany(e => e.Requests)
+                .WithRequired(e => e.Person)
+                .HasForeignKey(e => e.AuthorId)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Request>()
                 .Property(e => e.Title)

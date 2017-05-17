@@ -13,6 +13,7 @@ namespace WebApi.Models
         public Person()
         {
             Comments = new HashSet<Comment>();
+            Requests = new HashSet<Request>();
         }
 
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -45,5 +46,8 @@ namespace WebApi.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Request> Requests { get; set; }
     }
 }

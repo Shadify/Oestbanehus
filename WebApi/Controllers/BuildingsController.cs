@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class BuildingsController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/Buildings
         public IQueryable<Building> GetBuildings()

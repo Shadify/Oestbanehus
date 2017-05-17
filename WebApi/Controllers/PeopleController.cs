@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class PeopleController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/People
         public IQueryable<Person> GetPersons()

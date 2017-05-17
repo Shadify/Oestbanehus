@@ -8,6 +8,12 @@ namespace WebApi.Models
 
     public partial class ConditionsOfItem
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public ConditionsOfItem()
+        {
+            Comments = new HashSet<Comment>();
+        }
+
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
@@ -25,6 +31,9 @@ namespace WebApi.Models
         public string Status { get; set; }
 
         public virtual Apartment Apartment { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Comment> Comments { get; set; }
 
         public virtual ConditionType ConditionType1 { get; set; }
     }

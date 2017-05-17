@@ -11,16 +11,17 @@ namespace WebApi.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
-        public int ApartmentId { get; set; }
+        public int ConditionId { get; set; }
 
         public int PersonId { get; set; }
 
         [Required]
         public string Content { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        public string PublishedDate { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime PublishedDate { get; set; }
+
+        public virtual ConditionsOfItem ConditionsOfItem { get; set; }
 
         public virtual Person Person { get; set; }
     }

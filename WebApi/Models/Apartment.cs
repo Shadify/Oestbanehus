@@ -30,10 +30,8 @@ namespace WebApi.Models
         public int Floor { get; set; }
 
         [Required]
-        [StringLength(1)]
-        public string Side { get; set; }
-
-        public int ApartmentNumber { get; set; }
+        [StringLength(10)]
+        public string ApartmentNumber { get; set; }
 
         [Required]
         [StringLength(255)]

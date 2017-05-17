@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class CommentsController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/Comments
         public IQueryable<Comment> GetComments()

@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class ConditionsOfItemsController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/ConditionsOfItems
         public IQueryable<ConditionsOfItem> GetConditionsOfItems()

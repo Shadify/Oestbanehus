@@ -20,11 +20,11 @@ namespace WebApi.Models
 
         public int ApartmentId { get; set; }
 
-        [StringLength(255)]
-        public string MoveInDate { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? MoveInDate { get; set; }
 
-        [StringLength(255)]
-        public string MoveOutDate { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? MoveOutDate { get; set; }
 
         [Required]
         [StringLength(255)]

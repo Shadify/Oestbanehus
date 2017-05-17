@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class ConditionTypesController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/ConditionTypes
         public IQueryable<ConditionType> GetConditionTypes()

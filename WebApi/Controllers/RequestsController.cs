@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class RequestsController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/Requests
         public IQueryable<Request> GetRequests()

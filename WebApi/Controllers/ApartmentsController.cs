@@ -8,38 +8,18 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using WebApi.Models;
 
-namespace WebApi.Models
+namespace WebApi.Controllers
 {
-
-    public class BuildingDto
-    {
-        public int Id { get; set; }
-        public int Floor { get; set; }
-        public string Genre { get; set; }
-    }
-
-
-
-    [RoutePrefix("api/Apartments")]
     public class ApartmentsController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/Apartments
         public IQueryable<Apartment> GetApartments()
         {
             return db.Apartments;
-        }
-
-        [Route("{id:int}/buildingAps")]
-        public IQueryable<Apartment> GetBuildingApartments(int id)
-        {
-            var buildingAps = (from ap in db.Apartments
-                               where ap.BuildingId == id
-                               select ap);
-
-            return buildingAps;
         }
 
         // GET: api/Apartments/5

@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     public class CitiesController : ApiController
     {
-        private ViewContext db = new ViewContext();
+        private Context db = new Context();
 
         // GET: api/Cities
         public IQueryable<City> GetCities()

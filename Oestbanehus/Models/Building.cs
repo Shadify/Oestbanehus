@@ -15,9 +15,5 @@ namespace Oestbanehus.Models
 
         public string Street { get; set; }
 
-        public static explicit operator Building(JObject v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

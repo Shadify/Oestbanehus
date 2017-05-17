@@ -26,10 +26,6 @@ namespace Oestbanehus.Models
         }
 
 
-        private ApartmentsSingleton() {
-            LoadApartmentsAsync();
-        }
-
         public static ApartmentsSingleton Instance
         {
             get
@@ -53,6 +49,9 @@ namespace Oestbanehus.Models
         {
             _observableCollection = await Persistence.Persistence.getApartmentsInBuilding(buildingId);
         }
+
+
+
 
 
 

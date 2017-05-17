@@ -657,7 +657,6 @@ C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\System.Xml.XDoc
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\System.Xml.XmlSerializer.dll
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Template10Library.dll
-C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Oestbanehus.csprojResolveAssemblyReference.cache
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\App.g.i.cs
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\App.g.cs
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Buildings.g.i.cs

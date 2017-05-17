@@ -13,15 +13,19 @@ using Oestbanehus.Views;
 using Newtonsoft.Json.Linq;
 using Oestbanehus.Persistence;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Oestbanehus.ViewModels
 {
-    class BuildingsViewModel : ViewModelBase
+    class BuildingsViewModel : ViewModelBase, INotifyPropertyChanged
     {
 
         public ObservableCollection<Building> buildings { get; set; }
-        public ObservableCollection<Apartment> apartments = ApartmentsSingleton.Instance.ObservableCollection;
+        public ObservableCollection<Apartment> Apartments { get;set; }
 
+ 
         private Building _selectedBuilding;
         public Building selectedBuilding
         {
@@ -32,27 +36,38 @@ namespace Oestbanehus.ViewModels
             set
             {        
                 Set(ref _selectedBuilding, value);
-                ApartmentsSingleton.LoadApartmentsInBuildingAsync(_selectedBuilding.Id);
+                ExecuteCommand.Execute(selectedBuilding.Id);
             }
         }
 
+
+        DelegateCommand _executeCommand;
+        public DelegateCommand ExecuteCommand
+            => _executeCommand ?? (_executeCommand = new DelegateCommand( () =>
+            {
+                 ApartmentsSingleton.LoadApartmentsInBuildingAsync(selectedBuilding.Id);
+                Apartments.Clear();
+                foreach (var ap in ApartmentsSingleton.Instance.ObservableCollection)
+                {
+                    Apartments.Add(ap);
+                }
+                 
+            }, () => true));
+
+
+
         public BuildingsViewModel()
         {
-            
+            //_loadAptsCommand = new DelegateCommand<int>(loadApts);
+            Apartments = new ObservableCollection<Apartment>();
         }
+
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
             var a = BuildingsSingleton.Instance;
             buildings = a.ObservableCollection; 
         }
-
-
-        DelegateCommand _LoadAptsCommand;
-        public DelegateCommand LoadAptsCommand = new DelegateCommand(() =>
-            {
-                ApartmentsSingleton.LoadApartmentsInBuildingAsync(1);
-            }, () => false);
 
 
         public void GotoSettings() =>

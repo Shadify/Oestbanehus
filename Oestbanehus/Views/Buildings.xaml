@@ -6,17 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    
-  xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:controls="using:Template10.Controls"
       xmlns:vm="using:Oestbanehus.ViewModels"
-  xmlns:model="using:Oestbanehus.Models">
+  xmlns:model="using:Oestbanehus.Models"
+  xmlns:converters="using:Oestbanehus.Converters"
+      xmlns:Triggers="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
   <Page.DataContext>
     <vm:BuildingsViewModel x:Name="ViewModel" />
   </Page.DataContext>
 
-  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <Page.Resources>
+    <converters:ItemClickedConverter x:Name="ClickConverter"></converters:ItemClickedConverter>
+  </Page.Resources>
+
+  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        Name="Root">
     <StackPanel>
     <controls:PageHeader x:Name="pageHeader"
                          RelativePanel.AlignLeftWithPanel="True"
@@ -36,48 +43,63 @@
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <ListView ItemsSource="{x:Bind ViewModel.buildings}"
+                  SelectedItem="{Binding selectedBuilding, Mode=TwoWay}"
+                  Grid.Column="0">
+          <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Building">
+              <StackPanel>
+                <TextBlock Text="Street"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Street}" />
+                <TextBlock Text="ZipCode"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=ZipCode}" />
+                <TextBlock Text="Id"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Id}" />
 
-            <TextBlock Text="Buildings" />
-            <ListView ItemsSource="{x:Bind ViewModel.buildings}"
-              SelectedItem="{Binding selectedBuilding, Mode=TwoWay}">
-      <ListView.ItemTemplate>
-        <DataTemplate x:DataType="model:Building">
-            <StackPanel>
-            <TextBlock Text="Street" FontSize="8" />
-            <TextBlock Text="{Binding Path=Street}" />
-            <TextBlock Text="ZipCode" FontSize="8" />
-            <TextBlock Text="{Binding Path=ZipCode}" />
-            <TextBlock Text="Id" FontSize="8" />
-            <TextBlock Text="{Binding Path=Id}" />
-          </StackPanel>
-          
-        </DataTemplate>
+              </StackPanel>
+            </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
 
-            <TextBlock Text="Apartments" />
-            <ListView ItemsSource="{x:Bind ViewModel.apartments}">
-        <ListView.ItemTemplate>
-          <DataTemplate x:DataType="model:Apartment">
-            <StackPanel>
-             <TextBlock Text="ApartmentNumber" FontSize="8"/>
-             <TextBlock Text="{Binding Path=ApartmentNumber}" />
-             <TextBlock Text="Floor" FontSize="8"/>
-             <TextBlock Text="{Binding Path=Floor}" />
-             <TextBlock Text="Street" FontSize="8"/>
-             <TextBlock Text="{Binding Path=Street}"/>
-             <TextBlock Text="Size" FontSize="8"/>
-             <TextBlock Text="{Binding Path=Size}"/>
-             <TextBlock Text="Number of Rooms" FontSize="8"/>
-             <TextBlock Text="{Binding Path=NumberOfRooms}"/>
-             <TextBlock Text="Price" FontSize="8"/>
-             <TextBlock Text="{Binding Path=Price}"/>
-             </StackPanel>
+        <ListView ItemsSource="{x:Bind ViewModel.Apartments}"
+                  Grid.Column="1">
+          <TextBlock Text="Apartments: " />
+          <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Apartment">
+              <StackPanel>
+                <TextBlock Text="ApartmentNumber"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=ApartmentNumber}" />
+                <TextBlock Text="Floor"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Floor}" />
+                <TextBlock Text="Street"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Street}" />
+                <TextBlock Text="Size"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Size}" />
+                <TextBlock Text="Number of Rooms"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=NumberOfRooms}" />
+                <TextBlock Text="Price"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Price}" />
+              </StackPanel>
 
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
-      
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </Grid>
       
       <TextBlock Text="{Binding selectedBuilding.Id}" />
     </StackPanel>

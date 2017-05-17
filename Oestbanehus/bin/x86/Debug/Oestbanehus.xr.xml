@@ -6,6 +6,7 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="selectedBuilding" />
     <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="ExecuteCommand" />
     <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="NumberOfRooms" />
     <RootPropertyPathName Name="Size" />
@@ -83,12 +84,14 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Oestbanehus.ViewModels.BuildingsViewModel" />
+    <RootType FullName="Oestbanehus.Converters.ItemClickedConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Name" />
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="ColumnDefinitions" />
@@ -137,17 +140,27 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="MaxWidth" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectedItem" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
       <RootProperty Name="Mode" />
       <RootProperty Name="UpdateSourceTrigger" />
       <RootProperty Name="ElementName" />
       <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Command" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
@@ -169,9 +182,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Child" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="Width" />
@@ -212,12 +222,6 @@
       <RootMethod Name="SetIsTargetElement" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.DetailPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Command" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MinHeight" />

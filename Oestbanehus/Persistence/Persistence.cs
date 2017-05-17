@@ -19,7 +19,7 @@ namespace Oestbanehus.Persistence
         public static async Task<ObservableCollection<Building>> getBuildingsAsync()
         {
             ObservableCollection<Building> allBuildings = new ObservableCollection<Building>();
-            const string ServerUrl = "http://localhost:8005";
+            const string ServerUrl = "http://localhost:8416";
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
 
@@ -53,7 +53,7 @@ namespace Oestbanehus.Persistence
         public static async Task<ObservableCollection<Apartment>> getApartmentsAsync()
         {
             ObservableCollection<Apartment> allApartments = new ObservableCollection<Apartment>();
-            const string ServerUrl = "http://localhost:8005";
+            const string ServerUrl = "http://localhost:8416";
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
 
@@ -86,7 +86,7 @@ namespace Oestbanehus.Persistence
         public static async Task<ObservableCollection<Apartment>> getApartmentsInBuilding(int buildingId)
         {
             ObservableCollection<Apartment> allApartments = new ObservableCollection<Apartment>();
-            const string ServerUrl = "http://localhost:8005";
+            const string ServerUrl = "http://localhost:8416";
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
 

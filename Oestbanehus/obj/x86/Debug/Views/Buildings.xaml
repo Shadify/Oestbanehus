@@ -6,19 +6,26 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    
-  xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:controls="using:Template10.Controls"
       xmlns:vm="using:Oestbanehus.ViewModels"
-  xmlns:model="using:Oestbanehus.Models">
+  xmlns:model="using:Oestbanehus.Models"
+  xmlns:converters="using:Oestbanehus.Converters"
+      xmlns:Triggers="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
   <Page.DataContext>
     <vm:BuildingsViewModel x:ConnectionId='2' x:Name="ViewModel" />
   </Page.DataContext>
 
-  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <Page.Resources>
+    <converters:ItemClickedConverter x:ConnectionId='3' x:Name="ClickConverter"></converters:ItemClickedConverter>
+  </Page.Resources>
+
+  <Grid x:ConnectionId='4' Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        Name="Root">
     <StackPanel>
-    <controls:PageHeader x:ConnectionId='3' x:Name="pageHeader"
+    <controls:PageHeader x:ConnectionId='5' x:Name="pageHeader"
                          RelativePanel.AlignLeftWithPanel="True"
                          RelativePanel.AlignRightWithPanel="True"
                          RelativePanel.AlignTopWithPanel="True"
@@ -27,40 +34,51 @@
 
       <!--  secondary commands  -->
       <controls:PageHeader.SecondaryCommands>
-        <AppBarButton x:ConnectionId='6'                                        
+        <AppBarButton x:ConnectionId='8'                                        
                       Label="Settings" />
-        <AppBarButton x:ConnectionId='7'                                       
+        <AppBarButton x:ConnectionId='9'                                       
                       Label="Privacy" />
-        <AppBarButton x:ConnectionId='8'                                     
+        <AppBarButton x:ConnectionId='10'                                     
                       Label="About" />
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <ListView x:ConnectionId='6'                                           
+                  SelectedItem="{Binding selectedBuilding, Mode=TwoWay}"
+                  Grid.Column="0">
+          <ListView.ItemTemplate>
+            <DataTemplate                            >
+              <StackPanel>
+                <TextBlock Text="Street"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Street}" />
+                <TextBlock Text="ZipCode"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=ZipCode}" />
+                <TextBlock Text="Id"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=Id}" />
 
-            <TextBlock Text="Buildings" />
-            <ListView x:ConnectionId='4'                                           
-              SelectedItem="{Binding selectedBuilding, Mode=TwoWay}">
-      <ListView.ItemTemplate>
-        <DataTemplate                            >
-            <StackPanel>
-            <TextBlock Text="Street" FontSize="8" />
-            <TextBlock Text="{Binding Path=Street}" />
-            <TextBlock Text="ZipCode" FontSize="8" />
-            <TextBlock Text="{Binding Path=ZipCode}" />
-            <TextBlock Text="Id" FontSize="8" />
-            <TextBlock Text="{Binding Path=Id}" />
-          </StackPanel>
-          
-        </DataTemplate>
+              </StackPanel>
+            </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
 
-            <TextBlock Text="Apartments" />
-            <ListView x:ConnectionId='5'                                            >
-        <ListView.ItemTemplate>
+        <ListView x:ConnectionId='7' 
+                                                   
+        Grid.Column="1">
+          <TextBlock Text="Apartments: "
+                     />
+          <ListView.ItemTemplate>
           <DataTemplate                             >
-            <StackPanel>
-             <TextBlock Text="ApartmentNumber" FontSize="8"/>
+              <StackPanel>
+                <TextBlock Text="ApartmentNumber" FontSize="8"/>
              <TextBlock Text="{Binding Path=ApartmentNumber}" />
              <TextBlock Text="Floor" FontSize="8"/>
              <TextBlock Text="{Binding Path=Floor}" />
@@ -71,13 +89,16 @@
              <TextBlock Text="Number of Rooms" FontSize="8"/>
              <TextBlock Text="{Binding Path=NumberOfRooms}"/>
              <TextBlock Text="Price" FontSize="8"/>
-             <TextBlock Text="{Binding Path=Price}"/>
-             </StackPanel>
+                <TextBlock Text="{Binding Path=Price}" />
+              </StackPanel>
 
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
-      
+        <Button Grid.Column="2"
+                Command="{Binding ExecuteCommand}"
+                Margin="115,62,0,458">BTN</Button>
+      </Grid>
       
       <TextBlock Text="{Binding selectedBuilding.Id}" />
     </StackPanel>

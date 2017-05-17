@@ -22281,14 +22281,14 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Andy\\.nuget\\packages\\": {}
+    "C:\\Users\\VSPC1\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus\\Oestbanehus\\Oestbanehus.csproj",
+      "projectUniqueName": "C:\\Users\\VSPC1\\Desktop\\Oestbanehus\\Oestbanehus\\Oestbanehus.csproj",
       "projectName": "Oestbanehus",
-      "projectPath": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus\\Oestbanehus\\Oestbanehus.csproj",
-      "projectJsonPath": "C:\\Users\\Andy\\Source\\Repos\\Oestbanehus\\Oestbanehus\\project.json",
+      "projectPath": "C:\\Users\\VSPC1\\Desktop\\Oestbanehus\\Oestbanehus\\Oestbanehus.csproj",
+      "projectJsonPath": "C:\\Users\\VSPC1\\Desktop\\Oestbanehus\\Oestbanehus\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

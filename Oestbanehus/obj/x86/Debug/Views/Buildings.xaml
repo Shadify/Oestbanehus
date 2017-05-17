@@ -36,15 +36,18 @@
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
-    <ListView x:ConnectionId='4'                                           
+
+            <TextBlock Text="Buildings" />
+            <ListView x:ConnectionId='4'                                           
               SelectedItem="{Binding selectedBuilding, Mode=TwoWay}">
       <ListView.ItemTemplate>
         <DataTemplate                            >
-            <StackPanel 
-
-              >
+            <StackPanel>
+            <TextBlock Text="Street" FontSize="8" />
             <TextBlock Text="{Binding Path=Street}" />
+            <TextBlock Text="ZipCode" FontSize="8" />
             <TextBlock Text="{Binding Path=ZipCode}" />
+            <TextBlock Text="Id" FontSize="8" />
             <TextBlock Text="{Binding Path=Id}" />
           </StackPanel>
           
@@ -52,16 +55,24 @@
       </ListView.ItemTemplate>
     </ListView>
 
-      
-      <ListView x:ConnectionId='5'                                            
-       >
+            <TextBlock Text="Apartments" />
+            <ListView x:ConnectionId='5'                                            >
         <ListView.ItemTemplate>
           <DataTemplate                             >
             <StackPanel>
-              <TextBlock Text="{Binding Path=Id}" />
-              <TextBlock Text="{Binding Path=Floor}" />
-              <TextBlock Text="{Binding Path=Side}" />
-            </StackPanel>
+             <TextBlock Text="ApartmentNumber" FontSize="8"/>
+             <TextBlock Text="{Binding Path=ApartmentNumber}" />
+             <TextBlock Text="Floor" FontSize="8"/>
+             <TextBlock Text="{Binding Path=Floor}" />
+             <TextBlock Text="Street" FontSize="8"/>
+             <TextBlock Text="{Binding Path=Street}"/>
+             <TextBlock Text="Size" FontSize="8"/>
+             <TextBlock Text="{Binding Path=Size}"/>
+             <TextBlock Text="Number of Rooms" FontSize="8"/>
+             <TextBlock Text="{Binding Path=NumberOfRooms}"/>
+             <TextBlock Text="Price" FontSize="8"/>
+             <TextBlock Text="{Binding Path=Price}"/>
+             </StackPanel>
 
           </DataTemplate>
         </ListView.ItemTemplate>

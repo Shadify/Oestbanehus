@@ -156,7 +156,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[96];
+            _typeNameTable = new string[97];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -238,23 +238,24 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             _typeNameTable[78] = "Windows.System.VirtualKey";
             _typeNameTable[79] = "Template10.Behaviors.KeyBehavior.Kinds";
             _typeNameTable[80] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[81] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[82] = "Template10.Behaviors.FocusAction";
-            _typeNameTable[83] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
-            _typeNameTable[84] = "Oestbanehus.Views.MainPage";
-            _typeNameTable[85] = "Oestbanehus.Views.Payments";
-            _typeNameTable[86] = "Oestbanehus.Views.Requests";
-            _typeNameTable[87] = "Oestbanehus.Views.Residents";
-            _typeNameTable[88] = "Oestbanehus.ViewModels.SettingsPageViewModel";
-            _typeNameTable[89] = "Oestbanehus.ViewModels.SettingsPartViewModel";
-            _typeNameTable[90] = "Oestbanehus.ViewModels.AboutPartViewModel";
-            _typeNameTable[91] = "Template10.Converters.ValueWhenConverter";
-            _typeNameTable[92] = "Oestbanehus.Views.SettingsPage";
-            _typeNameTable[93] = "Template10.Behaviors.MessageDialogAction";
-            _typeNameTable[94] = "Oestbanehus.Views.Shell";
-            _typeNameTable[95] = "Oestbanehus.Views.Splash";
+            _typeNameTable[81] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[82] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[83] = "Template10.Behaviors.FocusAction";
+            _typeNameTable[84] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
+            _typeNameTable[85] = "Oestbanehus.Views.MainPage";
+            _typeNameTable[86] = "Oestbanehus.Views.Payments";
+            _typeNameTable[87] = "Oestbanehus.Views.Requests";
+            _typeNameTable[88] = "Oestbanehus.Views.Residents";
+            _typeNameTable[89] = "Oestbanehus.ViewModels.SettingsPageViewModel";
+            _typeNameTable[90] = "Oestbanehus.ViewModels.SettingsPartViewModel";
+            _typeNameTable[91] = "Oestbanehus.ViewModels.AboutPartViewModel";
+            _typeNameTable[92] = "Template10.Converters.ValueWhenConverter";
+            _typeNameTable[93] = "Oestbanehus.Views.SettingsPage";
+            _typeNameTable[94] = "Template10.Behaviors.MessageDialogAction";
+            _typeNameTable[95] = "Oestbanehus.Views.Shell";
+            _typeNameTable[96] = "Oestbanehus.Views.Splash";
 
-            _typeTable = new global::System.Type[96];
+            _typeTable = new global::System.Type[97];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -336,21 +337,22 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             _typeTable[78] = typeof(global::Windows.System.VirtualKey);
             _typeTable[79] = typeof(global::Template10.Behaviors.KeyBehavior.Kinds);
             _typeTable[80] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[81] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[82] = typeof(global::Template10.Behaviors.FocusAction);
-            _typeTable[83] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
-            _typeTable[84] = typeof(global::Oestbanehus.Views.MainPage);
-            _typeTable[85] = typeof(global::Oestbanehus.Views.Payments);
-            _typeTable[86] = typeof(global::Oestbanehus.Views.Requests);
-            _typeTable[87] = typeof(global::Oestbanehus.Views.Residents);
-            _typeTable[88] = typeof(global::Oestbanehus.ViewModels.SettingsPageViewModel);
-            _typeTable[89] = typeof(global::Oestbanehus.ViewModels.SettingsPartViewModel);
-            _typeTable[90] = typeof(global::Oestbanehus.ViewModels.AboutPartViewModel);
-            _typeTable[91] = typeof(global::Template10.Converters.ValueWhenConverter);
-            _typeTable[92] = typeof(global::Oestbanehus.Views.SettingsPage);
-            _typeTable[93] = typeof(global::Template10.Behaviors.MessageDialogAction);
-            _typeTable[94] = typeof(global::Oestbanehus.Views.Shell);
-            _typeTable[95] = typeof(global::Oestbanehus.Views.Splash);
+            _typeTable[81] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[82] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[83] = typeof(global::Template10.Behaviors.FocusAction);
+            _typeTable[84] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
+            _typeTable[85] = typeof(global::Oestbanehus.Views.MainPage);
+            _typeTable[86] = typeof(global::Oestbanehus.Views.Payments);
+            _typeTable[87] = typeof(global::Oestbanehus.Views.Requests);
+            _typeTable[88] = typeof(global::Oestbanehus.Views.Residents);
+            _typeTable[89] = typeof(global::Oestbanehus.ViewModels.SettingsPageViewModel);
+            _typeTable[90] = typeof(global::Oestbanehus.ViewModels.SettingsPartViewModel);
+            _typeTable[91] = typeof(global::Oestbanehus.ViewModels.AboutPartViewModel);
+            _typeTable[92] = typeof(global::Template10.Converters.ValueWhenConverter);
+            _typeTable[93] = typeof(global::Oestbanehus.Views.SettingsPage);
+            _typeTable[94] = typeof(global::Template10.Behaviors.MessageDialogAction);
+            _typeTable[95] = typeof(global::Oestbanehus.Views.Shell);
+            _typeTable[96] = typeof(global::Oestbanehus.Views.Splash);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -415,19 +417,19 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
         private object Activate_76_KeyBehavior() { return new global::Template10.Behaviors.KeyBehavior(); }
         private object Activate_77_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
         private object Activate_80_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_82_FocusAction() { return new global::Template10.Behaviors.FocusAction(); }
-        private object Activate_83_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
-        private object Activate_84_MainPage() { return new global::Oestbanehus.Views.MainPage(); }
-        private object Activate_85_Payments() { return new global::Oestbanehus.Views.Payments(); }
-        private object Activate_86_Requests() { return new global::Oestbanehus.Views.Requests(); }
-        private object Activate_87_Residents() { return new global::Oestbanehus.Views.Residents(); }
-        private object Activate_88_SettingsPageViewModel() { return new global::Oestbanehus.ViewModels.SettingsPageViewModel(); }
-        private object Activate_89_SettingsPartViewModel() { return new global::Oestbanehus.ViewModels.SettingsPartViewModel(); }
-        private object Activate_90_AboutPartViewModel() { return new global::Oestbanehus.ViewModels.AboutPartViewModel(); }
-        private object Activate_91_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
-        private object Activate_92_SettingsPage() { return new global::Oestbanehus.Views.SettingsPage(); }
-        private object Activate_93_MessageDialogAction() { return new global::Template10.Behaviors.MessageDialogAction(); }
-        private object Activate_94_Shell() { return new global::Oestbanehus.Views.Shell(); }
+        private object Activate_83_FocusAction() { return new global::Template10.Behaviors.FocusAction(); }
+        private object Activate_84_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
+        private object Activate_85_MainPage() { return new global::Oestbanehus.Views.MainPage(); }
+        private object Activate_86_Payments() { return new global::Oestbanehus.Views.Payments(); }
+        private object Activate_87_Requests() { return new global::Oestbanehus.Views.Requests(); }
+        private object Activate_88_Residents() { return new global::Oestbanehus.Views.Residents(); }
+        private object Activate_89_SettingsPageViewModel() { return new global::Oestbanehus.ViewModels.SettingsPageViewModel(); }
+        private object Activate_90_SettingsPartViewModel() { return new global::Oestbanehus.ViewModels.SettingsPartViewModel(); }
+        private object Activate_91_AboutPartViewModel() { return new global::Oestbanehus.ViewModels.AboutPartViewModel(); }
+        private object Activate_92_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
+        private object Activate_93_SettingsPage() { return new global::Oestbanehus.Views.SettingsPage(); }
+        private object Activate_94_MessageDialogAction() { return new global::Template10.Behaviors.MessageDialogAction(); }
+        private object Activate_95_Shell() { return new global::Oestbanehus.Views.Shell(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -1256,90 +1258,96 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 break;
 
             case 80:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
-                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
                 userType.Activator = Activate_80_EventTriggerBehavior;
-                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
-                userType.AddMemberName("Actions");
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 81:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 81:   //  Microsoft.Xaml.Interactivity.Trigger
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
+                userType.AddMemberName("Actions");
+                xamlType = userType;
+                break;
+
+            case 82:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 82:   //  Template10.Behaviors.FocusAction
+            case 83:   //  Template10.Behaviors.FocusAction
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_82_FocusAction;
+                userType.Activator = Activate_83_FocusAction;
                 userType.AddMemberName("TargetObject");
                 xamlType = userType;
                 break;
 
-            case 83:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
+            case 84:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_83_CallMethodAction;
+                userType.Activator = Activate_84_CallMethodAction;
                 userType.AddMemberName("MethodName");
                 userType.AddMemberName("TargetObject");
                 xamlType = userType;
                 break;
 
-            case 84:   //  Oestbanehus.Views.MainPage
+            case 85:   //  Oestbanehus.Views.MainPage
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_84_MainPage;
+                userType.Activator = Activate_85_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 85:   //  Oestbanehus.Views.Payments
+            case 86:   //  Oestbanehus.Views.Payments
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_85_Payments;
+                userType.Activator = Activate_86_Payments;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 86:   //  Oestbanehus.Views.Requests
+            case 87:   //  Oestbanehus.Views.Requests
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_86_Requests;
+                userType.Activator = Activate_87_Requests;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 87:   //  Oestbanehus.Views.Residents
+            case 88:   //  Oestbanehus.Views.Residents
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_87_Residents;
+                userType.Activator = Activate_88_Residents;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 88:   //  Oestbanehus.ViewModels.SettingsPageViewModel
+            case 89:   //  Oestbanehus.ViewModels.SettingsPageViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_88_SettingsPageViewModel;
+                userType.Activator = Activate_89_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 89:   //  Oestbanehus.ViewModels.SettingsPartViewModel
+            case 90:   //  Oestbanehus.ViewModels.SettingsPartViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 90:   //  Oestbanehus.ViewModels.AboutPartViewModel
+            case 91:   //  Oestbanehus.ViewModels.AboutPartViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 91:   //  Template10.Converters.ValueWhenConverter
+            case 92:   //  Template10.Converters.ValueWhenConverter
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_91_ValueWhenConverter;
+                userType.Activator = Activate_92_ValueWhenConverter;
                 userType.AddMemberName("When");
                 userType.AddMemberName("Value");
                 userType.AddMemberName("Otherwise");
@@ -1348,30 +1356,30 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 92:   //  Oestbanehus.Views.SettingsPage
+            case 93:   //  Oestbanehus.Views.SettingsPage
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_92_SettingsPage;
+                userType.Activator = Activate_93_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 93:   //  Template10.Behaviors.MessageDialogAction
+            case 94:   //  Template10.Behaviors.MessageDialogAction
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_93_MessageDialogAction;
+                userType.Activator = Activate_94_MessageDialogAction;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("OkText");
                 xamlType = userType;
                 break;
 
-            case 94:   //  Oestbanehus.Views.Shell
+            case 95:   //  Oestbanehus.Views.Shell
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_94_Shell;
+                userType.Activator = Activate_95_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 95:   //  Oestbanehus.Views.Splash
+            case 96:   //  Oestbanehus.Views.Splash
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -2553,9 +2561,9 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             var that = (global::Template10.Behaviors.KeyBehavior)instance;
             that.Event = (global::Template10.Behaviors.KeyBehavior.Kinds)Value;
         }
-        private object get_117_EventTriggerBehavior_Actions(object instance)
+        private object get_117_Trigger_Actions(object instance)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
         private object get_118_EventTriggerBehavior_EventName(object instance)
@@ -3481,11 +3489,11 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlMember.Getter = get_116_KeyBehavior_Event;
                 xamlMember.Setter = set_116_KeyBehavior_Event;
                 break;
-            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+            case "Microsoft.Xaml.Interactivity.Trigger.Actions":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_117_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":

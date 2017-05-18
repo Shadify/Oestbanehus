@@ -6,6 +6,7 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="apartment" />
     <RootPropertyPathName Name="Residents" />
+    <RootPropertyPathName Name="MoveOutDate" />
     <RootPropertyPathName Name="MoveInDate" />
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="Email" />
@@ -155,12 +156,13 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
-      <RootProperty Name="Inlines" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="LineHeight" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="MaxWidth" />

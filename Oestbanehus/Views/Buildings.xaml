@@ -56,16 +56,16 @@
             <DataTemplate x:DataType="model:Building">
               <StackPanel>
                 <TextBlock Text="Street"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=Street}" />
                 <TextBlock Text="ZipCode"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=ZipCode}" />
                 <TextBlock Text="City"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=City}" />
                 <TextBlock Text="Id"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold" />
                 <TextBlock Text="{Binding Path=Id}" />
 
               </StackPanel>
@@ -81,23 +81,23 @@
             <DataTemplate x:DataType="model:Apartment">
               <StackPanel>
                 <TextBlock Text="ApartmentNumber"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=ApartmentNumber}" />
                 <TextBlock Text="Floor"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=Floor}" />
                 <TextBlock Text="Street"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=Street}" />
                
                 <TextBlock Text="Size"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=Size}" />
                 <TextBlock Text="Number of Rooms"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold" />
                 <TextBlock Text="{Binding Path=NumberOfRooms}" />
                 <TextBlock Text="Price"
-                           FontSize="8" />
+                           FontSize="20" FontWeight="Bold"/>
                 <TextBlock Text="{Binding Path=Price}" />
               </StackPanel>
 
@@ -105,7 +105,6 @@
           </ListView.ItemTemplate>
         </ListView>
       </Grid>
-      
       <TextBlock Text="{Binding selectedBuilding.Id}" />
     </StackPanel>
     

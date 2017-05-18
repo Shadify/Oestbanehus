@@ -38,38 +38,35 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
-
-          <StackPanel Orientation="Horizontal">
-            <TextBlock>Address: </TextBlock>
-            
-            <TextBlock Text="{Binding Path=apartment.Street}" />
-            <TextBlock Text="{Binding Path=apartment.ApartmentNumber}" />
+                    <TextBlock Text="Address:  "  FontSize="20" FontWeight="Bold"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Path=apartment.Street}" />
+                        <TextBlock Text="{Binding Path=apartment.ApartmentNumber}" Margin="10,0,0,0"/>
           </StackPanel>
 
           <StackPanel Orientation="Horizontal">
-            <TextBlock Text="{Binding Path=apartment.ZipCode}" />
-
-            <TextBlock Text="{Binding Path=apartment.City}" />
+                        <TextBlock Text="{Binding Path=apartment.ZipCode}" />
+                        <TextBlock Text="{Binding Path=apartment.City}" Margin="10,0,0,0"/>
           </StackPanel>
 
           <StackPanel>
-            <TextBlock>Floor:</TextBlock>
-            <TextBlock Text="{Binding Path=apartment.Floor}" />
+                        <TextBlock Text="Floor: " FontSize="20" FontWeight="Bold" />
+                        <TextBlock Text="{Binding Path=apartment.Floor}" />
           </StackPanel>
 
           <StackPanel>
-            <TextBlock>Size:</TextBlock>
-            <TextBlock Text="{Binding Path=apartment.Size}" />
+                        <TextBlock FontSize="20" Text="Size: " FontWeight="Bold" />
+                        <TextBlock Text="{Binding Path=apartment.Size}" />
           </StackPanel>
 
           <StackPanel>
-            <TextBlock>Rooms:</TextBlock>
-            <TextBlock Text="{Binding Path=apartment.NumberOfRooms}" />
+                        <TextBlock FontSize="20" Text="Rooms: " FontWeight="Bold" />
+                        <TextBlock Text="{Binding Path=apartment.NumberOfRooms}" />
           </StackPanel>
 
           <StackPanel>
-            <TextBlock>Price:</TextBlock>
-            <TextBlock Text="{Binding Path=apartment.Price}" />
+                        <TextBlock Text="Price: " FontSize="20" FontWeight="Bold" />
+                        <TextBlock Text="{Binding Path=apartment.Price}" />
           </StackPanel>
 
         </StackPanel>
@@ -78,10 +75,16 @@
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>
-                <TextBlock Text="{Binding Name}" />
-                <TextBlock Text="{Binding Email}" />
-                <TextBlock Text="{Binding Phone}" />
-                <TextBlock Text="{Binding MoveInDate}" />
+                                <TextBlock Text="Name" FontSize="20" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Name}" />
+                                <TextBlock Text="Email" FontSize="20" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Email}" />
+                                <TextBlock Text="Phone Number" FontSize="20" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Phone}" />
+                                <TextBlock Text="Movein Date" FontSize="20" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding MoveInDate}" />
+                                <TextBlock Text="Moveout Date" FontSize="20" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding MoveOutDate}" />
               </StackPanel>
             </DataTemplate>
           </ListView.ItemTemplate>

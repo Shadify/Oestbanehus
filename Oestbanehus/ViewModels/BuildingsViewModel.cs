@@ -19,7 +19,7 @@ using System.Runtime.CompilerServices;
 
 namespace Oestbanehus.ViewModels
 {
-    class BuildingsViewModel : ViewModelBase, INotifyPropertyChanged
+    class BuildingsViewModel : ViewModelBase
     {
 
         public ObservableCollection<Building> buildings { get; set; }
@@ -40,6 +40,20 @@ namespace Oestbanehus.ViewModels
             }
         }
 
+        private Apartment _selectedApartment;
+        public Apartment selectedApartment
+        {
+            get
+            {
+                return _selectedApartment;
+            }
+            set
+            {
+                Set(ref _selectedApartment, value);
+                openAptCommand.Execute();
+            }
+        }
+
 
         DelegateCommand _executeCommand;
         public DelegateCommand ExecuteCommand
@@ -52,6 +66,14 @@ namespace Oestbanehus.ViewModels
                     Apartments.Add(ap);
                 }
                  
+            }, () => true));
+
+        DelegateCommand _openAptCommand;
+        public DelegateCommand openAptCommand
+            => _openAptCommand ?? (_openAptCommand = new DelegateCommand(() =>
+            {
+                NavigationService.Navigate(typeof(Views.ApartmentPage), selectedApartment);
+
             }, () => true));
 
 

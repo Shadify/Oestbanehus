@@ -17,9 +17,18 @@ namespace WebApi.Controllers
         private Context db = new Context();
 
         // GET: api/Buildings
-        public IQueryable<Building> GetBuildings()
+        public IQueryable<BuildingWithCity> GetBuildings()
         {
-            return db.Buildings;
+            var buildings = (from ep in db.Buildings
+                             join e in db.Cities on ep.ZipCode.ToString() equals e.ZipCode.ToString()
+                             select new BuildingWithCity
+                             {
+                                 Id = ep.Id,
+                                 Street = ep.Street,
+                                 ZipCode = ep.ZipCode,
+                                 City = e.City1
+                             });
+            return buildings;
         }
 
         // GET: api/Buildings/5

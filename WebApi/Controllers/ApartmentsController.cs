@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -11,15 +12,6 @@ using System.Web.Http.Description;
 
 namespace WebApi.Models
 {
-
-    public class BuildingDto
-    {
-        public int Id { get; set; }
-        public int Floor { get; set; }
-        public string Genre { get; set; }
-    }
-
-
 
     [RoutePrefix("api/Apartments")]
     public class ApartmentsController : ApiController
@@ -43,16 +35,30 @@ namespace WebApi.Models
         }
 
         // GET: api/Apartments/5
-        [ResponseType(typeof(Apartment))]
-        public IHttpActionResult GetApartment(int id)
+        [Route("{id:int}")]
+        public IQueryable<ApartmentDetails> GetApartment(int id)
         {
-            Apartment apartment = db.Apartments.Find(id);
-            if (apartment == null)
-            {
-                return NotFound();
-            }
+            var apartment = (from a in db.Apartments where a.Id == id
+                             join p in db.Persons on a.Id equals p.ApartmentId into apartmentOwner
+                             from ao in apartmentOwner join b in db.Buildings on ao.Apartment.BuildingId equals b.Id into apartmentOwnerBuilding
+                             from aob in apartmentOwnerBuilding join ad in db.Cities on aob.ZipCode equals ad.ZipCode
+                             select new ApartmentDetails
+                             {
 
-            return Ok(apartment);
+                                 Id = aob.Id,
+                                 Size = ao.Apartment.Size,
+                                 Price = ao.Apartment.Price,
+                                 NumberOfRooms = ao.Apartment.NumberOfRooms,
+                                 Floor = ao.Apartment.Floor,
+                                 ApartmentNumber = ao.Apartment.ApartmentNumber,
+                                 Street = ao.Apartment.Street,
+                                 City = aob.City.City1,
+                                 ZipCode = aob.ZipCode,
+                                 Residents = apartmentOwner
+                             });
+            return apartment;
+
+
         }
 
         // PUT: api/Apartments/5

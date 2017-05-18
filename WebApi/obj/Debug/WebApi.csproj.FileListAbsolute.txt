@@ -151,3 +151,4 @@ C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\bin\Microsoft.AI.Web.xml
 C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\obj\Debug\WebApi.dll
 C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\obj\Debug\WebApi.pdb
+C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache

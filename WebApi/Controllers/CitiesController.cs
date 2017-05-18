@@ -12,6 +12,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [RoutePrefix("api/Cities")]
     public class CitiesController : ApiController
     {
         private Context db = new Context();
@@ -20,6 +21,16 @@ namespace WebApi.Controllers
         public IQueryable<City> GetCities()
         {
             return db.Cities;
+        }
+
+        [Route("{zipcode:int}")]
+        public IQueryable<City> GetCityByZip(int zipcode)
+        {
+            var city = (from c in db.Cities
+                               where c.ZipCode == zipcode.ToString()
+                        select c);
+
+            return city;
         }
 
         // GET: api/Cities/5

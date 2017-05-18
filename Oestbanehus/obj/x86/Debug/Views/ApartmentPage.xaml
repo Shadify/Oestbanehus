@@ -1,0 +1,97 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Oestbanehus.Views.ApartmentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Oestbanehus.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:controls="using:Template10.Controls"
+      xmlns:vm="using:Oestbanehus.ViewModels"
+      mc:Ignorable="d">
+
+  <Page.DataContext>
+    <vm:ApartmentViewModel x:ConnectionId='2' x:Name="ViewModel" />
+  </Page.DataContext>
+  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel>
+    <controls:PageHeader x:ConnectionId='3' x:Name="pageHeader"
+                         RelativePanel.AlignLeftWithPanel="True"
+                         RelativePanel.AlignRightWithPanel="True"
+                         RelativePanel.AlignTopWithPanel="True"
+                         Text="Apartment">
+
+      <!--  secondary commands  -->
+      <controls:PageHeader.SecondaryCommands>
+        <AppBarButton x:ConnectionId='4'                                        
+                      Label="Settings" />
+        <AppBarButton x:ConnectionId='5'                                       
+                      Label="Privacy" />
+        <AppBarButton x:ConnectionId='6'                                     
+                      Label="About" />
+      </controls:PageHeader.SecondaryCommands>
+
+    </controls:PageHeader>
+    <Grid >
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+
+          <StackPanel Orientation="Horizontal">
+            <TextBlock>Address: </TextBlock>
+            
+            <TextBlock Text="{Binding Path=apartment.Street}" />
+            <TextBlock Text="{Binding Path=apartment.ApartmentNumber}" />
+          </StackPanel>
+
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Path=apartment.ZipCode}" />
+
+            <TextBlock Text="{Binding Path=apartment.City}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock>Floor:</TextBlock>
+            <TextBlock Text="{Binding Path=apartment.Floor}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock>Size:</TextBlock>
+            <TextBlock Text="{Binding Path=apartment.Size}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock>Rooms:</TextBlock>
+            <TextBlock Text="{Binding Path=apartment.NumberOfRooms}" />
+          </StackPanel>
+
+          <StackPanel>
+            <TextBlock>Price:</TextBlock>
+            <TextBlock Text="{Binding Path=apartment.Price}" />
+          </StackPanel>
+
+        </StackPanel>
+
+        <ListView ItemsSource="{Binding apartment.Residents}" Grid.Column="1">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <StackPanel>
+                <TextBlock Text="{Binding Name}" />
+                <TextBlock Text="{Binding Email}" />
+                <TextBlock Text="{Binding Phone}" />
+                <TextBlock Text="{Binding MoveInDate}" />
+              </StackPanel>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+         
+          
+        </ListView>
+     
+    </Grid>
+    </StackPanel>
+
+  </Grid>
+</Page>
+

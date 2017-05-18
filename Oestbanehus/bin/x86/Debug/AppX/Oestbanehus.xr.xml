@@ -4,16 +4,23 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="selectedBuilding" />
-    <RootPropertyPathName Name="Id" />
-    <RootPropertyPathName Name="ExecuteCommand" />
+    <RootPropertyPathName Name="apartment" />
+    <RootPropertyPathName Name="Residents" />
+    <RootPropertyPathName Name="MoveInDate" />
+    <RootPropertyPathName Name="Phone" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="NumberOfRooms" />
     <RootPropertyPathName Name="Size" />
-    <RootPropertyPathName Name="Street" />
     <RootPropertyPathName Name="Floor" />
-    <RootPropertyPathName Name="ApartmentNumber" />
+    <RootPropertyPathName Name="City" />
     <RootPropertyPathName Name="ZipCode" />
+    <RootPropertyPathName Name="ApartmentNumber" />
+    <RootPropertyPathName Name="Street" />
+    <RootPropertyPathName Name="selectedBuilding" />
+    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="selectedApartment" />
     <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
@@ -84,17 +91,16 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Oestbanehus.ViewModels.BuildingsViewModel" />
-    <RootType FullName="Oestbanehus.Converters.ItemClickedConverter" />
+    <RootType FullName="Oestbanehus.ViewModels.ApartmentViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="Name" />
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Name" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -128,17 +134,14 @@
       <RootMethod Name="GetAlignRightWith" />
       <RootMethod Name="SetAlignRightWith" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="LineHeight" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="MaxWidth" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
@@ -147,32 +150,32 @@
       <RootProperty Name="ElementName" />
       <RootProperty Name="Converter" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectedItem" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Command" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="LineHeight" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="MaxWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Label" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
       <RootProperty Name="Mode" />
       <RootProperty Name="FallbackValue" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Label" />
-      <RootEvent Name="Click" />
-    </RootType>
+    <RootType FullName="Oestbanehus.Views.ApartmentPage" />
+    <RootType FullName="Oestbanehus.ViewModels.BuildingsViewModel" />
+    <RootType FullName="Oestbanehus.Converters.ItemClickedConverter" />
     <RootType FullName="Oestbanehus.Views.Buildings" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
@@ -222,6 +225,12 @@
       <RootMethod Name="SetIsTargetElement" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.DetailPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Command" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MinHeight" />

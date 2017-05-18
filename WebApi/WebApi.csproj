@@ -197,7 +197,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Apartment.cs" />
+    <Compile Include="Models\ApartmentDetails.cs" />
     <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\BuildingWithCity.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\ConditionsOfItem.cs" />

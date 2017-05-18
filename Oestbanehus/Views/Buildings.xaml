@@ -61,6 +61,9 @@
                 <TextBlock Text="ZipCode"
                            FontSize="8" />
                 <TextBlock Text="{Binding Path=ZipCode}" />
+                <TextBlock Text="City"
+                           FontSize="8" />
+                <TextBlock Text="{Binding Path=City}" />
                 <TextBlock Text="Id"
                            FontSize="8" />
                 <TextBlock Text="{Binding Path=Id}" />
@@ -71,6 +74,7 @@
     </ListView>
 
         <ListView ItemsSource="{x:Bind ViewModel.Apartments}"
+                  SelectedItem="{Binding selectedApartment, Mode=TwoWay}"
                   Grid.Column="1">
           <TextBlock Text="Apartments: " />
           <ListView.ItemTemplate>
@@ -85,6 +89,7 @@
                 <TextBlock Text="Street"
                            FontSize="8" />
                 <TextBlock Text="{Binding Path=Street}" />
+               
                 <TextBlock Text="Size"
                            FontSize="8" />
                 <TextBlock Text="{Binding Path=Size}" />

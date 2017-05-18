@@ -112,5 +112,72 @@ namespace Oestbanehus.Persistence
                 }
             }
         }
+
+
+        //APTS WITH ALL DATA
+        public static async Task<ApartmentDetails> getApartmentDetails(int aptId)
+        {
+            ObservableCollection<ApartmentDetails> allApartments = new ObservableCollection<ApartmentDetails>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/Apartments/{aptId}").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string BuildingsData = response.Content.ReadAsStringAsync().Result;
+
+                        allApartments = (ObservableCollection<ApartmentDetails>)JsonConvert.DeserializeObject(BuildingsData, typeof(ObservableCollection<ApartmentDetails>));
+                    }
+                    return allApartments[0];
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+
+
+
+
+        //GET CITY BY ZIP CODE
+        public static async Task<City> GetCityByZip(int zipcode)
+        {
+            City cityObject = new City();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/Cities/{zipcode}").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string BuildingsData = response.Content.ReadAsStringAsync().Result;
+
+                        cityObject = JsonConvert.DeserializeObject(BuildingsData, typeof(City)) as City;
+                    }
+                    return cityObject;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
     }
 }

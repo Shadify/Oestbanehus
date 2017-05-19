@@ -12,6 +12,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [RoutePrefix("api/People")]
     public class PeopleController : ApiController
     {
         private Context db = new Context();
@@ -20,6 +21,32 @@ namespace WebApi.Controllers
         public IQueryable<Person> GetPersons()
         {
             return db.Persons;
+        }
+
+        [Route("{id:int}/details")]
+        public IQueryable<PersonWithDetails> GetPersonDetails(int id)
+        {
+            var person = (from c in db.Persons
+                          where c.Id == id
+                          join a in db.Apartments on c.ApartmentId equals a.Id into personDetails
+                          from pd in personDetails
+                          join b in db.Buildings on pd.BuildingId equals b.Id into apartmentOwnerBuilding
+                          from aob in apartmentOwnerBuilding
+                          join ad in db.Cities on aob.ZipCode equals ad.ZipCode
+                          select new PersonWithDetails
+                          {
+                              Id = c.Id,
+                              MoveInDate = c.MoveInDate.ToString(),
+                              MoveOutDate = c.MoveOutDate.ToString(),
+                              Name = c.Name,
+                              Phone = c.Phone,
+                              Email = c.Email,
+                              apartment = pd,
+                              City = aob.City.City1,
+                              ZipCode = aob.ZipCode
+                          });
+
+            return person;
         }
 
         // GET: api/People/5
@@ -34,6 +61,8 @@ namespace WebApi.Controllers
 
             return Ok(person);
         }
+
+
 
         // PUT: api/People/5
         [ResponseType(typeof(void))]

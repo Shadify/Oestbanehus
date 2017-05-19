@@ -179,5 +179,129 @@ namespace Oestbanehus.Persistence
                 }
             }
         }
+
+        //CONDITIONS OF ONE APARTMENT
+        public static async Task<ObservableCollection<ConditionsOfItem>> getConditionsOfApartment(int aptId)
+        {
+            ObservableCollection<ConditionsOfItem> allConditions = new ObservableCollection<ConditionsOfItem>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/ConditionsOfItems/apartment/{aptId}").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string ConditionsData = response.Content.ReadAsStringAsync().Result;
+
+                        allConditions = (ObservableCollection<ConditionsOfItem>)JsonConvert.DeserializeObject(ConditionsData, typeof(ObservableCollection<ConditionsOfItem>));
+                    }
+                    return allConditions;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+        //REQUESTS OF ONE APARTMENT
+        public static async Task<ObservableCollection<Request>> getRequestsOfApartment(int aptId)
+        {
+            ObservableCollection<Request> allRequests = new ObservableCollection<Request>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/Requests/apartment/{aptId}").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string RequestsData = response.Content.ReadAsStringAsync().Result;
+
+                        allRequests = (ObservableCollection<Request>)JsonConvert.DeserializeObject(RequestsData, typeof(ObservableCollection<Request>));
+                    }
+                    return allRequests;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+        //GET ALL RESIDENTS
+        public static async Task<ObservableCollection<Person>> getAllResidents()
+        {
+            ObservableCollection<Person> allResidents = new ObservableCollection<Person>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/People").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string ResidentsData = response.Content.ReadAsStringAsync().Result;
+
+                        allResidents = (ObservableCollection<Person>)JsonConvert.DeserializeObject(ResidentsData, typeof(ObservableCollection<Person>));
+                    }
+                    return allResidents;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+        //GET ALL RESIDENTS
+        public static async Task<PersonWithDetails> getPersonWithDetails(int id)
+        {
+            ObservableCollection<PersonWithDetails> pwd = new ObservableCollection<PersonWithDetails>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/People/{id}/details").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string Data = response.Content.ReadAsStringAsync().Result;
+
+                        pwd = (ObservableCollection<PersonWithDetails>)JsonConvert.DeserializeObject(Data, typeof(ObservableCollection<PersonWithDetails>));
+                    }
+                    return pwd[0];
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
     }
 }

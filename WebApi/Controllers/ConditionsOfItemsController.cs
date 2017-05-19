@@ -12,6 +12,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [RoutePrefix("api/ConditionsOfItems")]
     public class ConditionsOfItemsController : ApiController
     {
         private Context db = new Context();
@@ -23,8 +24,19 @@ namespace WebApi.Controllers
         }
 
         // GET: api/ConditionsOfItems/5
+        [Route("apartment/{id:int}")]
+        public IQueryable<ConditionsOfItem> GetConditionsOfItem(int id)
+        {
+            var conditions = (from c in db.ConditionsOfItems
+                               where c.ApartmentId == id
+                               select c);
+
+            return conditions;
+        }
+
+        // GET: api/ConditionsOfItems/5
         [ResponseType(typeof(ConditionsOfItem))]
-        public IHttpActionResult GetConditionsOfItem(int id)
+        public IHttpActionResult GetConditionsOfApartment(int id)
         {
             ConditionsOfItem conditionsOfItem = db.ConditionsOfItems.Find(id);
             if (conditionsOfItem == null)

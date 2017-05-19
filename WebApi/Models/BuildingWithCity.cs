@@ -7,6 +7,7 @@ using System.Web;
 
 namespace WebApi.Models
 {
+    [NotMapped]
     public class BuildingWithCity
     {
         public int Id { get; set; }

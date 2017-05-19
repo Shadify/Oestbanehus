@@ -109,25 +109,29 @@
     <Compile Include="Models\ConditionType.cs" />
     <Compile Include="Models\NotifyPropertyChangedInvocatorAttribute.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PersonWithDetails.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Persistence\Persistence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\ApartmentViewModel.cs" />
     <Compile Include="ViewModels\BuildingsViewModel.cs" />
+    <Compile Include="ViewModels\ConditionViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
+    <Compile Include="ViewModels\RequestViewModel.cs" />
+    <Compile Include="ViewModels\ResidentViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
-    <Compile Include="Views\ApartmentPage.xaml.cs">
+    <Compile Include="Views\Board\ApartmentPage.xaml.cs">
       <DependentUpon>ApartmentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Buildings.xaml.cs">
+    <Compile Include="Views\Board\Buildings.xaml.cs">
       <DependentUpon>Buildings.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Conditions.xaml.cs">
+    <Compile Include="Views\Board\Conditions.xaml.cs">
       <DependentUpon>Conditions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DetailPage.xaml.cs">
@@ -136,13 +140,13 @@
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Payments.xaml.cs">
+    <Compile Include="Views\Board\Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Requests.xaml.cs">
+    <Compile Include="Views\Board\Requests.xaml.cs">
       <DependentUpon>Requests.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Residents.xaml.cs">
+    <Compile Include="Views\Board\Residents.xaml.cs">
       <DependentUpon>Residents.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
@@ -183,11 +187,11 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
-    <Page Include="Views\ApartmentPage.xaml">
+    <Page Include="Views\Board\ApartmentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Buildings.xaml">
+    <Page Include="Views\Board\Buildings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -195,7 +199,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Conditions.xaml">
+    <Page Include="Views\Board\Conditions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,15 +211,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Payments.xaml">
+    <Page Include="Views\Board\Payments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Requests.xaml">
+    <Page Include="Views\Board\Requests.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Residents.xaml">
+    <Page Include="Views\Board\Residents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -26,6 +26,26 @@ namespace Oestbanehus.ViewModels
             }
         }
 
+        DelegateCommand _toConditions;
+        public DelegateCommand toConditions
+            => _toConditions ?? (_toConditions = new DelegateCommand(() =>
+            {
+                if (apartment != null)
+                {
+                    NavigationService.Navigate(typeof(Views.Conditions), apartment.Id);
+                }
+            }, () => true));
+
+        DelegateCommand _toRequests;
+        public DelegateCommand toRequests
+            => _toRequests ?? (_toRequests = new DelegateCommand(() =>
+            {
+                if(apartment != null)
+                {
+                    NavigationService.Navigate(typeof(Views.Requests), apartment.Id);
+                }
+            }, () => true));
+
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {

@@ -12,6 +12,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [RoutePrefix("api/Requests")]
     public class RequestsController : ApiController
     {
         private Context db = new Context();
@@ -20,6 +21,16 @@ namespace WebApi.Controllers
         public IQueryable<Request> GetRequests()
         {
             return db.Requests;
+        }
+
+        [Route("apartment/{id:int}")]
+        public IQueryable<Request> GetConditionsOfItem(int id)
+        {
+            var conditions = (from c in db.Requests
+                              where c.ApartmentId == id
+                              select c);
+
+            return conditions;
         }
 
         // GET: api/Requests/5

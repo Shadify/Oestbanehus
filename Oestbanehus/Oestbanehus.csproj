@@ -101,7 +101,11 @@
     <Compile Include="Models\Apartment.cs" />
     <Compile Include="Models\ApartmentDetails.cs" />
     <Compile Include="Models\ApartmentsSingleton.cs" />
+    <Compile Include="Models\ApartmentWithRequests.cs" />
+    <Compile Include="Models\ApartmentWithConditions.cs" />
     <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\BuildingConditions.cs" />
+    <Compile Include="Models\BuildingRequests.cs" />
     <Compile Include="Models\BuildingsSingleton.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -116,6 +120,8 @@
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\ApartmentViewModel.cs" />
     <Compile Include="ViewModels\BuildingsViewModel.cs" />
+    <Compile Include="ViewModels\BuildingsConditionsVM.cs" />
+    <Compile Include="ViewModels\BuildingsRequestsVM.cs" />
     <Compile Include="ViewModels\ConditionViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
@@ -125,8 +131,14 @@
     <Compile Include="Views\Board\ApartmentPage.xaml.cs">
       <DependentUpon>ApartmentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Board\BuildingRequests.xaml.cs">
+      <DependentUpon>BuildingRequests.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Board\Buildings.xaml.cs">
       <DependentUpon>Buildings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Board\BuildingsWithConditions.xaml.cs">
+      <DependentUpon>BuildingsWithConditions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
@@ -191,7 +203,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Board\BuildingRequests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Board\Buildings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Board\BuildingsWithConditions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

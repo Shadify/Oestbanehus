@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using WebApi.Models;
+using WebApi.Models.WebApi.Models;
 
 namespace WebApi.Controllers
 {
@@ -31,6 +32,50 @@ namespace WebApi.Controllers
                               select c);
 
             return conditions;
+        }
+
+        //RETURN ALL BUILDINGS WITH REQUESTS
+        [Route("Buildings")]
+        public IQueryable<BuildingRequests> GetBuildingsWithRequests()
+        {
+            var apwc = (from ap in db.Apartments
+                        join r in db.Requests on ap.Id equals r.ApartmentId
+                        select new ApartmentWithRequests
+                        {
+                            Id = ap.Id,
+                            BuildingId = ap.BuildingId,
+                            Size = ap.Size,
+                            Price = ap.Price,
+                            NumberOfRooms = ap.NumberOfRooms,
+                            Floor = ap.Floor,
+                            ApartmentNumber = ap.ApartmentNumber,
+                            Street = ap.Street,
+                            Requests = ap.Requests
+                        });
+
+            var result = (from b in db.Buildings
+                          join a in apwc on b.Id equals a.BuildingId into bac
+                          from p in bac
+                          join c in db.Cities on b.ZipCode equals c.ZipCode
+                          select new BuildingRequests
+                          {
+                              Id = b.Id,
+                              Street = b.Street,
+                              ZipCode = b.ZipCode,
+                              City = c.City1
+                          }).ToList();
+
+            for (int i = 0; i < result.Count(); i++)
+            {
+                foreach (var item2 in apwc)
+                {
+                    if (result.ElementAt(i).Id.ToString() == item2.BuildingId.ToString())
+                    {
+                        result.ElementAt(i).Apartments.Add(item2);
+                    }
+                }
+            }
+            return result.AsQueryable();
         }
 
         // GET: api/Requests/5

@@ -205,7 +205,11 @@
     </Compile>
     <Compile Include="Models\Apartment.cs" />
     <Compile Include="Models\ApartmentDetails.cs" />
+    <Compile Include="Models\ApartmentWithConditions.cs" />
+    <Compile Include="Models\ApartmentWithRequests.cs" />
     <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\BuildingConditions.cs" />
+    <Compile Include="Models\BuildingRequests.cs" />
     <Compile Include="Models\BuildingWithCity.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Comment.cs" />

@@ -24,9 +24,14 @@
     <RootPropertyPathName Name="selectedBuilding" />
     <RootPropertyPathName Name="Id" />
     <RootPropertyPathName Name="selectedApartment" />
-    <RootPropertyPathName Name="Conditions" />
-    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="selectedApt" />
+    <RootPropertyPathName Name="ConditionsOfItems" />
     <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="ConditionType" />
+    <RootPropertyPathName Name="Apartments" />
+    <RootPropertyPathName Name="Buildings" />
+    <RootPropertyPathName Name="Conditions" />
     <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="Requests" />
     <RootPropertyPathName Name="Date" />
@@ -179,6 +184,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="TextTrimming" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Style" />
@@ -196,9 +202,13 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.ApartmentPage" />
+    <RootType FullName="Oestbanehus.ViewModels.BuildingsRequestsVM" />
+    <RootType FullName="Oestbanehus.Views.BuildingRequests" />
     <RootType FullName="Oestbanehus.ViewModels.BuildingsViewModel" />
     <RootType FullName="Oestbanehus.Converters.ItemClickedConverter" />
     <RootType FullName="Oestbanehus.Views.Buildings" />
+    <RootType FullName="Oestbanehus.ViewModels.BuildingsConditionsVM" />
+    <RootType FullName="Oestbanehus.Views.BuildingsWithConditions" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>

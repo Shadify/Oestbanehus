@@ -845,3 +845,14 @@ C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\Con
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\Payments.xbf
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\Requests.xbf
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\Residents.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Views\Board\BuildingsWithConditions.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingsWithConditions.g.i.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingsWithConditions.g.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingsWithConditions.xaml
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingsWithConditions.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Oestbanehus.csprojResolveAssemblyReference.cache
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingRequests.g.i.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingRequests.g.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingRequests.xaml
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\BuildingRequests.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Views\Board\BuildingRequests.xbf

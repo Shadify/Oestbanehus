@@ -1,7 +1,9 @@
 App.xbf
 Styles\Custom.xbf
 Views\Board\ApartmentPage.xbf
+Views\Board\BuildingRequests.xbf
 Views\Board\Buildings.xbf
+Views\Board\BuildingsWithConditions.xbf
 Views\Board\Conditions.xbf
 Views\Board\Payments.xbf
 Views\Board\Requests.xbf

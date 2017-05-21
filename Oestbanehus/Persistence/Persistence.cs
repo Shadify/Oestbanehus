@@ -303,5 +303,68 @@ namespace Oestbanehus.Persistence
                 }
             }
         }
+        
+        //BUILDINGS WITH CONDITIONS
+        public static async Task<ObservableCollection<BuildingConditions>> getBuildingsWithConditions()
+        {
+            ObservableCollection<BuildingConditions> bwc = new ObservableCollection<BuildingConditions>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/Buildings/conditions").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string Data = response.Content.ReadAsStringAsync().Result;
+
+                        bwc = (ObservableCollection<BuildingConditions>)JsonConvert.DeserializeObject(Data, typeof(ObservableCollection<BuildingConditions>));
+                    }
+                    return bwc;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+
+        //BUILDINGS WITH REQUESTS
+        public static async Task<ObservableCollection<BuildingRequests>> getBuildingsWithRequests()
+        {
+            ObservableCollection<BuildingRequests> bwc = new ObservableCollection<BuildingRequests>();
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+                    var response = client.GetAsync($"api/Buildings/conditions").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string Data = response.Content.ReadAsStringAsync().Result;
+
+                        bwc = (ObservableCollection<BuildingRequests>)JsonConvert.DeserializeObject(Data, typeof(ObservableCollection<BuildingRequests>));
+                    }
+                    return bwc;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
     }
 }

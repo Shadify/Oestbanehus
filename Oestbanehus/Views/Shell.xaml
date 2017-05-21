@@ -40,7 +40,7 @@
         </Controls:HamburgerButtonInfo>
 
         <Controls:HamburgerButtonInfo ClearHistory="True"
-                                      PageType="views:Residents">
+                                      PageType="views:BuildingRequests">
           <StackPanel Orientation="Horizontal">
             <SymbolIcon Width="48"
                         Height="48"
@@ -63,7 +63,7 @@
       </Controls:HamburgerButtonInfo>
           
       <Controls:HamburgerButtonInfo ClearHistory="True"
-                                    PageType="views:Conditions">
+                                    PageType="views:BuildingsWithConditions">
         <StackPanel Orientation="Horizontal">
           <SymbolIcon Width="48"
                       Height="48"
@@ -75,7 +75,7 @@
       </Controls:HamburgerButtonInfo>
 
       <Controls:HamburgerButtonInfo ClearHistory="True"
-                                    PageType="views:Requests">
+                                    PageType="views:BuildingRequests">
         <StackPanel Orientation="Horizontal">
           <SymbolIcon Width="48"
                       Height="48"

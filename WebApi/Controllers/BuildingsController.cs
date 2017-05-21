@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -12,6 +13,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    [RoutePrefix("api/Buildings")]
     public class BuildingsController : ApiController
     {
         private Context db = new Context();
@@ -29,6 +31,49 @@ namespace WebApi.Controllers
                                  City = e.City1
                              });
             return buildings;
+        }
+
+
+        [Route("conditions")]
+        public IQueryable<BuildingConditions> GetBuildingsWithConditions()
+        {
+            var apwc = (from ap in db.Apartments
+                             join c in db.ConditionsOfItems on ap.Id equals c.ApartmentId select new ApartmentWithConditions
+                             {
+                                 Id = ap.Id,
+                                 BuildingId = ap.BuildingId,
+                                 Size = ap.Size,
+                                 Price = ap.Price,
+                                 NumberOfRooms = ap.NumberOfRooms,
+                                 Floor = ap.Floor,
+                                 ApartmentNumber = ap.ApartmentNumber,
+                                 Street = ap.Street,
+                                 ConditionsOfItems = ap.ConditionsOfItems
+                             });
+
+           var result = (from b in db.Buildings
+            join a in apwc on b.Id equals a.BuildingId into bac
+            from p in bac 
+            join c in db.Cities on b.ZipCode equals c.ZipCode
+            select new BuildingConditions
+            {
+                Id = b.Id,
+                Street = b.Street,
+                ZipCode = b.ZipCode,
+                City = c.City1,
+            }).ToList();
+
+            for (int i = 0; i < result.Count(); i++)
+            {
+                foreach (var item2 in apwc)
+                {
+                    if (result.ElementAt(i).Id.ToString() == item2.BuildingId.ToString())
+                    {
+                        result.ElementAt(i).Apartments.Add(item2);
+                    }
+                }
+            }
+            return result.AsQueryable();
         }
 
         // GET: api/Buildings/5

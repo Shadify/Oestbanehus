@@ -118,20 +118,6 @@
                                       RelativePanel.AlignLeftWithPanel="True"
                                       RelativePanel.Below="ShowHamburgerButtonToggleSwitch" />
 
-                        <TextBox x:ConnectionId='18' x:Name="BusyTextTextBox"
-                                 Width="200"
-                                 Margin="0,12,0,0"
-                                 HorizontalAlignment="Left"
-                                 Header="Busy text"
-                                 RelativePanel.AlignLeftWithPanel="True"
-                                 RelativePanel.Below="IsFullScreenToggleSwitch"
-                                 Text="{Binding BusyText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-                        <Button x:ConnectionId='19' Margin="12,0,0,0"
-                                                                                                  
-                                Content="Show Busy"
-                                RelativePanel.AlignBottomWith="BusyTextTextBox"
-                                RelativePanel.RightOf="BusyTextTextBox" />
 
                     </RelativePanel>
 

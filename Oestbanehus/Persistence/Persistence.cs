@@ -351,7 +351,7 @@ namespace Oestbanehus.Persistence
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 try
                 {
-                    var response = client.GetAsync($"api/Buildings/conditions").Result;
+                    var response = client.GetAsync($"api/Requests/Buildings").Result;
                     if (response.IsSuccessStatusCode)
                     {
                         string Data = response.Content.ReadAsStringAsync().Result;

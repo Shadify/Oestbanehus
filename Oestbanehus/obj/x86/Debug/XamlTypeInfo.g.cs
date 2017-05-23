@@ -224,7 +224,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             _typeNameTable[64] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithRequests>";
             _typeNameTable[65] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithRequests>";
             _typeNameTable[66] = "Oestbanehus.Models.ApartmentWithRequests";
-            _typeNameTable[67] = "System.Collections.Generic.ICollection`1<Oestbanehus.Models.Request>";
+            _typeNameTable[67] = "System.Collections.Generic.List`1<Oestbanehus.Models.Request>";
             _typeNameTable[68] = "Oestbanehus.Models.Request";
             _typeNameTable[69] = "System.DateTime";
             _typeNameTable[70] = "Oestbanehus.Views.BuildingRequests";
@@ -355,7 +355,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             _typeTable[64] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>);
             _typeTable[65] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithRequests>);
             _typeTable[66] = typeof(global::Oestbanehus.Models.ApartmentWithRequests);
-            _typeTable[67] = typeof(global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Request>);
+            _typeTable[67] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>);
             _typeTable[68] = typeof(global::Oestbanehus.Models.Request);
             _typeTable[69] = typeof(global::System.DateTime);
             _typeTable[70] = typeof(global::Oestbanehus.Views.BuildingRequests);
@@ -471,6 +471,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
         private object Activate_64_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>(); }
         private object Activate_65_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithRequests>(); }
         private object Activate_66_ApartmentWithRequests() { return new global::Oestbanehus.Models.ApartmentWithRequests(); }
+        private object Activate_67_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>(); }
         private object Activate_68_Request() { return new global::Oestbanehus.Models.Request(); }
         private object Activate_70_BuildingRequests() { return new global::Oestbanehus.Views.BuildingRequests(); }
         private object Activate_71_BuildingsViewModel() { return new global::Oestbanehus.ViewModels.BuildingsViewModel(); }
@@ -574,7 +575,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             var newItem = (global::Oestbanehus.Models.ApartmentWithRequests)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_67_ICollection(object instance, object item)
+        private void VectorAdd_67_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Request>)instance;
             var newItem = (global::Oestbanehus.Models.Request)item;
@@ -1190,9 +1191,9 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  System.Collections.Generic.ICollection`1<Oestbanehus.Models.Request>
-                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_67_ICollection;
+            case 67:   //  System.Collections.Generic.List`1<Oestbanehus.Models.Request>
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_67_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -2908,7 +2909,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
         private void set_102_ApartmentWithRequests_Requests(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
-            that.Requests = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Request>)Value;
+            that.Requests = (global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>)Value;
         }
         private object get_103_Request_Id(object instance)
         {
@@ -4503,7 +4504,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Requests":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Requests", "System.Collections.Generic.ICollection`1<Oestbanehus.Models.Request>");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Requests", "System.Collections.Generic.List`1<Oestbanehus.Models.Request>");
                 xamlMember.Getter = get_102_ApartmentWithRequests_Requests;
                 xamlMember.Setter = set_102_ApartmentWithRequests_Requests;
                 break;

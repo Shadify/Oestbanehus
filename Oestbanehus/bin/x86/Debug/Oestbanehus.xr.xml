@@ -21,19 +21,19 @@
     <RootPropertyPathName Name="ZipCode" />
     <RootPropertyPathName Name="ApartmentNumber" />
     <RootPropertyPathName Name="Street" />
-    <RootPropertyPathName Name="selectedBuilding" />
-    <RootPropertyPathName Name="Id" />
-    <RootPropertyPathName Name="selectedApartment" />
     <RootPropertyPathName Name="selectedApt" />
-    <RootPropertyPathName Name="ConditionsOfItems" />
+    <RootPropertyPathName Name="Requests" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Status" />
-    <RootPropertyPathName Name="ConditionType" />
+    <RootPropertyPathName Name="selectedBuilding" />
     <RootPropertyPathName Name="Apartments" />
     <RootPropertyPathName Name="Buildings" />
+    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="selectedApartment" />
+    <RootPropertyPathName Name="ConditionsOfItems" />
+    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="ConditionType" />
     <RootPropertyPathName Name="Conditions" />
     <RootPropertyPathName Name="Value" />
-    <RootPropertyPathName Name="Requests" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="pwd" />
@@ -44,7 +44,6 @@
     <RootPropertyPathName Name="DisplayName" />
     <RootPropertyPathName Name="Logo" />
     <RootPropertyPathName Name="SettingsPartViewModel" />
-    <RootPropertyPathName Name="BusyText" />
     <RootPropertyPathName Name="IsFullScreen" />
     <RootPropertyPathName Name="IsOn" />
     <RootPropertyPathName Name="ShowHamburgerButton" />
@@ -264,9 +263,6 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />

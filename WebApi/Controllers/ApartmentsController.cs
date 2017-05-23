@@ -44,7 +44,6 @@ namespace WebApi.Models
                              from aob in apartmentOwnerBuilding join ad in db.Cities on aob.ZipCode equals ad.ZipCode
                              select new ApartmentDetails
                              {
-
                                  Id = aob.Id,
                                  Size = ao.Apartment.Size,
                                  Price = ao.Apartment.Price,

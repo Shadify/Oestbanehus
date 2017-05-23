@@ -40,9 +40,12 @@
       <ListView.ItemTemplate>
         <DataTemplate>
             <StackPanel>
-              <TextBlock Text="{Binding Description}" />
-              <TextBlock Text="PIPE" />
-              <TextBlock Text="{Binding Status}" />
+                            <TextBlock Text="Description: " FontSize="20" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Description}" />
+                            <TextBlock Text="Condition type: " FontSize="20" FontWeight="Bold" />
+                            <TextBlock Text="PIPE" />
+                            <TextBlock Text="Status: " FontSize="20" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Status}" />
             </StackPanel>
           </DataTemplate>
       </ListView.ItemTemplate>

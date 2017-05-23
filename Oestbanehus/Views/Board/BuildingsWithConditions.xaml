@@ -47,9 +47,12 @@
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>
-                <TextBlock Text="{Binding Street}" />
-                <TextBlock Text="{Binding ZipCode}" />
-                <TextBlock Text="{Binding City}" />
+                                <TextBlock Text="Street: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding Street}" />
+                                <TextBlock Text="ZipCode: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding ZipCode}" />
+                                <TextBlock Text="City: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding City}" />
               </StackPanel>
             </DataTemplate>
           </ListView.ItemTemplate>
@@ -61,8 +64,10 @@
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>
-                <TextBlock Text="{Binding Street}" />
-                <TextBlock Text="{Binding ApartmentNumber}" />
+                                <TextBlock Text="Street: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding Street}" />
+                                <TextBlock Text="Apartment number: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding ApartmentNumber}" />
               </StackPanel>
             </DataTemplate>
           </ListView.ItemTemplate>
@@ -74,9 +79,12 @@
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>
-                <TextBlock Text="{Binding ConditionType}" />
-                <TextBlock Text="{Binding Status}" />
-                <TextBlock Text="{Binding Description}" TextTrimming="WordEllipsis" />
+                                <TextBlock Text="Condition type: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding ConditionType}" />
+                                <TextBlock Text="Status: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding Status}" />
+                                <TextBlock Text="Description: " FontSize="20" FontWeight="Bold" />
+                                <TextBlock Text="{Binding Description}" TextTrimming="WordEllipsis" />
               </StackPanel>
             </DataTemplate>
           </ListView.ItemTemplate>

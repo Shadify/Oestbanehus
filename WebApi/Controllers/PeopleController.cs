@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -100,9 +101,10 @@ namespace WebApi.Controllers
         }
 
         // POST: api/People
-        [ResponseType(typeof(Person))]
+        [Route("add")]
         public IHttpActionResult PostPerson(Person person)
         {
+            Debug.WriteLine("FUCK");
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -119,9 +121,15 @@ namespace WebApi.Controllers
                 if (PersonExists(person.Id))
                 {
                     return Conflict();
+
                 }
                 else
                 {
+                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
+                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
+                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
+                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
+                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
                     throw;
                 }
             }

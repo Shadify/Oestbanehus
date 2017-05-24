@@ -16,7 +16,8 @@ namespace WebApi.Models
             Requests = new HashSet<Request>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public int ApartmentId { get; set; }
@@ -37,7 +38,6 @@ namespace WebApi.Models
         [StringLength(255)]
         public string Email { get; set; }
 
-        [Required]
         public string Picture { get; set; }
 
         public int? Type { get; set; }

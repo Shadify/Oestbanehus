@@ -1,5 +1,6 @@
 App.xbf
 Styles\Custom.xbf
+Views\Board\AddPerson.xbf
 Views\Board\ApartmentPage.xbf
 Views\Board\BuildingRequests.xbf
 Views\Board\Buildings.xbf

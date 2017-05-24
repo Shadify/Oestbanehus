@@ -1,5 +1,6 @@
 ﻿using Oestbanehus.Models;
 using Oestbanehus.Views;
+using Oestbanehus.Views.Board;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -57,6 +58,14 @@ namespace Oestbanehus.ViewModels
                 Residents.Add(r);
             }
         }
+
+        DelegateCommand _navToAddPerson;
+        public DelegateCommand navToAddPerson
+            => _navToAddPerson ?? (_navToAddPerson = new DelegateCommand(() =>
+            {
+                NavigationService.Navigate(typeof(AddPerson));
+
+            }, () => true));
 
         public async void getDetails(int id)
         {

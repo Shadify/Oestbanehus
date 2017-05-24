@@ -82,7 +82,7 @@
             <TextBlock Text="Move out: " />
             <TextBlock Text="{Binding pwd.MoveOutDate}" />
           </StackPanel>
-
+          <Button Command="{Binding navToAddPerson}">Add a new Resident</Button>
          
          
 

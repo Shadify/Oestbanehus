@@ -366,5 +366,36 @@ namespace Oestbanehus.Persistence
                 }
             }
         }
+
+        //CREATE USER
+        public static async Task<int> addPerson(Person person)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                StringContent content = new StringContent(JsonConvert.SerializeObject(person), Encoding.UTF8, "application/json");
+                try
+                {
+                    
+                    var response = client.PostAsync($"api/People/add", content).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return 0;
+                    }
+                    return 0;
+                    
+                }
+                catch (Exception ex)
+                {
+                    return 1;
+                }
+            }
+        }
     }
 }

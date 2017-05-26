@@ -75,7 +75,7 @@
 
         <ListView ItemsSource="{Binding selectedApt.ConditionsOfItems}"
                   Grid.Column="2"
-                  SelectedItem="{Binding}">
+                  SelectedItem="{Binding selectedCondition, Mode=TwoWay}">
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>

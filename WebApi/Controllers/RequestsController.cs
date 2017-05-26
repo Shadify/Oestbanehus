@@ -78,6 +78,29 @@ namespace WebApi.Controllers
             return result.AsQueryable();
         }
 
+        //Get request with comments
+        [HttpGet]
+        [Route("{id:int}/details")]
+        public DetailRequest detailedRequest(int id)
+        {
+            var request = (from c in db.Requests
+                              where id == c.Id
+                              join com in db.Persons on c.AuthorId equals com.Id into h
+                              select new DetailRequest
+                              {
+                                  Id = c.Id,
+                                  AuthorId = c.AuthorId,
+                                  Description = c.Description,
+                                  Title = c.Title,
+                                  Picture = c.Picture,
+                                  Date = c.Date,
+                                  Person = c.Person
+                              }
+                               ).Single();
+
+            return request;
+        }
+
         // GET: api/Requests/5
         [ResponseType(typeof(Request))]
         public IHttpActionResult GetRequest(int id)

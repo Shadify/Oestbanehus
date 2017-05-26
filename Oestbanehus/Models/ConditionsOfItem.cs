@@ -18,8 +18,9 @@ namespace Oestbanehus.Models
 
         public string Picture { get; set; }
 
-
         public string Status { get; set; }
+
+        public List<Comment> Comments { get; set; }
 
     }
 }

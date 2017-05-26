@@ -24,5 +24,10 @@ namespace Oestbanehus.Models
 
         public string Street { get; set; }
 
+        public override string ToString()
+        {
+            return $"Street: {Street}\nApartment Number: {ApartmentNumber}\nFloor: {Floor}";
+        }
+
     }
 }

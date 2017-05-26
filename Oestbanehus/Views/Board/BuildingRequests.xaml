@@ -68,7 +68,8 @@
         </ListView>
 
         <ListView ItemsSource="{Binding selectedApt.Requests}"
-                  Grid.Column="2">
+                  Grid.Column="2"
+                  SelectedItem="{Binding selectedRequest,Mode=TwoWay}">
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>

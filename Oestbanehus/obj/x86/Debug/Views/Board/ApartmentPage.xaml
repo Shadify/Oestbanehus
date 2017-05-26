@@ -13,7 +13,9 @@
     <vm:ApartmentViewModel x:ConnectionId='2' x:Name="ViewModel" />
   </Page.DataContext>
   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <StackPanel>
+    <ScrollViewer>
+      <StackPanel ScrollViewer.VerticalScrollMode="Enabled">
+
     <controls:PageHeader x:ConnectionId='3' x:Name="pageHeader"
                          RelativePanel.AlignLeftWithPanel="True"
                          RelativePanel.AlignRightWithPanel="True"
@@ -104,7 +106,9 @@
         </StackPanel>
        
       </Grid>
+    
     </StackPanel>
+    </ScrollViewer>
 
   </Grid>
 </Page>

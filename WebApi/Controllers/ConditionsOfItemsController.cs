@@ -34,6 +34,26 @@ namespace WebApi.Controllers
             return conditions;
         }
 
+        // GET a condition with its comments
+        [Route("{id:int}/comments")]
+        public FUCKYOU GetCondition(int id)
+        {
+            var conditions = (from c in db.ConditionsOfItems
+                              where id == c.Id join com in db.Comments on c.Id equals com.ConditionId into h
+                              select new FUCKYOU {
+                                  Id = c.Id,
+                                  ApartmentId = c.ApartmentId,
+                                  ConditionType = c.ConditionType,
+                                  Description = c.Description,
+                                  Picture = c.Picture,
+                                  Status = c.Status,
+                                  Comments = h
+                              }
+                               ).Single();
+
+            return conditions;
+        }
+
         // GET: api/ConditionsOfItems/5
         [ResponseType(typeof(ConditionsOfItem))]
         public IHttpActionResult GetConditionsOfApartment(int id)

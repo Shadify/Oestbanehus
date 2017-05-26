@@ -1,4 +1,5 @@
 ﻿using Oestbanehus.Models;
+using Oestbanehus.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,6 +25,20 @@ namespace Oestbanehus.ViewModels
             set
             {
                 Set(ref _selectedBuilding, value);
+            }
+        }
+
+        private ConditionsOfItem _selectedCondition;
+        public ConditionsOfItem selectedCondition
+        {
+            get
+            {
+                return _selectedCondition;
+            }
+            set
+            {
+                Set(ref _selectedCondition, value);
+                NavigationService.Navigate(typeof(ConditionDetail), selectedCondition.Id);
             }
         }
 

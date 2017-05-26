@@ -123,12 +123,16 @@
     <Compile Include="ViewModels\BuildingsViewModel.cs" />
     <Compile Include="ViewModels\BuildingsConditionsVM.cs" />
     <Compile Include="ViewModels\BuildingsRequestsVM.cs" />
+    <Compile Include="ViewModels\ConditionDetailVM.cs" />
     <Compile Include="ViewModels\ConditionViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\RequestViewModel.cs" />
     <Compile Include="ViewModels\ResidentViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
+    <Compile Include="ViewModels\ShellSingleton.cs" />
+    <Compile Include="ViewModels\ShellVM.cs" />
+    <Compile Include="ViewModels\ViewModelRequestDetails.cs" />
     <Compile Include="Views\Board\AddPerson.xaml.cs">
       <DependentUpon>AddPerson.xaml</DependentUpon>
     </Compile>
@@ -143,6 +147,12 @@
     </Compile>
     <Compile Include="Views\Board\BuildingsWithConditions.xaml.cs">
       <DependentUpon>BuildingsWithConditions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Board\ConditionDetail.xaml.cs">
+      <DependentUpon>ConditionDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Board\RequestWithDetails.xaml.cs">
+      <DependentUpon>RequestWithDetails.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
@@ -220,6 +230,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Board\BuildingsWithConditions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Board\ConditionDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Board\RequestWithDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

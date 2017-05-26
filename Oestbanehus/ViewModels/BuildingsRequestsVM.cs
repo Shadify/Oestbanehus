@@ -1,4 +1,5 @@
 ﻿using Oestbanehus.Models;
+using Oestbanehus.Views.Board;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -37,6 +38,20 @@ namespace Oestbanehus.ViewModels
             set
             {
                 Set(ref _selectedApt, value);
+            }
+        }
+
+        private Request _selectedRequest;
+        public Request selectedRequest
+        {
+            get
+            {
+                return _selectedRequest;
+            }
+            set
+            {
+                Set(ref _selectedRequest, value);
+                NavigationService.Navigate(typeof(RequestWithDetails), selectedRequest.Id);
             }
         }
 

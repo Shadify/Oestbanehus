@@ -12,104 +12,60 @@
       mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:MainPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
+        <vm:ShellVM x:ConnectionId='2' x:Name="ViewModel" />
     </Page.DataContext>
 
-    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='3' x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:ConnectionId='4' x:Name="VisualStateNarrow">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
-                        <Setter Target="stateTextBox.Text" Value="Narrow Visual State" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:ConnectionId='5' x:Name="VisualStateNormal">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
-                        <Setter Target="stateTextBox.Text" Value="Normal Visual State" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:ConnectionId='6' x:Name="VisualStateWide">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
-                        <Setter Target="stateTextBox.Text" Value="Wide Visual State" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
+    <StackPanel>
 
-        <controls:PageHeader x:ConnectionId='7' x:Name="pageHeader"
-                             RelativePanel.AlignLeftWithPanel="True"
-                             RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True"
-                             Text="Main Page">
+      <controls:PageHeader x:ConnectionId='3' x:Name="pageHeader"
+                           RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.AlignRightWithPanel="True"
+                           RelativePanel.AlignTopWithPanel="True"
+                           Text="Login">
 
-            <!--  secondary commands  -->
-            <controls:PageHeader.SecondaryCommands>
-                <AppBarButton x:ConnectionId='11'                                         Label="Settings" />
-                <AppBarButton x:ConnectionId='12'                                        Label="Privacy" />
-                <AppBarButton x:ConnectionId='13'                                      Label="About" />
-            </controls:PageHeader.SecondaryCommands>
+        <!--  secondary commands  -->
+        <controls:PageHeader.SecondaryCommands>
+          <AppBarButton x:ConnectionId='4'                                        
+                        Label="Settings" />
+          <AppBarButton x:ConnectionId='5'                                       
+                        Label="Privacy" />
+          <AppBarButton x:ConnectionId='6'                                     
+                        Label="About" />
+        </controls:PageHeader.SecondaryCommands>
 
-        </controls:PageHeader>
+      </controls:PageHeader>
 
-        <RelativePanel EntranceNavigationTransitionInfo.IsTargetElement="True"
-                       RelativePanel.AlignBottomWithPanel="True"
-                       RelativePanel.AlignLeftWithPanel="True"
-                       RelativePanel.AlignRightWithPanel="True"
-                       RelativePanel.Below="pageHeader">
-
-
-            <controls:Resizer x:ConnectionId='8' x:Name="parameterResizer" Margin="16,16,16,0">
-
-                <TextBox MinWidth="150"
-                         MinHeight="62"
-                         Header="Parameter to pass"
-                         Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                         TextWrapping="Wrap">
-                    <Interactivity:Interaction.Behaviors>
-
-                        <!--  enable submit on enter key  -->
-                        <Behaviors:KeyBehavior Key="Enter">
-                            <Core:CallMethodAction MethodName="GotoDetailsPage" TargetObject="{Binding}" />
-                        </Behaviors:KeyBehavior>
-
-                        <!--  focus on textbox when page loads  -->
-                        <Core:EventTriggerBehavior>
-                            <Behaviors:FocusAction />
-                        </Core:EventTriggerBehavior>
-
-                    </Interactivity:Interaction.Behaviors>
-                </TextBox>
-
-            </controls:Resizer>
-
-            <Button x:ConnectionId='9' x:Name="submitButton"
-                                                              
-                    Content="Submit"
-                    RelativePanel.AlignBottomWith="parameterResizer"
-                    RelativePanel.RightOf="parameterResizer" />
-
-            <TextBlock x:ConnectionId='10' x:Name="stateTextBox"
-                       Margin="16,16,0,0"
-                       RelativePanel.AlignLeftWith="parameterResizer"
-                       RelativePanel.Below="parameterResizer"
-                       Text="Current Visual State" />
-
-        </RelativePanel>
-
-    </RelativePanel>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1">
+          <TextBlock Text="Email"></TextBlock>
+          <TextBox Text="{Binding email, Mode=TwoWay}"></TextBox>
+          <TextBlock Text="Password"></TextBlock>
+          <TextBox Text="{Binding password,Mode=TwoWay}"></TextBox>
+          <Button Command="{Binding login}">Login</Button>
+          <TextBlock Text="{Binding error}" />
+          <TextBlock Text="{Binding loggedUserType}" />
+          <ComboBox SelectedIndex="{Binding loggedUserType, Mode=TwoWay}">
+            <ComboBoxItem>
+              <TextBlock Text="1" />
+            </ComboBoxItem>
+            <ComboBoxItem>
+              <TextBlock Text="1" />
+            </ComboBoxItem>
+            <ComboBoxItem>
+              <TextBlock Text="1" />
+            </ComboBoxItem>
+          </ComboBox>
+        </StackPanel >
+      </Grid>
+    </StackPanel>
+  </Grid>
 </Page>
 
 

@@ -216,6 +216,8 @@
     <Compile Include="Models\ConditionsOfItem.cs" />
     <Compile Include="Models\ConditionType.cs" />
     <Compile Include="Models\Context.cs" />
+    <Compile Include="Models\DetailRequest.cs" />
+    <Compile Include="Models\FUCKYOU.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonWithDetails..cs" />
     <Compile Include="Models\Request.cs" />

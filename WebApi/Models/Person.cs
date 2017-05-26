@@ -38,6 +38,9 @@ namespace WebApi.Models
         [StringLength(255)]
         public string Email { get; set; }
 
+        [StringLength(50)]
+        public string Password { get; set; }
+
         public string Picture { get; set; }
 
         public int? Type { get; set; }

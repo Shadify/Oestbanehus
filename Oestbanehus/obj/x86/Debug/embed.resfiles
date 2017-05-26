@@ -5,9 +5,11 @@ Views\Board\ApartmentPage.xbf
 Views\Board\BuildingRequests.xbf
 Views\Board\Buildings.xbf
 Views\Board\BuildingsWithConditions.xbf
+Views\Board\ConditionDetail.xbf
 Views\Board\Conditions.xbf
 Views\Board\Payments.xbf
 Views\Board\Requests.xbf
+Views\Board\RequestWithDetails.xbf
 Views\Board\Residents.xbf
 Views\Busy.xbf
 Views\DetailPage.xbf

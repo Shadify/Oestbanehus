@@ -7,12 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:controls="using:Template10.Controls"
       xmlns:vm="using:Oestbanehus.ViewModels"
+      xmlns:converters="using:Template10.Converters"
       mc:Ignorable="d">
   <Page.DataContext>
     <vm:AddPersonVM x:ConnectionId='2' x:Name="ViewModel" />
   </Page.DataContext>
+  <Page.Resources>
+    <converters:ValueWhenConverter x:Key="VisibleWhenTrueConverter">
+      <converters:ValueWhenConverter.When>
+        <x:Int32>2</x:Int32>
+      </converters:ValueWhenConverter.When>
+      <converters:ValueWhenConverter.Value>
+        <Visibility>Visible</Visibility>
+      </converters:ValueWhenConverter.Value>
+      <converters:ValueWhenConverter.Otherwise>
+        <Visibility>Collapsed</Visibility>
+      </converters:ValueWhenConverter.Otherwise>
+    </converters:ValueWhenConverter>
+  </Page.Resources>
+
+
 
   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
     <StackPanel>
       <controls:PageHeader x:ConnectionId='3' x:Name="pageHeader"
                            RelativePanel.AlignLeftWithPanel="True"
@@ -45,6 +62,10 @@
         <TextBox Text="{Binding email, Mode=TwoWay}" />
       </StackPanel>
       <StackPanel>
+        <TextBlock>Password</TextBlock>
+        <PasswordBox Password="{Binding password, Mode=TwoWay}" />
+      </StackPanel>
+      <StackPanel>
         <TextBlock>Type</TextBlock>
         <ComboBox SelectedIndex="{Binding type, Mode=TwoWay}">
           <ComboBoxItem>
@@ -57,6 +78,20 @@
             <TextBlock>Resident</TextBlock>
           </ComboBoxItem>
         </ComboBox>
+        <StackPanel Visibility="{Binding type, Converter={StaticResource VisibleWhenTrueConverter}}">
+          <TextBlock Text="Building" />
+          <ComboBox ItemsSource="{Binding buildings}"
+                    SelectedItem="{Binding selectedBuilding,Mode=TwoWay}" />
+          <TextBlock Text="Apartment" />
+          <ComboBox ItemsSource="{Binding apartments}"
+                    SelectedItem="{Binding selectedApartment,Mode=TwoWay}" />
+          <CalendarDatePicker Header="Move in date"
+                              Date="{Binding movein, Mode=TwoWay}">
+
+          </CalendarDatePicker>
+        </StackPanel>
+       
+
       </StackPanel>
       <Button Command="{Binding sendPost}">Submit</Button>
     </StackPanel>

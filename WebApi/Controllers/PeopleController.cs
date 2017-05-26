@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -101,10 +102,10 @@ namespace WebApi.Controllers
         }
 
         // POST: api/People
+        
         [Route("add")]
         public IHttpActionResult PostPerson(Person person)
         {
-            Debug.WriteLine("FUCK");
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -125,17 +126,36 @@ namespace WebApi.Controllers
                 }
                 else
                 {
-                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
-                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
-                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
-                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
-                    Debug.WriteLine("FUCK- THROW, FUCK!!!!!");
                     throw;
                 }
             }
 
             return CreatedAtRoute("DefaultApi", new { id = person.Id }, person);
         }
+
+        // POST: LOGIN
+        [HttpPost]
+        [Route("login")]
+        public IHttpActionResult LoginPerson(Person log)
+        {
+
+            var foundPerson = (from p in db.Persons where p.Email == log.Email select p).Single();
+
+            if (foundPerson != null)
+            {
+                if(foundPerson.Password == log.Password)
+                {
+                    return Ok(foundPerson);
+                } else
+                {
+                    return NotFound();
+                }
+            } else
+            {
+                return NotFound();
+            } 
+        }
+
 
         // DELETE: api/People/5
         [ResponseType(typeof(Person))]

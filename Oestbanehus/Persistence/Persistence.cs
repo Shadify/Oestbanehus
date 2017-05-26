@@ -273,7 +273,7 @@ namespace Oestbanehus.Persistence
             }
         }
 
-        //GET ALL RESIDENTS
+        //GET DETAILED RESIDENT
         public static async Task<PersonWithDetails> getPersonWithDetails(int id)
         {
             ObservableCollection<PersonWithDetails> pwd = new ObservableCollection<PersonWithDetails>();
@@ -386,6 +386,7 @@ namespace Oestbanehus.Persistence
                     var response = client.PostAsync($"api/People/add", content).Result;
                     if (response.IsSuccessStatusCode)
                     {
+
                         return 0;
                     }
                     return 0;
@@ -394,6 +395,109 @@ namespace Oestbanehus.Persistence
                 catch (Exception ex)
                 {
                     return 1;
+                }
+            }
+        }
+
+        //LOGIN 
+        public static async Task<Person> Login(Person person)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+            Person per = new Person();
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                StringContent content = new StringContent(JsonConvert.SerializeObject(person), Encoding.UTF8, "application/json");
+                try
+                {
+
+                    var response = client.PostAsync($"api/People/login", content).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string Data = response.Content.ReadAsStringAsync().Result;
+
+                        per = (Person)JsonConvert.DeserializeObject(Data, typeof(Person));
+                        return per;
+                    }
+                    return per;
+
+                }
+                catch (Exception ex)
+                {
+                    return per;
+                }
+            }
+        }
+
+        public static async Task<ConditionsOfItem> getConditionDetails(int id)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+            ConditionsOfItem per = new ConditionsOfItem();
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+
+                    var response = client.GetAsync($"api/ConditionsOfItems/{id}/comments").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string Data = response.Content.ReadAsStringAsync().Result;
+
+                        per = (ConditionsOfItem)JsonConvert.DeserializeObject(Data, typeof(ConditionsOfItem));
+                        return per;
+                    }
+                    return per;
+
+                }
+                catch (Exception ex)
+                {
+                    var a = ex;
+                    return per;
+                }
+            }
+        }
+
+        public static async Task<Request> getRequestDetails(int id)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+            Request per = new Request();
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                try
+                {
+
+                    var response = client.GetAsync($"api/Requests/{id}/details").Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string Data = response.Content.ReadAsStringAsync().Result;
+
+                        per = (Request)JsonConvert.DeserializeObject(Data, typeof(Request));
+                        return per;
+                    }
+                    return per;
+
+                }
+                catch (Exception ex)
+                {
+                    var a = ex;
+                    return per;
                 }
             }
         }

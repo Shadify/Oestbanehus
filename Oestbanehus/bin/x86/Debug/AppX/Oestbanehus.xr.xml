@@ -6,6 +6,12 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="sendPost" />
     <RootPropertyPathName Name="type" />
+    <RootPropertyPathName Name="movein" />
+    <RootPropertyPathName Name="apartments" />
+    <RootPropertyPathName Name="selectedApartment" />
+    <RootPropertyPathName Name="buildings" />
+    <RootPropertyPathName Name="selectedBuilding" />
+    <RootPropertyPathName Name="password" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="phone" />
     <RootPropertyPathName Name="name" />
@@ -28,19 +34,27 @@
     <RootPropertyPathName Name="Street" />
     <RootPropertyPathName Name="selectedApt" />
     <RootPropertyPathName Name="Requests" />
+    <RootPropertyPathName Name="selectedRequest" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="selectedBuilding" />
     <RootPropertyPathName Name="Apartments" />
     <RootPropertyPathName Name="Buildings" />
     <RootPropertyPathName Name="Id" />
-    <RootPropertyPathName Name="selectedApartment" />
     <RootPropertyPathName Name="ConditionsOfItems" />
+    <RootPropertyPathName Name="selectedCondition" />
     <RootPropertyPathName Name="Status" />
     <RootPropertyPathName Name="ConditionType" />
-    <RootPropertyPathName Name="Conditions" />
-    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="condition" />
+    <RootPropertyPathName Name="Comments" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="PublishedDate" />
+    <RootPropertyPathName Name="request" />
     <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Person" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Conditions" />
+    <RootPropertyPathName Name="loggedUserType" />
+    <RootPropertyPathName Name="error" />
+    <RootPropertyPathName Name="login" />
     <RootPropertyPathName Name="navToAddPerson" />
     <RootPropertyPathName Name="pwd" />
     <RootPropertyPathName Name="selectedResident" />
@@ -100,23 +114,27 @@
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
-      <RootProperty Name="Target" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Template10.Controls.Resizer">
       <RootProperty Name="GrabberBrush" />
       <RootProperty Name="GrabberVisibility" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="ElementControl" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Oestbanehus.ViewModels.AddPersonVM" />
+    <RootType FullName="Template10.Converters.ValueWhenConverter">
+      <RootProperty Name="When" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Otherwise" />
+    </RootType>
+    <RootType FullName="System.Int32" />
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -130,6 +148,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
@@ -147,12 +166,6 @@
       <RootMethod Name="SetAlignBottomWithPanel" />
       <RootMethod Name="GetBelow" />
       <RootMethod Name="SetBelow" />
-      <RootMethod Name="GetAlignBottomWith" />
-      <RootMethod Name="SetAlignBottomWith" />
-      <RootMethod Name="GetRightOf" />
-      <RootMethod Name="SetRightOf" />
-      <RootMethod Name="GetAlignLeftWith" />
-      <RootMethod Name="SetAlignLeftWith" />
       <RootMethod Name="GetAlignRightWith" />
       <RootMethod Name="SetAlignRightWith" />
     </RootType>
@@ -160,14 +173,12 @@
       <RootProperty Name="Command" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
       <RootProperty Name="Mode" />
       <RootProperty Name="Path" />
-      <RootProperty Name="UpdateSourceTrigger" />
       <RootProperty Name="ElementName" />
-      <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Inlines" />
@@ -186,16 +197,21 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="SelectedIndex" />
       <RootProperty Name="Items" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Date" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Password" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
-      <RootProperty Name="MinWidth" />
-      <RootProperty Name="MinHeight" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />
@@ -207,6 +223,15 @@
     </RootType>
     <RootType FullName="Oestbanehus.Views.Board.AddPerson" />
     <RootType FullName="Oestbanehus.ViewModels.ApartmentViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
@@ -230,6 +255,10 @@
     <RootType FullName="Oestbanehus.Views.Buildings" />
     <RootType FullName="Oestbanehus.ViewModels.BuildingsConditionsVM" />
     <RootType FullName="Oestbanehus.Views.BuildingsWithConditions" />
+    <RootType FullName="Oestbanehus.ViewModels.ConditionDetailVM" />
+    <RootType FullName="Oestbanehus.Views.ConditionDetail" />
+    <RootType FullName="Oestbanehus.ViewModels.ViewModelRequestDetails" />
+    <RootType FullName="Oestbanehus.Views.Board.RequestWithDetails" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
@@ -266,48 +295,20 @@
     <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
       <RootProperty Name="MinWindowWidth" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Padding" />
-      <RootProperty Name="VerticalScrollBarVisibility" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalContentAlignment" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo">
       <RootMethod Name="GetIsTargetElement" />
       <RootMethod Name="SetIsTargetElement" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.DetailPage" />
-    <RootType FullName="Oestbanehus.ViewModels.MainPageViewModel" />
-    <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
-      <RootMethod Name="GetBehaviors" />
-      <RootMethod Name="SetBehaviors" />
-    </RootType>
-    <RootType FullName="Template10.Behaviors.KeyBehavior">
-      <RootProperty Name="Key" />
-      <RootProperty Name="Actions" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
-      <RootProperty Name="Actions" />
-      <RootProperty Name="EventName" />
-    </RootType>
-    <RootType FullName="Template10.Behaviors.FocusAction" />
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction">
-      <RootProperty Name="MethodName" />
-      <RootProperty Name="TargetObject" />
-    </RootType>
+    <RootType FullName="Oestbanehus.ViewModels.ShellVM" />
     <RootType FullName="Oestbanehus.Views.MainPage" />
+    <RootType FullName="Oestbanehus.ViewModels.MainPageViewModel" />
     <RootType FullName="Oestbanehus.Views.Payments" />
     <RootType FullName="Oestbanehus.ViewModels.RequestViewModel" />
     <RootType FullName="Oestbanehus.Views.Requests" />
     <RootType FullName="Oestbanehus.ViewModels.ResidentViewModel" />
     <RootType FullName="Oestbanehus.Views.Residents" />
     <RootType FullName="Oestbanehus.ViewModels.SettingsPageViewModel" />
-    <RootType FullName="Template10.Converters.ValueWhenConverter">
-      <RootProperty Name="When" />
-      <RootProperty Name="Value" />
-      <RootProperty Name="Otherwise" />
-    </RootType>
     <RootType FullName="System.Boolean" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
@@ -361,7 +362,15 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Symbol" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviors" />
+      <RootMethod Name="SetBehaviors" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo" />
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="EventName" />
+      <RootProperty Name="Actions" />
+    </RootType>
     <RootType FullName="Template10.Behaviors.MessageDialogAction">
       <RootProperty Name="Title" />
       <RootProperty Name="Content" />

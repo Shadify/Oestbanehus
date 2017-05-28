@@ -4,6 +4,11 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="addRequest" />
+    <RootPropertyPathName Name="description" />
+    <RootPropertyPathName Name="title" />
+    <RootPropertyPathName Name="addCondition" />
+    <RootPropertyPathName Name="conditionType" />
     <RootPropertyPathName Name="sendPost" />
     <RootPropertyPathName Name="type" />
     <RootPropertyPathName Name="movein" />
@@ -15,8 +20,6 @@
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="phone" />
     <RootPropertyPathName Name="name" />
-    <RootPropertyPathName Name="toRequests" />
-    <RootPropertyPathName Name="toConditions" />
     <RootPropertyPathName Name="apartment" />
     <RootPropertyPathName Name="Residents" />
     <RootPropertyPathName Name="MoveOutDate" />
@@ -24,6 +27,8 @@
     <RootPropertyPathName Name="Phone" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="toRequests" />
+    <RootPropertyPathName Name="toConditions" />
     <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="NumberOfRooms" />
     <RootPropertyPathName Name="Size" />
@@ -43,18 +48,21 @@
     <RootPropertyPathName Name="selectedCondition" />
     <RootPropertyPathName Name="Status" />
     <RootPropertyPathName Name="ConditionType" />
-    <RootPropertyPathName Name="condition" />
-    <RootPropertyPathName Name="Comments" />
+    <RootPropertyPathName Name="comments" />
     <RootPropertyPathName Name="Content" />
     <RootPropertyPathName Name="PublishedDate" />
+    <RootPropertyPathName Name="addComment" />
+    <RootPropertyPathName Name="comment" />
+    <RootPropertyPathName Name="condition" />
     <RootPropertyPathName Name="request" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Person" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="navToAddCondition" />
     <RootPropertyPathName Name="Conditions" />
-    <RootPropertyPathName Name="loggedUserType" />
     <RootPropertyPathName Name="error" />
     <RootPropertyPathName Name="login" />
+    <RootPropertyPathName Name="navToAddReq" />
     <RootPropertyPathName Name="navToAddPerson" />
     <RootPropertyPathName Name="pwd" />
     <RootPropertyPathName Name="selectedResident" />
@@ -69,6 +77,7 @@
     <RootPropertyPathName Name="ShowHamburgerButton" />
     <RootPropertyPathName Name="UseLightThemeButton" />
     <RootPropertyPathName Name="UseShellBackButton" />
+    <RootPropertyPathName Name="loggedUserType" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Template10.Common.BootStrapper">
@@ -123,23 +132,15 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Oestbanehus.ViewModels.AddPersonVM" />
-    <RootType FullName="Template10.Converters.ValueWhenConverter">
-      <RootProperty Name="When" />
-      <RootProperty Name="Value" />
-      <RootProperty Name="Otherwise" />
-    </RootType>
-    <RootType FullName="System.Int32" />
-    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="Oestbanehus.ViewModels.AddRequestVM" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Name" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -169,20 +170,37 @@
       <RootMethod Name="GetAlignRightWith" />
       <RootMethod Name="SetAlignRightWith" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Command" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Converter" />
       <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
       <RootProperty Name="Path" />
       <RootProperty Name="ElementName" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Label" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="FallbackValue" />
+    </RootType>
+    <RootType FullName="Oestbanehus.Views.Board.AddRequest" />
+    <RootType FullName="Oestbanehus.ViewModels.AddConditionVM" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Inlines" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Margin" />
@@ -200,26 +218,24 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Oestbanehus.Views.Board.AddCondition" />
+    <RootType FullName="Oestbanehus.ViewModels.AddPersonVM" />
+    <RootType FullName="Template10.Converters.ValueWhenConverter">
+      <RootProperty Name="When" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Otherwise" />
+    </RootType>
+    <RootType FullName="System.Int32" />
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
       <RootProperty Name="Header" />
       <RootProperty Name="Date" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Password" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Text" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Label" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.Board.AddPerson" />
     <RootType FullName="Oestbanehus.ViewModels.ApartmentViewModel" />
@@ -234,9 +250,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
@@ -349,10 +362,12 @@
       <RootProperty Name="IsEnabled" />
     </RootType>
     <RootType FullName="Oestbanehus.Views.SettingsPage" />
+    <RootType FullName="Oestbanehus.ViewModels.ShellVM2" />
     <RootType FullName="Template10.Controls.HamburgerButtonInfo">
       <RootProperty Name="ClearHistory" />
       <RootProperty Name="PageType" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="ButtonType" />
       <RootProperty Name="PageParameter" />
       <RootProperty Name="NavigationTransitionInfo" />

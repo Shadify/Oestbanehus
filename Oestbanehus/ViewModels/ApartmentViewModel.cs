@@ -49,9 +49,18 @@ namespace Oestbanehus.ViewModels
 
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> suspensionState)
         {
-            var Dapartment = (Apartment)parameter;
-            apartment = await Persistence.Persistence.getApartmentDetails(Dapartment.Id);
-            var a = apartment;
+            var b = parameter.GetType();
+                var c = new Apartment();
+            if(b == c.GetType())
+            {
+                var Dapartment = (Apartment)parameter;
+                apartment = await Persistence.Persistence.getApartmentDetails(Dapartment.Id);
+                var a = apartment;
+            } else
+            {
+                apartment = await Persistence.Persistence.getApartmentDetails((int)parameter);
+            }
+           
         }
 
         public void GotoSettings() =>

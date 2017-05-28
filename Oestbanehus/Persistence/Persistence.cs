@@ -501,5 +501,101 @@ namespace Oestbanehus.Persistence
                 }
             }
         }
+
+        //ADD COMMENT
+        public static async Task<int> addComment(Comment comment)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                StringContent content = new StringContent(JsonConvert.SerializeObject(comment), Encoding.UTF8, "application/json");
+                try
+                {
+
+                    var response = client.PostAsync($"api/Comments", content).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+
+                        return 0;
+                    }
+                    return 0;
+
+                }
+                catch (Exception ex)
+                {
+                    return 1;
+                }
+            }
+        }
+
+        //ADD CONDITION
+        public static async Task<int> addCondition(ConditionsOfItem condition)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                StringContent content = new StringContent(JsonConvert.SerializeObject(condition), Encoding.UTF8, "application/json");
+                try
+                {
+
+                    var response = client.PostAsync($"api/ConditionsOfItems", content).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+
+                        return 0;
+                    }
+                    return 0;
+
+                }
+                catch (Exception ex)
+                {
+                    return 1;
+                }
+            }
+        }
+
+        //ADD CONDITION
+        public static async Task<int> addRequest(Request req)
+        {
+            const string ServerUrl = "http://localhost:8416";
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.UseDefaultCredentials = true;
+
+            using (var client = new HttpClient(handler))
+            {
+                client.BaseAddress = new Uri(ServerUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                StringContent content = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
+                try
+                {
+
+                    var response = client.PostAsync($"api/Requests", content).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+
+                        return 0;
+                    }
+                    return 0;
+
+                }
+                catch (Exception ex)
+                {
+                    return 1;
+                }
+            }
+        }
     }
 }

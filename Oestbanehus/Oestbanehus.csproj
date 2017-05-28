@@ -103,6 +103,7 @@
     <Compile Include="Models\ApartmentsSingleton.cs" />
     <Compile Include="Models\ApartmentWithRequests.cs" />
     <Compile Include="Models\ApartmentWithConditions.cs" />
+    <Compile Include="Models\AppSettings.cs" />
     <Compile Include="Models\Building.cs" />
     <Compile Include="Models\BuildingConditions.cs" />
     <Compile Include="Models\BuildingRequests.cs" />
@@ -117,8 +118,11 @@
     <Compile Include="Models\Request.cs" />
     <Compile Include="Persistence\Persistence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Aggregate.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="ViewModels\AddConditionVM.cs" />
     <Compile Include="ViewModels\AddPersonVM.cs" />
+    <Compile Include="ViewModels\AddRequestVM.cs" />
     <Compile Include="ViewModels\ApartmentViewModel.cs" />
     <Compile Include="ViewModels\BuildingsViewModel.cs" />
     <Compile Include="ViewModels\BuildingsConditionsVM.cs" />
@@ -132,7 +136,14 @@
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
     <Compile Include="ViewModels\ShellSingleton.cs" />
     <Compile Include="ViewModels\ShellVM.cs" />
+    <Compile Include="ViewModels\ShellVM2.cs" />
     <Compile Include="ViewModels\ViewModelRequestDetails.cs" />
+    <Compile Include="Views\Board\AddRequest.xaml.cs">
+      <DependentUpon>AddRequest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Board\AddCondition.xaml.cs">
+      <DependentUpon>AddCondition.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Board\AddPerson.xaml.cs">
       <DependentUpon>AddPerson.xaml</DependentUpon>
     </Compile>
@@ -212,6 +223,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Views\Board\AddRequest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Board\AddCondition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Board\AddPerson.xaml">
       <SubType>Designer</SubType>

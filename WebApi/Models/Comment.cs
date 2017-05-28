@@ -8,7 +8,8 @@ namespace WebApi.Models
 
     public partial class Comment
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public int ConditionId { get; set; }
@@ -18,7 +19,7 @@ namespace WebApi.Models
         [Required]
         public string Content { get; set; }
 
-        [Column(TypeName = "date")]
+        [Column(TypeName = "datetime")]
         public DateTime PublishedDate { get; set; }
 
         public virtual ConditionsOfItem ConditionsOfItem { get; set; }

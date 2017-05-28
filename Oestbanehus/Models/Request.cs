@@ -22,8 +22,7 @@ namespace Oestbanehus.Models
 
         public string Picture { get; set; }
 
-        public Person Person { get; set;
-        }
+        public Person Person { get; set; }
 
 
     }

@@ -1,4 +1,5 @@
 ﻿using Oestbanehus.Models;
+using Oestbanehus.Views.Board;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,8 @@ namespace Oestbanehus.ViewModels
         {
             request = await Persistence.Persistence.getRequestDetails((int)parameter);
         }
+
+
 
         public void GotoSettings() =>
            NavigationService.Navigate(typeof(Views.SettingsPage), 0);

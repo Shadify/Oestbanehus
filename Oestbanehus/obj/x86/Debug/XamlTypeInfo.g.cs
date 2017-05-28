@@ -156,7 +156,7 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[134];
+            _typeNameTable = new string[141];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -206,93 +206,100 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             _typeNameTable[46] = "Template10.Controls.Resizer";
             _typeNameTable[47] = "Windows.UI.Xaml.Controls.Control";
             _typeNameTable[48] = "Windows.Foundation.Size";
-            _typeNameTable[49] = "Oestbanehus.ViewModels.AddPersonVM";
+            _typeNameTable[49] = "Oestbanehus.ViewModels.AddRequestVM";
             _typeNameTable[50] = "Template10.Mvvm.ViewModelBase";
             _typeNameTable[51] = "Template10.Mvvm.BindableBase";
-            _typeNameTable[52] = "Oestbanehus.Models.Person";
-            _typeNameTable[53] = "Int32";
-            _typeNameTable[54] = "Oestbanehus.Models.Building";
-            _typeNameTable[55] = "Oestbanehus.Models.Apartment";
-            _typeNameTable[56] = "System.DateTimeOffset";
-            _typeNameTable[57] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>";
-            _typeNameTable[58] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Building>";
-            _typeNameTable[59] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>";
-            _typeNameTable[60] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Apartment>";
-            _typeNameTable[61] = "Template10.Mvvm.DelegateCommand";
-            _typeNameTable[62] = "Template10.Common.IDispatcherWrapper";
-            _typeNameTable[63] = "Template10.Common.IStateItems";
-            _typeNameTable[64] = "Template10.Converters.ValueWhenConverter";
-            _typeNameTable[65] = "Oestbanehus.Views.Board.AddPerson";
-            _typeNameTable[66] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[67] = "Oestbanehus.ViewModels.ApartmentViewModel";
-            _typeNameTable[68] = "Oestbanehus.Models.ApartmentDetails";
-            _typeNameTable[69] = "Oestbanehus.Views.ApartmentPage";
-            _typeNameTable[70] = "Oestbanehus.ViewModels.BuildingsRequestsVM";
-            _typeNameTable[71] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingRequests>";
-            _typeNameTable[72] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingRequests>";
-            _typeNameTable[73] = "Oestbanehus.Models.BuildingRequests";
-            _typeNameTable[74] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithRequests>";
-            _typeNameTable[75] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithRequests>";
-            _typeNameTable[76] = "Oestbanehus.Models.ApartmentWithRequests";
-            _typeNameTable[77] = "System.Collections.Generic.List`1<Oestbanehus.Models.Request>";
-            _typeNameTable[78] = "Oestbanehus.Models.Request";
-            _typeNameTable[79] = "System.DateTime";
-            _typeNameTable[80] = "Oestbanehus.Views.BuildingRequests";
-            _typeNameTable[81] = "Oestbanehus.ViewModels.BuildingsViewModel";
-            _typeNameTable[82] = "Oestbanehus.Converters.ItemClickedConverter";
-            _typeNameTable[83] = "Oestbanehus.Views.Buildings";
-            _typeNameTable[84] = "Oestbanehus.ViewModels.BuildingsConditionsVM";
-            _typeNameTable[85] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingConditions>";
-            _typeNameTable[86] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingConditions>";
-            _typeNameTable[87] = "Oestbanehus.Models.BuildingConditions";
-            _typeNameTable[88] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithConditions>";
-            _typeNameTable[89] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithConditions>";
-            _typeNameTable[90] = "Oestbanehus.Models.ApartmentWithConditions";
-            _typeNameTable[91] = "System.Collections.Generic.List`1<Oestbanehus.Models.ConditionsOfItem>";
-            _typeNameTable[92] = "Oestbanehus.Models.ConditionsOfItem";
-            _typeNameTable[93] = "System.Collections.Generic.List`1<Oestbanehus.Models.Comment>";
-            _typeNameTable[94] = "Oestbanehus.Models.Comment";
-            _typeNameTable[95] = "Oestbanehus.Views.BuildingsWithConditions";
-            _typeNameTable[96] = "Oestbanehus.ViewModels.ConditionDetailVM";
-            _typeNameTable[97] = "Oestbanehus.Views.ConditionDetail";
-            _typeNameTable[98] = "Oestbanehus.ViewModels.ViewModelRequestDetails";
-            _typeNameTable[99] = "Oestbanehus.Views.Board.RequestWithDetails";
-            _typeNameTable[100] = "Oestbanehus.Views.Busy";
-            _typeNameTable[101] = "Oestbanehus.ViewModels.ConditionViewModel";
-            _typeNameTable[102] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ConditionsOfItem>";
-            _typeNameTable[103] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ConditionsOfItem>";
-            _typeNameTable[104] = "Oestbanehus.Views.Conditions";
-            _typeNameTable[105] = "Oestbanehus.ViewModels.DetailPageViewModel";
-            _typeNameTable[106] = "Oestbanehus.Views.DetailPage";
-            _typeNameTable[107] = "Oestbanehus.ViewModels.ShellVM";
-            _typeNameTable[108] = "Oestbanehus.Views.MainPage";
-            _typeNameTable[109] = "Oestbanehus.ViewModels.MainPageViewModel";
-            _typeNameTable[110] = "Oestbanehus.Views.Payments";
-            _typeNameTable[111] = "Oestbanehus.ViewModels.RequestViewModel";
-            _typeNameTable[112] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Request>";
-            _typeNameTable[113] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Request>";
-            _typeNameTable[114] = "Oestbanehus.Views.Requests";
-            _typeNameTable[115] = "Oestbanehus.ViewModels.ResidentViewModel";
-            _typeNameTable[116] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Person>";
-            _typeNameTable[117] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Person>";
-            _typeNameTable[118] = "Oestbanehus.Models.PersonWithDetails";
-            _typeNameTable[119] = "Oestbanehus.Views.Residents";
-            _typeNameTable[120] = "Oestbanehus.ViewModels.SettingsPageViewModel";
-            _typeNameTable[121] = "Oestbanehus.ViewModels.SettingsPartViewModel";
-            _typeNameTable[122] = "Oestbanehus.ViewModels.AboutPartViewModel";
-            _typeNameTable[123] = "Oestbanehus.Views.SettingsPage";
-            _typeNameTable[124] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[125] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[126] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[127] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[128] = "Microsoft.Xaml.Interactivity.Trigger";
-            _typeNameTable[129] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[130] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[131] = "Template10.Behaviors.MessageDialogAction";
-            _typeNameTable[132] = "Oestbanehus.Views.Shell";
-            _typeNameTable[133] = "Oestbanehus.Views.Splash";
+            _typeNameTable[52] = "Int32";
+            _typeNameTable[53] = "Template10.Mvvm.DelegateCommand";
+            _typeNameTable[54] = "Template10.Common.IDispatcherWrapper";
+            _typeNameTable[55] = "Template10.Common.IStateItems";
+            _typeNameTable[56] = "Oestbanehus.Views.Board.AddRequest";
+            _typeNameTable[57] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[58] = "Oestbanehus.ViewModels.AddConditionVM";
+            _typeNameTable[59] = "Oestbanehus.Views.Board.AddCondition";
+            _typeNameTable[60] = "Oestbanehus.ViewModels.AddPersonVM";
+            _typeNameTable[61] = "Oestbanehus.Models.Person";
+            _typeNameTable[62] = "Oestbanehus.Models.Building";
+            _typeNameTable[63] = "Oestbanehus.Models.Apartment";
+            _typeNameTable[64] = "System.DateTimeOffset";
+            _typeNameTable[65] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>";
+            _typeNameTable[66] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Building>";
+            _typeNameTable[67] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>";
+            _typeNameTable[68] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Apartment>";
+            _typeNameTable[69] = "Template10.Converters.ValueWhenConverter";
+            _typeNameTable[70] = "Oestbanehus.Views.Board.AddPerson";
+            _typeNameTable[71] = "Oestbanehus.ViewModels.ApartmentViewModel";
+            _typeNameTable[72] = "Oestbanehus.Models.ApartmentDetails";
+            _typeNameTable[73] = "Oestbanehus.Views.ApartmentPage";
+            _typeNameTable[74] = "Oestbanehus.ViewModels.BuildingsRequestsVM";
+            _typeNameTable[75] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingRequests>";
+            _typeNameTable[76] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingRequests>";
+            _typeNameTable[77] = "Oestbanehus.Models.BuildingRequests";
+            _typeNameTable[78] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithRequests>";
+            _typeNameTable[79] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithRequests>";
+            _typeNameTable[80] = "Oestbanehus.Models.ApartmentWithRequests";
+            _typeNameTable[81] = "System.Collections.Generic.List`1<Oestbanehus.Models.Request>";
+            _typeNameTable[82] = "Oestbanehus.Models.Request";
+            _typeNameTable[83] = "System.DateTime";
+            _typeNameTable[84] = "Oestbanehus.Views.BuildingRequests";
+            _typeNameTable[85] = "Oestbanehus.ViewModels.BuildingsViewModel";
+            _typeNameTable[86] = "Oestbanehus.Converters.ItemClickedConverter";
+            _typeNameTable[87] = "Oestbanehus.Views.Buildings";
+            _typeNameTable[88] = "Oestbanehus.ViewModels.BuildingsConditionsVM";
+            _typeNameTable[89] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingConditions>";
+            _typeNameTable[90] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingConditions>";
+            _typeNameTable[91] = "Oestbanehus.Models.BuildingConditions";
+            _typeNameTable[92] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithConditions>";
+            _typeNameTable[93] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithConditions>";
+            _typeNameTable[94] = "Oestbanehus.Models.ApartmentWithConditions";
+            _typeNameTable[95] = "System.Collections.Generic.List`1<Oestbanehus.Models.ConditionsOfItem>";
+            _typeNameTable[96] = "Oestbanehus.Models.ConditionsOfItem";
+            _typeNameTable[97] = "System.Collections.Generic.List`1<Oestbanehus.Models.Comment>";
+            _typeNameTable[98] = "Oestbanehus.Models.Comment";
+            _typeNameTable[99] = "Oestbanehus.Views.BuildingsWithConditions";
+            _typeNameTable[100] = "Oestbanehus.ViewModels.ConditionDetailVM";
+            _typeNameTable[101] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Comment>";
+            _typeNameTable[102] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Comment>";
+            _typeNameTable[103] = "Oestbanehus.Views.ConditionDetail";
+            _typeNameTable[104] = "Oestbanehus.ViewModels.ViewModelRequestDetails";
+            _typeNameTable[105] = "Oestbanehus.Views.Board.RequestWithDetails";
+            _typeNameTable[106] = "Oestbanehus.Views.Busy";
+            _typeNameTable[107] = "Oestbanehus.ViewModels.ConditionViewModel";
+            _typeNameTable[108] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ConditionsOfItem>";
+            _typeNameTable[109] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ConditionsOfItem>";
+            _typeNameTable[110] = "Oestbanehus.Views.Conditions";
+            _typeNameTable[111] = "Oestbanehus.ViewModels.DetailPageViewModel";
+            _typeNameTable[112] = "Oestbanehus.Views.DetailPage";
+            _typeNameTable[113] = "Oestbanehus.ViewModels.ShellVM";
+            _typeNameTable[114] = "Oestbanehus.Views.MainPage";
+            _typeNameTable[115] = "Oestbanehus.ViewModels.MainPageViewModel";
+            _typeNameTable[116] = "Oestbanehus.Views.Payments";
+            _typeNameTable[117] = "Oestbanehus.ViewModels.RequestViewModel";
+            _typeNameTable[118] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Request>";
+            _typeNameTable[119] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Request>";
+            _typeNameTable[120] = "Oestbanehus.Views.Requests";
+            _typeNameTable[121] = "Oestbanehus.ViewModels.ResidentViewModel";
+            _typeNameTable[122] = "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Person>";
+            _typeNameTable[123] = "System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Person>";
+            _typeNameTable[124] = "Oestbanehus.Models.PersonWithDetails";
+            _typeNameTable[125] = "Oestbanehus.Views.Residents";
+            _typeNameTable[126] = "Oestbanehus.ViewModels.SettingsPageViewModel";
+            _typeNameTable[127] = "Oestbanehus.ViewModels.SettingsPartViewModel";
+            _typeNameTable[128] = "Oestbanehus.ViewModels.AboutPartViewModel";
+            _typeNameTable[129] = "Oestbanehus.Views.SettingsPage";
+            _typeNameTable[130] = "Oestbanehus.ViewModels.ShellVM2";
+            _typeNameTable[131] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[132] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[133] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[134] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[135] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[136] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[137] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[138] = "Template10.Behaviors.MessageDialogAction";
+            _typeNameTable[139] = "Oestbanehus.Views.Shell";
+            _typeNameTable[140] = "Oestbanehus.Views.Splash";
 
-            _typeTable = new global::System.Type[134];
+            _typeTable = new global::System.Type[141];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -342,91 +349,98 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             _typeTable[46] = typeof(global::Template10.Controls.Resizer);
             _typeTable[47] = typeof(global::Windows.UI.Xaml.Controls.Control);
             _typeTable[48] = typeof(global::Windows.Foundation.Size);
-            _typeTable[49] = typeof(global::Oestbanehus.ViewModels.AddPersonVM);
+            _typeTable[49] = typeof(global::Oestbanehus.ViewModels.AddRequestVM);
             _typeTable[50] = typeof(global::Template10.Mvvm.ViewModelBase);
             _typeTable[51] = typeof(global::Template10.Mvvm.BindableBase);
-            _typeTable[52] = typeof(global::Oestbanehus.Models.Person);
-            _typeTable[53] = typeof(global::System.Int32);
-            _typeTable[54] = typeof(global::Oestbanehus.Models.Building);
-            _typeTable[55] = typeof(global::Oestbanehus.Models.Apartment);
-            _typeTable[56] = typeof(global::System.DateTimeOffset);
-            _typeTable[57] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>);
-            _typeTable[58] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Building>);
-            _typeTable[59] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>);
-            _typeTable[60] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Apartment>);
-            _typeTable[61] = typeof(global::Template10.Mvvm.DelegateCommand);
-            _typeTable[62] = typeof(global::Template10.Common.IDispatcherWrapper);
-            _typeTable[63] = typeof(global::Template10.Common.IStateItems);
-            _typeTable[64] = typeof(global::Template10.Converters.ValueWhenConverter);
-            _typeTable[65] = typeof(global::Oestbanehus.Views.Board.AddPerson);
-            _typeTable[66] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[67] = typeof(global::Oestbanehus.ViewModels.ApartmentViewModel);
-            _typeTable[68] = typeof(global::Oestbanehus.Models.ApartmentDetails);
-            _typeTable[69] = typeof(global::Oestbanehus.Views.ApartmentPage);
-            _typeTable[70] = typeof(global::Oestbanehus.ViewModels.BuildingsRequestsVM);
-            _typeTable[71] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingRequests>);
-            _typeTable[72] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingRequests>);
-            _typeTable[73] = typeof(global::Oestbanehus.Models.BuildingRequests);
-            _typeTable[74] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>);
-            _typeTable[75] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithRequests>);
-            _typeTable[76] = typeof(global::Oestbanehus.Models.ApartmentWithRequests);
-            _typeTable[77] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>);
-            _typeTable[78] = typeof(global::Oestbanehus.Models.Request);
-            _typeTable[79] = typeof(global::System.DateTime);
-            _typeTable[80] = typeof(global::Oestbanehus.Views.BuildingRequests);
-            _typeTable[81] = typeof(global::Oestbanehus.ViewModels.BuildingsViewModel);
-            _typeTable[82] = typeof(global::Oestbanehus.Converters.ItemClickedConverter);
-            _typeTable[83] = typeof(global::Oestbanehus.Views.Buildings);
-            _typeTable[84] = typeof(global::Oestbanehus.ViewModels.BuildingsConditionsVM);
-            _typeTable[85] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingConditions>);
-            _typeTable[86] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingConditions>);
-            _typeTable[87] = typeof(global::Oestbanehus.Models.BuildingConditions);
-            _typeTable[88] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithConditions>);
-            _typeTable[89] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithConditions>);
-            _typeTable[90] = typeof(global::Oestbanehus.Models.ApartmentWithConditions);
-            _typeTable[91] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.ConditionsOfItem>);
-            _typeTable[92] = typeof(global::Oestbanehus.Models.ConditionsOfItem);
-            _typeTable[93] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.Comment>);
-            _typeTable[94] = typeof(global::Oestbanehus.Models.Comment);
-            _typeTable[95] = typeof(global::Oestbanehus.Views.BuildingsWithConditions);
-            _typeTable[96] = typeof(global::Oestbanehus.ViewModels.ConditionDetailVM);
-            _typeTable[97] = typeof(global::Oestbanehus.Views.ConditionDetail);
-            _typeTable[98] = typeof(global::Oestbanehus.ViewModels.ViewModelRequestDetails);
-            _typeTable[99] = typeof(global::Oestbanehus.Views.Board.RequestWithDetails);
-            _typeTable[100] = typeof(global::Oestbanehus.Views.Busy);
-            _typeTable[101] = typeof(global::Oestbanehus.ViewModels.ConditionViewModel);
-            _typeTable[102] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ConditionsOfItem>);
-            _typeTable[103] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ConditionsOfItem>);
-            _typeTable[104] = typeof(global::Oestbanehus.Views.Conditions);
-            _typeTable[105] = typeof(global::Oestbanehus.ViewModels.DetailPageViewModel);
-            _typeTable[106] = typeof(global::Oestbanehus.Views.DetailPage);
-            _typeTable[107] = typeof(global::Oestbanehus.ViewModels.ShellVM);
-            _typeTable[108] = typeof(global::Oestbanehus.Views.MainPage);
-            _typeTable[109] = typeof(global::Oestbanehus.ViewModels.MainPageViewModel);
-            _typeTable[110] = typeof(global::Oestbanehus.Views.Payments);
-            _typeTable[111] = typeof(global::Oestbanehus.ViewModels.RequestViewModel);
-            _typeTable[112] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Request>);
-            _typeTable[113] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Request>);
-            _typeTable[114] = typeof(global::Oestbanehus.Views.Requests);
-            _typeTable[115] = typeof(global::Oestbanehus.ViewModels.ResidentViewModel);
-            _typeTable[116] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Person>);
-            _typeTable[117] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Person>);
-            _typeTable[118] = typeof(global::Oestbanehus.Models.PersonWithDetails);
-            _typeTable[119] = typeof(global::Oestbanehus.Views.Residents);
-            _typeTable[120] = typeof(global::Oestbanehus.ViewModels.SettingsPageViewModel);
-            _typeTable[121] = typeof(global::Oestbanehus.ViewModels.SettingsPartViewModel);
-            _typeTable[122] = typeof(global::Oestbanehus.ViewModels.AboutPartViewModel);
-            _typeTable[123] = typeof(global::Oestbanehus.Views.SettingsPage);
-            _typeTable[124] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[125] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[126] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[127] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[128] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
-            _typeTable[129] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[130] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[131] = typeof(global::Template10.Behaviors.MessageDialogAction);
-            _typeTable[132] = typeof(global::Oestbanehus.Views.Shell);
-            _typeTable[133] = typeof(global::Oestbanehus.Views.Splash);
+            _typeTable[52] = typeof(global::System.Int32);
+            _typeTable[53] = typeof(global::Template10.Mvvm.DelegateCommand);
+            _typeTable[54] = typeof(global::Template10.Common.IDispatcherWrapper);
+            _typeTable[55] = typeof(global::Template10.Common.IStateItems);
+            _typeTable[56] = typeof(global::Oestbanehus.Views.Board.AddRequest);
+            _typeTable[57] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[58] = typeof(global::Oestbanehus.ViewModels.AddConditionVM);
+            _typeTable[59] = typeof(global::Oestbanehus.Views.Board.AddCondition);
+            _typeTable[60] = typeof(global::Oestbanehus.ViewModels.AddPersonVM);
+            _typeTable[61] = typeof(global::Oestbanehus.Models.Person);
+            _typeTable[62] = typeof(global::Oestbanehus.Models.Building);
+            _typeTable[63] = typeof(global::Oestbanehus.Models.Apartment);
+            _typeTable[64] = typeof(global::System.DateTimeOffset);
+            _typeTable[65] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>);
+            _typeTable[66] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Building>);
+            _typeTable[67] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>);
+            _typeTable[68] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Apartment>);
+            _typeTable[69] = typeof(global::Template10.Converters.ValueWhenConverter);
+            _typeTable[70] = typeof(global::Oestbanehus.Views.Board.AddPerson);
+            _typeTable[71] = typeof(global::Oestbanehus.ViewModels.ApartmentViewModel);
+            _typeTable[72] = typeof(global::Oestbanehus.Models.ApartmentDetails);
+            _typeTable[73] = typeof(global::Oestbanehus.Views.ApartmentPage);
+            _typeTable[74] = typeof(global::Oestbanehus.ViewModels.BuildingsRequestsVM);
+            _typeTable[75] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingRequests>);
+            _typeTable[76] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingRequests>);
+            _typeTable[77] = typeof(global::Oestbanehus.Models.BuildingRequests);
+            _typeTable[78] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>);
+            _typeTable[79] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithRequests>);
+            _typeTable[80] = typeof(global::Oestbanehus.Models.ApartmentWithRequests);
+            _typeTable[81] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>);
+            _typeTable[82] = typeof(global::Oestbanehus.Models.Request);
+            _typeTable[83] = typeof(global::System.DateTime);
+            _typeTable[84] = typeof(global::Oestbanehus.Views.BuildingRequests);
+            _typeTable[85] = typeof(global::Oestbanehus.ViewModels.BuildingsViewModel);
+            _typeTable[86] = typeof(global::Oestbanehus.Converters.ItemClickedConverter);
+            _typeTable[87] = typeof(global::Oestbanehus.Views.Buildings);
+            _typeTable[88] = typeof(global::Oestbanehus.ViewModels.BuildingsConditionsVM);
+            _typeTable[89] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingConditions>);
+            _typeTable[90] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingConditions>);
+            _typeTable[91] = typeof(global::Oestbanehus.Models.BuildingConditions);
+            _typeTable[92] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithConditions>);
+            _typeTable[93] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithConditions>);
+            _typeTable[94] = typeof(global::Oestbanehus.Models.ApartmentWithConditions);
+            _typeTable[95] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.ConditionsOfItem>);
+            _typeTable[96] = typeof(global::Oestbanehus.Models.ConditionsOfItem);
+            _typeTable[97] = typeof(global::System.Collections.Generic.List<global::Oestbanehus.Models.Comment>);
+            _typeTable[98] = typeof(global::Oestbanehus.Models.Comment);
+            _typeTable[99] = typeof(global::Oestbanehus.Views.BuildingsWithConditions);
+            _typeTable[100] = typeof(global::Oestbanehus.ViewModels.ConditionDetailVM);
+            _typeTable[101] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Comment>);
+            _typeTable[102] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Comment>);
+            _typeTable[103] = typeof(global::Oestbanehus.Views.ConditionDetail);
+            _typeTable[104] = typeof(global::Oestbanehus.ViewModels.ViewModelRequestDetails);
+            _typeTable[105] = typeof(global::Oestbanehus.Views.Board.RequestWithDetails);
+            _typeTable[106] = typeof(global::Oestbanehus.Views.Busy);
+            _typeTable[107] = typeof(global::Oestbanehus.ViewModels.ConditionViewModel);
+            _typeTable[108] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ConditionsOfItem>);
+            _typeTable[109] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ConditionsOfItem>);
+            _typeTable[110] = typeof(global::Oestbanehus.Views.Conditions);
+            _typeTable[111] = typeof(global::Oestbanehus.ViewModels.DetailPageViewModel);
+            _typeTable[112] = typeof(global::Oestbanehus.Views.DetailPage);
+            _typeTable[113] = typeof(global::Oestbanehus.ViewModels.ShellVM);
+            _typeTable[114] = typeof(global::Oestbanehus.Views.MainPage);
+            _typeTable[115] = typeof(global::Oestbanehus.ViewModels.MainPageViewModel);
+            _typeTable[116] = typeof(global::Oestbanehus.Views.Payments);
+            _typeTable[117] = typeof(global::Oestbanehus.ViewModels.RequestViewModel);
+            _typeTable[118] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Request>);
+            _typeTable[119] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Request>);
+            _typeTable[120] = typeof(global::Oestbanehus.Views.Requests);
+            _typeTable[121] = typeof(global::Oestbanehus.ViewModels.ResidentViewModel);
+            _typeTable[122] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Person>);
+            _typeTable[123] = typeof(global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Person>);
+            _typeTable[124] = typeof(global::Oestbanehus.Models.PersonWithDetails);
+            _typeTable[125] = typeof(global::Oestbanehus.Views.Residents);
+            _typeTable[126] = typeof(global::Oestbanehus.ViewModels.SettingsPageViewModel);
+            _typeTable[127] = typeof(global::Oestbanehus.ViewModels.SettingsPartViewModel);
+            _typeTable[128] = typeof(global::Oestbanehus.ViewModels.AboutPartViewModel);
+            _typeTable[129] = typeof(global::Oestbanehus.Views.SettingsPage);
+            _typeTable[130] = typeof(global::Oestbanehus.ViewModels.ShellVM2);
+            _typeTable[131] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[132] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[133] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[134] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[135] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[136] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[137] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[138] = typeof(global::Template10.Behaviors.MessageDialogAction);
+            _typeTable[139] = typeof(global::Oestbanehus.Views.Shell);
+            _typeTable[140] = typeof(global::Oestbanehus.Views.Splash);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -470,77 +484,84 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
         private object Activate_25_HamburgerButtonInfo() { return new global::Template10.Controls.HamburgerButtonInfo(); }
         private object Activate_41_PageHeader() { return new global::Template10.Controls.PageHeader(); }
         private object Activate_46_Resizer() { return new global::Template10.Controls.Resizer(); }
-        private object Activate_49_AddPersonVM() { return new global::Oestbanehus.ViewModels.AddPersonVM(); }
-        private object Activate_52_Person() { return new global::Oestbanehus.Models.Person(); }
-        private object Activate_54_Building() { return new global::Oestbanehus.Models.Building(); }
-        private object Activate_55_Apartment() { return new global::Oestbanehus.Models.Apartment(); }
-        private object Activate_57_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>(); }
-        private object Activate_58_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Building>(); }
-        private object Activate_59_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>(); }
-        private object Activate_60_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Apartment>(); }
-        private object Activate_64_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
-        private object Activate_65_AddPerson() { return new global::Oestbanehus.Views.Board.AddPerson(); }
-        private object Activate_67_ApartmentViewModel() { return new global::Oestbanehus.ViewModels.ApartmentViewModel(); }
-        private object Activate_68_ApartmentDetails() { return new global::Oestbanehus.Models.ApartmentDetails(); }
-        private object Activate_69_ApartmentPage() { return new global::Oestbanehus.Views.ApartmentPage(); }
-        private object Activate_70_BuildingsRequestsVM() { return new global::Oestbanehus.ViewModels.BuildingsRequestsVM(); }
-        private object Activate_71_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingRequests>(); }
-        private object Activate_72_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingRequests>(); }
-        private object Activate_73_BuildingRequests() { return new global::Oestbanehus.Models.BuildingRequests(); }
-        private object Activate_74_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>(); }
-        private object Activate_75_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithRequests>(); }
-        private object Activate_76_ApartmentWithRequests() { return new global::Oestbanehus.Models.ApartmentWithRequests(); }
-        private object Activate_77_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>(); }
-        private object Activate_78_Request() { return new global::Oestbanehus.Models.Request(); }
-        private object Activate_80_BuildingRequests() { return new global::Oestbanehus.Views.BuildingRequests(); }
-        private object Activate_81_BuildingsViewModel() { return new global::Oestbanehus.ViewModels.BuildingsViewModel(); }
-        private object Activate_82_ItemClickedConverter() { return new global::Oestbanehus.Converters.ItemClickedConverter(); }
-        private object Activate_83_Buildings() { return new global::Oestbanehus.Views.Buildings(); }
-        private object Activate_84_BuildingsConditionsVM() { return new global::Oestbanehus.ViewModels.BuildingsConditionsVM(); }
-        private object Activate_85_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingConditions>(); }
-        private object Activate_86_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingConditions>(); }
-        private object Activate_87_BuildingConditions() { return new global::Oestbanehus.Models.BuildingConditions(); }
-        private object Activate_88_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithConditions>(); }
-        private object Activate_89_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithConditions>(); }
-        private object Activate_90_ApartmentWithConditions() { return new global::Oestbanehus.Models.ApartmentWithConditions(); }
-        private object Activate_91_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.ConditionsOfItem>(); }
-        private object Activate_92_ConditionsOfItem() { return new global::Oestbanehus.Models.ConditionsOfItem(); }
-        private object Activate_93_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.Comment>(); }
-        private object Activate_94_Comment() { return new global::Oestbanehus.Models.Comment(); }
-        private object Activate_95_BuildingsWithConditions() { return new global::Oestbanehus.Views.BuildingsWithConditions(); }
-        private object Activate_96_ConditionDetailVM() { return new global::Oestbanehus.ViewModels.ConditionDetailVM(); }
-        private object Activate_97_ConditionDetail() { return new global::Oestbanehus.Views.ConditionDetail(); }
-        private object Activate_98_ViewModelRequestDetails() { return new global::Oestbanehus.ViewModels.ViewModelRequestDetails(); }
-        private object Activate_99_RequestWithDetails() { return new global::Oestbanehus.Views.Board.RequestWithDetails(); }
-        private object Activate_100_Busy() { return new global::Oestbanehus.Views.Busy(); }
-        private object Activate_101_ConditionViewModel() { return new global::Oestbanehus.ViewModels.ConditionViewModel(); }
-        private object Activate_102_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ConditionsOfItem>(); }
-        private object Activate_103_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ConditionsOfItem>(); }
-        private object Activate_104_Conditions() { return new global::Oestbanehus.Views.Conditions(); }
-        private object Activate_105_DetailPageViewModel() { return new global::Oestbanehus.ViewModels.DetailPageViewModel(); }
-        private object Activate_106_DetailPage() { return new global::Oestbanehus.Views.DetailPage(); }
-        private object Activate_107_ShellVM() { return new global::Oestbanehus.ViewModels.ShellVM(); }
-        private object Activate_108_MainPage() { return new global::Oestbanehus.Views.MainPage(); }
-        private object Activate_109_MainPageViewModel() { return new global::Oestbanehus.ViewModels.MainPageViewModel(); }
-        private object Activate_110_Payments() { return new global::Oestbanehus.Views.Payments(); }
-        private object Activate_111_RequestViewModel() { return new global::Oestbanehus.ViewModels.RequestViewModel(); }
-        private object Activate_112_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Request>(); }
-        private object Activate_113_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Request>(); }
-        private object Activate_114_Requests() { return new global::Oestbanehus.Views.Requests(); }
-        private object Activate_115_ResidentViewModel() { return new global::Oestbanehus.ViewModels.ResidentViewModel(); }
-        private object Activate_116_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Person>(); }
-        private object Activate_117_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Person>(); }
-        private object Activate_118_PersonWithDetails() { return new global::Oestbanehus.Models.PersonWithDetails(); }
-        private object Activate_119_Residents() { return new global::Oestbanehus.Views.Residents(); }
-        private object Activate_120_SettingsPageViewModel() { return new global::Oestbanehus.ViewModels.SettingsPageViewModel(); }
-        private object Activate_121_SettingsPartViewModel() { return new global::Oestbanehus.ViewModels.SettingsPartViewModel(); }
-        private object Activate_122_AboutPartViewModel() { return new global::Oestbanehus.ViewModels.AboutPartViewModel(); }
-        private object Activate_123_SettingsPage() { return new global::Oestbanehus.Views.SettingsPage(); }
-        private object Activate_125_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_127_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_130_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_131_MessageDialogAction() { return new global::Template10.Behaviors.MessageDialogAction(); }
-        private object Activate_132_Shell() { return new global::Oestbanehus.Views.Shell(); }
+        private object Activate_49_AddRequestVM() { return new global::Oestbanehus.ViewModels.AddRequestVM(); }
+        private object Activate_56_AddRequest() { return new global::Oestbanehus.Views.Board.AddRequest(); }
+        private object Activate_58_AddConditionVM() { return new global::Oestbanehus.ViewModels.AddConditionVM(); }
+        private object Activate_59_AddCondition() { return new global::Oestbanehus.Views.Board.AddCondition(); }
+        private object Activate_60_AddPersonVM() { return new global::Oestbanehus.ViewModels.AddPersonVM(); }
+        private object Activate_61_Person() { return new global::Oestbanehus.Models.Person(); }
+        private object Activate_62_Building() { return new global::Oestbanehus.Models.Building(); }
+        private object Activate_63_Apartment() { return new global::Oestbanehus.Models.Apartment(); }
+        private object Activate_65_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>(); }
+        private object Activate_66_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Building>(); }
+        private object Activate_67_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>(); }
+        private object Activate_68_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Apartment>(); }
+        private object Activate_69_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
+        private object Activate_70_AddPerson() { return new global::Oestbanehus.Views.Board.AddPerson(); }
+        private object Activate_71_ApartmentViewModel() { return new global::Oestbanehus.ViewModels.ApartmentViewModel(); }
+        private object Activate_72_ApartmentDetails() { return new global::Oestbanehus.Models.ApartmentDetails(); }
+        private object Activate_73_ApartmentPage() { return new global::Oestbanehus.Views.ApartmentPage(); }
+        private object Activate_74_BuildingsRequestsVM() { return new global::Oestbanehus.ViewModels.BuildingsRequestsVM(); }
+        private object Activate_75_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingRequests>(); }
+        private object Activate_76_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingRequests>(); }
+        private object Activate_77_BuildingRequests() { return new global::Oestbanehus.Models.BuildingRequests(); }
+        private object Activate_78_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>(); }
+        private object Activate_79_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithRequests>(); }
+        private object Activate_80_ApartmentWithRequests() { return new global::Oestbanehus.Models.ApartmentWithRequests(); }
+        private object Activate_81_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>(); }
+        private object Activate_82_Request() { return new global::Oestbanehus.Models.Request(); }
+        private object Activate_84_BuildingRequests() { return new global::Oestbanehus.Views.BuildingRequests(); }
+        private object Activate_85_BuildingsViewModel() { return new global::Oestbanehus.ViewModels.BuildingsViewModel(); }
+        private object Activate_86_ItemClickedConverter() { return new global::Oestbanehus.Converters.ItemClickedConverter(); }
+        private object Activate_87_Buildings() { return new global::Oestbanehus.Views.Buildings(); }
+        private object Activate_88_BuildingsConditionsVM() { return new global::Oestbanehus.ViewModels.BuildingsConditionsVM(); }
+        private object Activate_89_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingConditions>(); }
+        private object Activate_90_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.BuildingConditions>(); }
+        private object Activate_91_BuildingConditions() { return new global::Oestbanehus.Models.BuildingConditions(); }
+        private object Activate_92_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithConditions>(); }
+        private object Activate_93_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ApartmentWithConditions>(); }
+        private object Activate_94_ApartmentWithConditions() { return new global::Oestbanehus.Models.ApartmentWithConditions(); }
+        private object Activate_95_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.ConditionsOfItem>(); }
+        private object Activate_96_ConditionsOfItem() { return new global::Oestbanehus.Models.ConditionsOfItem(); }
+        private object Activate_97_List() { return new global::System.Collections.Generic.List<global::Oestbanehus.Models.Comment>(); }
+        private object Activate_98_Comment() { return new global::Oestbanehus.Models.Comment(); }
+        private object Activate_99_BuildingsWithConditions() { return new global::Oestbanehus.Views.BuildingsWithConditions(); }
+        private object Activate_100_ConditionDetailVM() { return new global::Oestbanehus.ViewModels.ConditionDetailVM(); }
+        private object Activate_101_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Comment>(); }
+        private object Activate_102_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Comment>(); }
+        private object Activate_103_ConditionDetail() { return new global::Oestbanehus.Views.ConditionDetail(); }
+        private object Activate_104_ViewModelRequestDetails() { return new global::Oestbanehus.ViewModels.ViewModelRequestDetails(); }
+        private object Activate_105_RequestWithDetails() { return new global::Oestbanehus.Views.Board.RequestWithDetails(); }
+        private object Activate_106_Busy() { return new global::Oestbanehus.Views.Busy(); }
+        private object Activate_107_ConditionViewModel() { return new global::Oestbanehus.ViewModels.ConditionViewModel(); }
+        private object Activate_108_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ConditionsOfItem>(); }
+        private object Activate_109_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.ConditionsOfItem>(); }
+        private object Activate_110_Conditions() { return new global::Oestbanehus.Views.Conditions(); }
+        private object Activate_111_DetailPageViewModel() { return new global::Oestbanehus.ViewModels.DetailPageViewModel(); }
+        private object Activate_112_DetailPage() { return new global::Oestbanehus.Views.DetailPage(); }
+        private object Activate_113_ShellVM() { return new global::Oestbanehus.ViewModels.ShellVM(); }
+        private object Activate_114_MainPage() { return new global::Oestbanehus.Views.MainPage(); }
+        private object Activate_115_MainPageViewModel() { return new global::Oestbanehus.ViewModels.MainPageViewModel(); }
+        private object Activate_116_Payments() { return new global::Oestbanehus.Views.Payments(); }
+        private object Activate_117_RequestViewModel() { return new global::Oestbanehus.ViewModels.RequestViewModel(); }
+        private object Activate_118_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Request>(); }
+        private object Activate_119_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Request>(); }
+        private object Activate_120_Requests() { return new global::Oestbanehus.Views.Requests(); }
+        private object Activate_121_ResidentViewModel() { return new global::Oestbanehus.ViewModels.ResidentViewModel(); }
+        private object Activate_122_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Person>(); }
+        private object Activate_123_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Oestbanehus.Models.Person>(); }
+        private object Activate_124_PersonWithDetails() { return new global::Oestbanehus.Models.PersonWithDetails(); }
+        private object Activate_125_Residents() { return new global::Oestbanehus.Views.Residents(); }
+        private object Activate_126_SettingsPageViewModel() { return new global::Oestbanehus.ViewModels.SettingsPageViewModel(); }
+        private object Activate_127_SettingsPartViewModel() { return new global::Oestbanehus.ViewModels.SettingsPartViewModel(); }
+        private object Activate_128_AboutPartViewModel() { return new global::Oestbanehus.ViewModels.AboutPartViewModel(); }
+        private object Activate_129_SettingsPage() { return new global::Oestbanehus.Views.SettingsPage(); }
+        private object Activate_130_ShellVM2() { return new global::Oestbanehus.ViewModels.ShellVM2(); }
+        private object Activate_132_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_134_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_137_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_138_MessageDialogAction() { return new global::Template10.Behaviors.MessageDialogAction(); }
+        private object Activate_139_Shell() { return new global::Oestbanehus.Views.Shell(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -567,139 +588,151 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             var newItem = (global::Template10.Controls.HamburgerButtonInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_57_ObservableCollection(object instance, object item)
+        private void VectorAdd_65_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Building>)instance;
             var newItem = (global::Oestbanehus.Models.Building)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_58_Collection(object instance, object item)
+        private void VectorAdd_66_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Building>)instance;
             var newItem = (global::Oestbanehus.Models.Building)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_59_ObservableCollection(object instance, object item)
+        private void VectorAdd_67_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Apartment>)instance;
             var newItem = (global::Oestbanehus.Models.Apartment)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_60_Collection(object instance, object item)
+        private void VectorAdd_68_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Apartment>)instance;
             var newItem = (global::Oestbanehus.Models.Apartment)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_71_ObservableCollection(object instance, object item)
+        private void VectorAdd_75_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.BuildingRequests>)instance;
             var newItem = (global::Oestbanehus.Models.BuildingRequests)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_72_Collection(object instance, object item)
+        private void VectorAdd_76_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.BuildingRequests>)instance;
             var newItem = (global::Oestbanehus.Models.BuildingRequests)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_74_ObservableCollection(object instance, object item)
+        private void VectorAdd_78_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ApartmentWithRequests>)instance;
             var newItem = (global::Oestbanehus.Models.ApartmentWithRequests)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_75_Collection(object instance, object item)
+        private void VectorAdd_79_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ApartmentWithRequests>)instance;
             var newItem = (global::Oestbanehus.Models.ApartmentWithRequests)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_77_List(object instance, object item)
+        private void VectorAdd_81_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Request>)instance;
             var newItem = (global::Oestbanehus.Models.Request)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_85_ObservableCollection(object instance, object item)
+        private void VectorAdd_89_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.BuildingConditions>)instance;
             var newItem = (global::Oestbanehus.Models.BuildingConditions)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_86_Collection(object instance, object item)
+        private void VectorAdd_90_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.BuildingConditions>)instance;
             var newItem = (global::Oestbanehus.Models.BuildingConditions)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_88_ObservableCollection(object instance, object item)
+        private void VectorAdd_92_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ApartmentWithConditions>)instance;
             var newItem = (global::Oestbanehus.Models.ApartmentWithConditions)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_89_Collection(object instance, object item)
+        private void VectorAdd_93_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ApartmentWithConditions>)instance;
             var newItem = (global::Oestbanehus.Models.ApartmentWithConditions)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_91_List(object instance, object item)
+        private void VectorAdd_95_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ConditionsOfItem>)instance;
             var newItem = (global::Oestbanehus.Models.ConditionsOfItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_93_List(object instance, object item)
+        private void VectorAdd_97_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Comment>)instance;
             var newItem = (global::Oestbanehus.Models.Comment)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_102_ObservableCollection(object instance, object item)
+        private void VectorAdd_101_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Comment>)instance;
+            var newItem = (global::Oestbanehus.Models.Comment)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_102_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Comment>)instance;
+            var newItem = (global::Oestbanehus.Models.Comment)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_108_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ConditionsOfItem>)instance;
             var newItem = (global::Oestbanehus.Models.ConditionsOfItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_103_Collection(object instance, object item)
+        private void VectorAdd_109_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.ConditionsOfItem>)instance;
             var newItem = (global::Oestbanehus.Models.ConditionsOfItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_112_ObservableCollection(object instance, object item)
+        private void VectorAdd_118_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Request>)instance;
             var newItem = (global::Oestbanehus.Models.Request)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_113_Collection(object instance, object item)
+        private void VectorAdd_119_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Request>)instance;
             var newItem = (global::Oestbanehus.Models.Request)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_116_ObservableCollection(object instance, object item)
+        private void VectorAdd_122_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Person>)instance;
             var newItem = (global::Oestbanehus.Models.Person)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_117_Collection(object instance, object item)
+        private void VectorAdd_123_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Oestbanehus.Models.Person>)instance;
             var newItem = (global::Oestbanehus.Models.Person)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_125_BehaviorCollection(object instance, object item)
+        private void VectorAdd_132_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_130_ActionCollection(object instance, object item)
+        private void VectorAdd_137_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -1069,21 +1102,13 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 49:   //  Oestbanehus.ViewModels.AddPersonVM
+            case 49:   //  Oestbanehus.ViewModels.AddRequestVM
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_49_AddPersonVM;
-                userType.AddMemberName("newPerson");
-                userType.AddMemberName("name");
-                userType.AddMemberName("email");
-                userType.AddMemberName("password");
-                userType.AddMemberName("phone");
-                userType.AddMemberName("type");
-                userType.AddMemberName("selectedBuilding");
-                userType.AddMemberName("selectedApartment");
-                userType.AddMemberName("movein");
-                userType.AddMemberName("buildings");
-                userType.AddMemberName("apartments");
-                userType.AddMemberName("sendPost");
+                userType.Activator = Activate_49_AddRequestVM;
+                userType.AddMemberName("apartmentId");
+                userType.AddMemberName("title");
+                userType.AddMemberName("description");
+                userType.AddMemberName("addRequest");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1101,9 +1126,79 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 52:   //  Oestbanehus.Models.Person
+            case 52:   //  Int32
+                xamlType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 53:   //  Template10.Mvvm.DelegateCommand
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_52_Person;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 54:   //  Template10.Common.IDispatcherWrapper
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 55:   //  Template10.Common.IStateItems
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 56:   //  Oestbanehus.Views.Board.AddRequest
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_56_AddRequest;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 57:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 58:   //  Oestbanehus.ViewModels.AddConditionVM
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_58_AddConditionVM;
+                userType.AddMemberName("apartmentId");
+                userType.AddMemberName("conditionType");
+                userType.AddMemberName("description");
+                userType.AddMemberName("addCondition");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 59:   //  Oestbanehus.Views.Board.AddCondition
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_59_AddCondition;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 60:   //  Oestbanehus.ViewModels.AddPersonVM
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_60_AddPersonVM;
+                userType.AddMemberName("newPerson");
+                userType.AddMemberName("name");
+                userType.AddMemberName("email");
+                userType.AddMemberName("password");
+                userType.AddMemberName("phone");
+                userType.AddMemberName("type");
+                userType.AddMemberName("selectedBuilding");
+                userType.AddMemberName("selectedApartment");
+                userType.AddMemberName("movein");
+                userType.AddMemberName("buildings");
+                userType.AddMemberName("apartments");
+                userType.AddMemberName("sendPost");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 61:   //  Oestbanehus.Models.Person
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_61_Person;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("ApartmentId");
                 userType.AddMemberName("MoveInDate");
@@ -1118,13 +1213,9 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 53:   //  Int32
-                xamlType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 54:   //  Oestbanehus.Models.Building
+            case 62:   //  Oestbanehus.Models.Building
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_54_Building;
+                userType.Activator = Activate_62_Building;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("ZipCode");
                 userType.AddMemberName("Street");
@@ -1133,9 +1224,9 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 55:   //  Oestbanehus.Models.Apartment
+            case 63:   //  Oestbanehus.Models.Apartment
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_55_Apartment;
+                userType.Activator = Activate_63_Apartment;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("BuildingId");
                 userType.AddMemberName("Size");
@@ -1148,61 +1239,43 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 56:   //  System.DateTimeOffset
+            case 64:   //  System.DateTimeOffset
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 57:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>
+            case 65:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Building>"));
-                userType.CollectionAdd = VectorAdd_57_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_65_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 58:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Building>
+            case 66:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Building>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_58_Collection;
-                userType.CollectionAdd = VectorAdd_58_Collection;
+                userType.Activator = Activate_66_Collection;
+                userType.CollectionAdd = VectorAdd_66_Collection;
                 xamlType = userType;
                 break;
 
-            case 59:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>
+            case 67:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Apartment>"));
-                userType.CollectionAdd = VectorAdd_59_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_67_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 60:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Apartment>
+            case 68:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Apartment>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_60_Collection;
-                userType.CollectionAdd = VectorAdd_60_Collection;
+                userType.Activator = Activate_68_Collection;
+                userType.CollectionAdd = VectorAdd_68_Collection;
                 xamlType = userType;
                 break;
 
-            case 61:   //  Template10.Mvvm.DelegateCommand
+            case 69:   //  Template10.Converters.ValueWhenConverter
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 62:   //  Template10.Common.IDispatcherWrapper
-                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 63:   //  Template10.Common.IStateItems
-                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 64:   //  Template10.Converters.ValueWhenConverter
-                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_64_ValueWhenConverter;
+                userType.Activator = Activate_69_ValueWhenConverter;
                 userType.AddMemberName("When");
                 userType.AddMemberName("Value");
                 userType.AddMemberName("Otherwise");
@@ -1211,20 +1284,16 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 65:   //  Oestbanehus.Views.Board.AddPerson
+            case 70:   //  Oestbanehus.Views.Board.AddPerson
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_65_AddPerson;
+                userType.Activator = Activate_70_AddPerson;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 66:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 67:   //  Oestbanehus.ViewModels.ApartmentViewModel
+            case 71:   //  Oestbanehus.ViewModels.ApartmentViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_67_ApartmentViewModel;
+                userType.Activator = Activate_71_ApartmentViewModel;
                 userType.AddMemberName("apartment");
                 userType.AddMemberName("toConditions");
                 userType.AddMemberName("toRequests");
@@ -1232,23 +1301,23 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 68:   //  Oestbanehus.Models.ApartmentDetails
+            case 72:   //  Oestbanehus.Models.ApartmentDetails
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Oestbanehus.Models.Apartment"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 69:   //  Oestbanehus.Views.ApartmentPage
+            case 73:   //  Oestbanehus.Views.ApartmentPage
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_69_ApartmentPage;
+                userType.Activator = Activate_73_ApartmentPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Oestbanehus.ViewModels.BuildingsRequestsVM
+            case 74:   //  Oestbanehus.ViewModels.BuildingsRequestsVM
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_70_BuildingsRequestsVM;
+                userType.Activator = Activate_74_BuildingsRequestsVM;
                 userType.AddMemberName("Buildings");
                 userType.AddMemberName("selectedBuilding");
                 userType.AddMemberName("selectedApt");
@@ -1257,23 +1326,23 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 71:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingRequests>
+            case 75:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingRequests>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingRequests>"));
-                userType.CollectionAdd = VectorAdd_71_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_75_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 72:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingRequests>
+            case 76:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingRequests>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_72_Collection;
-                userType.CollectionAdd = VectorAdd_72_Collection;
+                userType.Activator = Activate_76_Collection;
+                userType.CollectionAdd = VectorAdd_76_Collection;
                 xamlType = userType;
                 break;
 
-            case 73:   //  Oestbanehus.Models.BuildingRequests
+            case 77:   //  Oestbanehus.Models.BuildingRequests
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_73_BuildingRequests;
+                userType.Activator = Activate_77_BuildingRequests;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("ZipCode");
                 userType.AddMemberName("Street");
@@ -1283,23 +1352,23 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 74:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithRequests>
+            case 78:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithRequests>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithRequests>"));
-                userType.CollectionAdd = VectorAdd_74_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_78_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 75:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithRequests>
+            case 79:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithRequests>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_75_Collection;
-                userType.CollectionAdd = VectorAdd_75_Collection;
+                userType.Activator = Activate_79_Collection;
+                userType.CollectionAdd = VectorAdd_79_Collection;
                 xamlType = userType;
                 break;
 
-            case 76:   //  Oestbanehus.Models.ApartmentWithRequests
+            case 80:   //  Oestbanehus.Models.ApartmentWithRequests
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_76_ApartmentWithRequests;
+                userType.Activator = Activate_80_ApartmentWithRequests;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("BuildingId");
                 userType.AddMemberName("Size");
@@ -1313,16 +1382,16 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 77:   //  System.Collections.Generic.List`1<Oestbanehus.Models.Request>
+            case 81:   //  System.Collections.Generic.List`1<Oestbanehus.Models.Request>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_77_List;
+                userType.CollectionAdd = VectorAdd_81_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Oestbanehus.Models.Request
+            case 82:   //  Oestbanehus.Models.Request
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_78_Request;
+                userType.Activator = Activate_82_Request;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Author");
                 userType.AddMemberName("ApartmentId");
@@ -1335,22 +1404,22 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 79:   //  System.DateTime
+            case 83:   //  System.DateTime
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 80:   //  Oestbanehus.Views.BuildingRequests
+            case 84:   //  Oestbanehus.Views.BuildingRequests
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_80_BuildingRequests;
+                userType.Activator = Activate_84_BuildingRequests;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 81:   //  Oestbanehus.ViewModels.BuildingsViewModel
+            case 85:   //  Oestbanehus.ViewModels.BuildingsViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_81_BuildingsViewModel;
+                userType.Activator = Activate_85_BuildingsViewModel;
                 userType.AddMemberName("buildings");
                 userType.AddMemberName("Apartments");
                 userType.AddMemberName("selectedBuilding");
@@ -1361,23 +1430,23 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 82:   //  Oestbanehus.Converters.ItemClickedConverter
+            case 86:   //  Oestbanehus.Converters.ItemClickedConverter
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_82_ItemClickedConverter;
+                userType.Activator = Activate_86_ItemClickedConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 83:   //  Oestbanehus.Views.Buildings
+            case 87:   //  Oestbanehus.Views.Buildings
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_83_Buildings;
+                userType.Activator = Activate_87_Buildings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 84:   //  Oestbanehus.ViewModels.BuildingsConditionsVM
+            case 88:   //  Oestbanehus.ViewModels.BuildingsConditionsVM
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_84_BuildingsConditionsVM;
+                userType.Activator = Activate_88_BuildingsConditionsVM;
                 userType.AddMemberName("Buildings");
                 userType.AddMemberName("selectedBuilding");
                 userType.AddMemberName("selectedCondition");
@@ -1386,23 +1455,23 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 85:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingConditions>
+            case 89:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingConditions>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingConditions>"));
-                userType.CollectionAdd = VectorAdd_85_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_89_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 86:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingConditions>
+            case 90:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.BuildingConditions>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_86_Collection;
-                userType.CollectionAdd = VectorAdd_86_Collection;
+                userType.Activator = Activate_90_Collection;
+                userType.CollectionAdd = VectorAdd_90_Collection;
                 xamlType = userType;
                 break;
 
-            case 87:   //  Oestbanehus.Models.BuildingConditions
+            case 91:   //  Oestbanehus.Models.BuildingConditions
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_87_BuildingConditions;
+                userType.Activator = Activate_91_BuildingConditions;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("ZipCode");
                 userType.AddMemberName("Street");
@@ -1412,23 +1481,23 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 88:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithConditions>
+            case 92:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithConditions>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithConditions>"));
-                userType.CollectionAdd = VectorAdd_88_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_92_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 89:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithConditions>
+            case 93:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ApartmentWithConditions>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_89_Collection;
-                userType.CollectionAdd = VectorAdd_89_Collection;
+                userType.Activator = Activate_93_Collection;
+                userType.CollectionAdd = VectorAdd_93_Collection;
                 xamlType = userType;
                 break;
 
-            case 90:   //  Oestbanehus.Models.ApartmentWithConditions
+            case 94:   //  Oestbanehus.Models.ApartmentWithConditions
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_90_ApartmentWithConditions;
+                userType.Activator = Activate_94_ApartmentWithConditions;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("BuildingId");
                 userType.AddMemberName("Size");
@@ -1442,16 +1511,16 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 91:   //  System.Collections.Generic.List`1<Oestbanehus.Models.ConditionsOfItem>
+            case 95:   //  System.Collections.Generic.List`1<Oestbanehus.Models.ConditionsOfItem>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_91_List;
+                userType.CollectionAdd = VectorAdd_95_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 92:   //  Oestbanehus.Models.ConditionsOfItem
+            case 96:   //  Oestbanehus.Models.ConditionsOfItem
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_92_ConditionsOfItem;
+                userType.Activator = Activate_96_ConditionsOfItem;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("ApartmentId");
                 userType.AddMemberName("ConditionType");
@@ -1463,18 +1532,18 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 93:   //  System.Collections.Generic.List`1<Oestbanehus.Models.Comment>
+            case 97:   //  System.Collections.Generic.List`1<Oestbanehus.Models.Comment>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_93_List;
+                userType.CollectionAdd = VectorAdd_97_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 94:   //  Oestbanehus.Models.Comment
+            case 98:   //  Oestbanehus.Models.Comment
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_94_Comment;
+                userType.Activator = Activate_98_Comment;
                 userType.AddMemberName("Id");
-                userType.AddMemberName("ApartmentId");
+                userType.AddMemberName("ConditionId");
                 userType.AddMemberName("PersonId");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("PublishedDate");
@@ -1483,99 +1552,119 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 95:   //  Oestbanehus.Views.BuildingsWithConditions
+            case 99:   //  Oestbanehus.Views.BuildingsWithConditions
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_95_BuildingsWithConditions;
+                userType.Activator = Activate_99_BuildingsWithConditions;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 96:   //  Oestbanehus.ViewModels.ConditionDetailVM
+            case 100:   //  Oestbanehus.ViewModels.ConditionDetailVM
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_96_ConditionDetailVM;
+                userType.Activator = Activate_100_ConditionDetailVM;
                 userType.AddMemberName("condition");
+                userType.AddMemberName("comments");
+                userType.AddMemberName("comment");
+                userType.AddMemberName("addComment");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 97:   //  Oestbanehus.Views.ConditionDetail
+            case 101:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Comment>
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Comment>"));
+                userType.CollectionAdd = VectorAdd_101_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 102:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Comment>
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_102_Collection;
+                userType.CollectionAdd = VectorAdd_102_Collection;
+                xamlType = userType;
+                break;
+
+            case 103:   //  Oestbanehus.Views.ConditionDetail
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_97_ConditionDetail;
+                userType.Activator = Activate_103_ConditionDetail;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 98:   //  Oestbanehus.ViewModels.ViewModelRequestDetails
+            case 104:   //  Oestbanehus.ViewModels.ViewModelRequestDetails
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_98_ViewModelRequestDetails;
+                userType.Activator = Activate_104_ViewModelRequestDetails;
                 userType.AddMemberName("request");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 99:   //  Oestbanehus.Views.Board.RequestWithDetails
+            case 105:   //  Oestbanehus.Views.Board.RequestWithDetails
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_99_RequestWithDetails;
+                userType.Activator = Activate_105_RequestWithDetails;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 100:   //  Oestbanehus.Views.Busy
+            case 106:   //  Oestbanehus.Views.Busy
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_100_Busy;
+                userType.Activator = Activate_106_Busy;
                 userType.AddMemberName("BusyText");
                 userType.AddMemberName("IsBusy");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 101:   //  Oestbanehus.ViewModels.ConditionViewModel
+            case 107:   //  Oestbanehus.ViewModels.ConditionViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_101_ConditionViewModel;
+                userType.Activator = Activate_107_ConditionViewModel;
                 userType.AddMemberName("Conditions");
+                userType.AddMemberName("selectedCondition");
+                userType.AddMemberName("apartmentId");
+                userType.AddMemberName("navToAddCondition");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 102:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ConditionsOfItem>
+            case 108:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ConditionsOfItem>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ConditionsOfItem>"));
-                userType.CollectionAdd = VectorAdd_102_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_108_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 103:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ConditionsOfItem>
+            case 109:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.ConditionsOfItem>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_103_Collection;
-                userType.CollectionAdd = VectorAdd_103_Collection;
+                userType.Activator = Activate_109_Collection;
+                userType.CollectionAdd = VectorAdd_109_Collection;
                 xamlType = userType;
                 break;
 
-            case 104:   //  Oestbanehus.Views.Conditions
+            case 110:   //  Oestbanehus.Views.Conditions
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_104_Conditions;
+                userType.Activator = Activate_110_Conditions;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 105:   //  Oestbanehus.ViewModels.DetailPageViewModel
+            case 111:   //  Oestbanehus.ViewModels.DetailPageViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_105_DetailPageViewModel;
+                userType.Activator = Activate_111_DetailPageViewModel;
                 userType.AddMemberName("Value");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 106:   //  Oestbanehus.Views.DetailPage
+            case 112:   //  Oestbanehus.Views.DetailPage
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_106_DetailPage;
+                userType.Activator = Activate_112_DetailPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 107:   //  Oestbanehus.ViewModels.ShellVM
+            case 113:   //  Oestbanehus.ViewModels.ShellVM
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_107_ShellVM;
+                userType.Activator = Activate_113_ShellVM;
                 userType.AddMemberName("loggedUserType");
                 userType.AddMemberName("error");
                 userType.AddMemberName("email");
@@ -1585,60 +1674,62 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 108:   //  Oestbanehus.Views.MainPage
+            case 114:   //  Oestbanehus.Views.MainPage
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_108_MainPage;
+                userType.Activator = Activate_114_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 109:   //  Oestbanehus.ViewModels.MainPageViewModel
+            case 115:   //  Oestbanehus.ViewModels.MainPageViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_109_MainPageViewModel;
+                userType.Activator = Activate_115_MainPageViewModel;
                 userType.AddMemberName("Value");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 110:   //  Oestbanehus.Views.Payments
+            case 116:   //  Oestbanehus.Views.Payments
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_110_Payments;
+                userType.Activator = Activate_116_Payments;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 111:   //  Oestbanehus.ViewModels.RequestViewModel
+            case 117:   //  Oestbanehus.ViewModels.RequestViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_111_RequestViewModel;
+                userType.Activator = Activate_117_RequestViewModel;
                 userType.AddMemberName("Requests");
+                userType.AddMemberName("navToAddReq");
+                userType.AddMemberName("currentApartmentId");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 112:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Request>
+            case 118:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Request>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Request>"));
-                userType.CollectionAdd = VectorAdd_112_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_118_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 113:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Request>
+            case 119:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Request>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_113_Collection;
-                userType.CollectionAdd = VectorAdd_113_Collection;
+                userType.Activator = Activate_119_Collection;
+                userType.CollectionAdd = VectorAdd_119_Collection;
                 xamlType = userType;
                 break;
 
-            case 114:   //  Oestbanehus.Views.Requests
+            case 120:   //  Oestbanehus.Views.Requests
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_114_Requests;
+                userType.Activator = Activate_120_Requests;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 115:   //  Oestbanehus.ViewModels.ResidentViewModel
+            case 121:   //  Oestbanehus.ViewModels.ResidentViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_115_ResidentViewModel;
+                userType.Activator = Activate_121_ResidentViewModel;
                 userType.AddMemberName("Residents");
                 userType.AddMemberName("selectedResident");
                 userType.AddMemberName("pwd");
@@ -1647,127 +1738,135 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 116:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Person>
+            case 122:   //  System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Person>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Person>"));
-                userType.CollectionAdd = VectorAdd_116_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_122_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 117:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Person>
+            case 123:   //  System.Collections.ObjectModel.Collection`1<Oestbanehus.Models.Person>
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_117_Collection;
-                userType.CollectionAdd = VectorAdd_117_Collection;
+                userType.Activator = Activate_123_Collection;
+                userType.CollectionAdd = VectorAdd_123_Collection;
                 xamlType = userType;
                 break;
 
-            case 118:   //  Oestbanehus.Models.PersonWithDetails
+            case 124:   //  Oestbanehus.Models.PersonWithDetails
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 119:   //  Oestbanehus.Views.Residents
+            case 125:   //  Oestbanehus.Views.Residents
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_119_Residents;
+                userType.Activator = Activate_125_Residents;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 120:   //  Oestbanehus.ViewModels.SettingsPageViewModel
+            case 126:   //  Oestbanehus.ViewModels.SettingsPageViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_120_SettingsPageViewModel;
+                userType.Activator = Activate_126_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 121:   //  Oestbanehus.ViewModels.SettingsPartViewModel
+            case 127:   //  Oestbanehus.ViewModels.SettingsPartViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 122:   //  Oestbanehus.ViewModels.AboutPartViewModel
+            case 128:   //  Oestbanehus.ViewModels.AboutPartViewModel
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 123:   //  Oestbanehus.Views.SettingsPage
+            case 129:   //  Oestbanehus.Views.SettingsPage
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_123_SettingsPage;
+                userType.Activator = Activate_129_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 124:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 130:   //  Oestbanehus.ViewModels.ShellVM2
+                userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_130_ShellVM2;
+                userType.AddMemberName("loggedUserType");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 131:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 125:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 132:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_125_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_132_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 126:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 133:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 127:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 134:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
-                userType.Activator = Activate_127_EventTriggerBehavior;
+                userType.Activator = Activate_134_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 128:   //  Microsoft.Xaml.Interactivity.Trigger
+            case 135:   //  Microsoft.Xaml.Interactivity.Trigger
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Actions");
                 xamlType = userType;
                 break;
 
-            case 129:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 136:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 130:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 137:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_130_ActionCollection;
+                userType.CollectionAdd = VectorAdd_137_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 131:   //  Template10.Behaviors.MessageDialogAction
+            case 138:   //  Template10.Behaviors.MessageDialogAction
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_131_MessageDialogAction;
+                userType.Activator = Activate_138_MessageDialogAction;
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("OkText");
                 xamlType = userType;
                 break;
 
-            case 132:   //  Oestbanehus.Views.Shell
+            case 139:   //  Oestbanehus.Views.Shell
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_132_Shell;
+                userType.Activator = Activate_139_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 133:   //  Oestbanehus.Views.Splash
+            case 140:   //  Oestbanehus.Views.Splash
                 userType = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -2631,1295 +2730,1440 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
             var that = (global::Template10.Controls.Resizer)instance;
             that.GrabberSize = (global::Windows.Foundation.Size)Value;
         }
-        private object get_83_AddPersonVM_newPerson(object instance)
+        private object get_83_AddRequestVM_apartmentId(object instance)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.newPerson;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            return that.apartmentId;
         }
-        private void set_83_AddPersonVM_newPerson(object instance, object Value)
+        private void set_83_AddRequestVM_apartmentId(object instance, object Value)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.newPerson = (global::Oestbanehus.Models.Person)Value;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            that.apartmentId = (global::System.Int32)Value;
         }
-        private object get_84_AddPersonVM_name(object instance)
+        private object get_84_AddRequestVM_title(object instance)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.name;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            return that.title;
         }
-        private void set_84_AddPersonVM_name(object instance, object Value)
+        private void set_84_AddRequestVM_title(object instance, object Value)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.name = (global::System.String)Value;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            that.title = (global::System.String)Value;
         }
-        private object get_85_AddPersonVM_email(object instance)
+        private object get_85_AddRequestVM_description(object instance)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.email;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            return that.description;
         }
-        private void set_85_AddPersonVM_email(object instance, object Value)
+        private void set_85_AddRequestVM_description(object instance, object Value)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.email = (global::System.String)Value;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            that.description = (global::System.String)Value;
         }
-        private object get_86_AddPersonVM_password(object instance)
+        private object get_86_AddRequestVM_addRequest(object instance)
         {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.password;
+            var that = (global::Oestbanehus.ViewModels.AddRequestVM)instance;
+            return that.addRequest;
         }
-        private void set_86_AddPersonVM_password(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.password = (global::System.String)Value;
-        }
-        private object get_87_AddPersonVM_phone(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.phone;
-        }
-        private void set_87_AddPersonVM_phone(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.phone = (global::System.String)Value;
-        }
-        private object get_88_AddPersonVM_type(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.type;
-        }
-        private void set_88_AddPersonVM_type(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.type = (global::System.Int32)Value;
-        }
-        private object get_89_AddPersonVM_selectedBuilding(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.selectedBuilding;
-        }
-        private void set_89_AddPersonVM_selectedBuilding(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.selectedBuilding = (global::Oestbanehus.Models.Building)Value;
-        }
-        private object get_90_AddPersonVM_selectedApartment(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.selectedApartment;
-        }
-        private void set_90_AddPersonVM_selectedApartment(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.selectedApartment = (global::Oestbanehus.Models.Apartment)Value;
-        }
-        private object get_91_AddPersonVM_movein(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.movein;
-        }
-        private void set_91_AddPersonVM_movein(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.movein = (global::System.DateTimeOffset)Value;
-        }
-        private object get_92_AddPersonVM_buildings(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.buildings;
-        }
-        private void set_92_AddPersonVM_buildings(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.buildings = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>)Value;
-        }
-        private object get_93_Building_Id(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            return that.Id;
-        }
-        private void set_93_Building_Id(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            that.Id = (global::System.Int32)Value;
-        }
-        private object get_94_Building_ZipCode(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            return that.ZipCode;
-        }
-        private void set_94_Building_ZipCode(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            that.ZipCode = (global::System.String)Value;
-        }
-        private object get_95_Building_Street(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            return that.Street;
-        }
-        private void set_95_Building_Street(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            that.Street = (global::System.String)Value;
-        }
-        private object get_96_Building_City(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            return that.City;
-        }
-        private void set_96_Building_City(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Building)instance;
-            that.City = (global::System.String)Value;
-        }
-        private object get_97_AddPersonVM_apartments(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.apartments;
-        }
-        private void set_97_AddPersonVM_apartments(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            that.apartments = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>)Value;
-        }
-        private object get_98_Apartment_Id(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.Id;
-        }
-        private void set_98_Apartment_Id(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.Id = (global::System.Int32)Value;
-        }
-        private object get_99_Apartment_BuildingId(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.BuildingId;
-        }
-        private void set_99_Apartment_BuildingId(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.BuildingId = (global::System.Int32)Value;
-        }
-        private object get_100_Apartment_Size(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.Size;
-        }
-        private void set_100_Apartment_Size(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.Size = (global::System.Int32)Value;
-        }
-        private object get_101_Apartment_Price(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.Price;
-        }
-        private void set_101_Apartment_Price(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.Price = (global::System.Int32)Value;
-        }
-        private object get_102_Apartment_NumberOfRooms(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.NumberOfRooms;
-        }
-        private void set_102_Apartment_NumberOfRooms(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.NumberOfRooms = (global::System.Int32)Value;
-        }
-        private object get_103_Apartment_Floor(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.Floor;
-        }
-        private void set_103_Apartment_Floor(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.Floor = (global::System.Int32)Value;
-        }
-        private object get_104_Apartment_ApartmentNumber(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.ApartmentNumber;
-        }
-        private void set_104_Apartment_ApartmentNumber(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.ApartmentNumber = (global::System.String)Value;
-        }
-        private object get_105_Apartment_Street(object instance)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            return that.Street;
-        }
-        private void set_105_Apartment_Street(object instance, object Value)
-        {
-            var that = (global::Oestbanehus.Models.Apartment)instance;
-            that.Street = (global::System.String)Value;
-        }
-        private object get_106_AddPersonVM_sendPost(object instance)
-        {
-            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
-            return that.sendPost;
-        }
-        private object get_107_ViewModelBase_NavigationService(object instance)
+        private object get_87_ViewModelBase_NavigationService(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.NavigationService;
         }
-        private void set_107_ViewModelBase_NavigationService(object instance, object Value)
+        private void set_87_ViewModelBase_NavigationService(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.NavigationService = (global::Template10.Services.NavigationService.INavigationService)Value;
         }
-        private object get_108_ViewModelBase_Dispatcher(object instance)
+        private object get_88_ViewModelBase_Dispatcher(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.Dispatcher;
         }
-        private void set_108_ViewModelBase_Dispatcher(object instance, object Value)
+        private void set_88_ViewModelBase_Dispatcher(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.Dispatcher = (global::Template10.Common.IDispatcherWrapper)Value;
         }
-        private object get_109_ViewModelBase_SessionState(object instance)
+        private object get_89_ViewModelBase_SessionState(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.SessionState;
         }
-        private void set_109_ViewModelBase_SessionState(object instance, object Value)
+        private void set_89_ViewModelBase_SessionState(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.SessionState = (global::Template10.Common.IStateItems)Value;
         }
-        private object get_110_ValueWhenConverter_When(object instance)
+        private object get_90_AddConditionVM_apartmentId(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            return that.apartmentId;
+        }
+        private void set_90_AddConditionVM_apartmentId(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            that.apartmentId = (global::System.Int32)Value;
+        }
+        private object get_91_AddConditionVM_conditionType(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            return that.conditionType;
+        }
+        private void set_91_AddConditionVM_conditionType(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            that.conditionType = (global::System.Int32)Value;
+        }
+        private object get_92_AddConditionVM_description(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            return that.description;
+        }
+        private void set_92_AddConditionVM_description(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            that.description = (global::System.String)Value;
+        }
+        private object get_93_AddConditionVM_addCondition(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddConditionVM)instance;
+            return that.addCondition;
+        }
+        private object get_94_AddPersonVM_newPerson(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.newPerson;
+        }
+        private void set_94_AddPersonVM_newPerson(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.newPerson = (global::Oestbanehus.Models.Person)Value;
+        }
+        private object get_95_AddPersonVM_name(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.name;
+        }
+        private void set_95_AddPersonVM_name(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.name = (global::System.String)Value;
+        }
+        private object get_96_AddPersonVM_email(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.email;
+        }
+        private void set_96_AddPersonVM_email(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.email = (global::System.String)Value;
+        }
+        private object get_97_AddPersonVM_password(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.password;
+        }
+        private void set_97_AddPersonVM_password(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.password = (global::System.String)Value;
+        }
+        private object get_98_AddPersonVM_phone(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.phone;
+        }
+        private void set_98_AddPersonVM_phone(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.phone = (global::System.String)Value;
+        }
+        private object get_99_AddPersonVM_type(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.type;
+        }
+        private void set_99_AddPersonVM_type(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.type = (global::System.Int32)Value;
+        }
+        private object get_100_AddPersonVM_selectedBuilding(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.selectedBuilding;
+        }
+        private void set_100_AddPersonVM_selectedBuilding(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.selectedBuilding = (global::Oestbanehus.Models.Building)Value;
+        }
+        private object get_101_AddPersonVM_selectedApartment(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.selectedApartment;
+        }
+        private void set_101_AddPersonVM_selectedApartment(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.selectedApartment = (global::Oestbanehus.Models.Apartment)Value;
+        }
+        private object get_102_AddPersonVM_movein(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.movein;
+        }
+        private void set_102_AddPersonVM_movein(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.movein = (global::System.DateTimeOffset)Value;
+        }
+        private object get_103_AddPersonVM_buildings(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.buildings;
+        }
+        private void set_103_AddPersonVM_buildings(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.buildings = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>)Value;
+        }
+        private object get_104_Building_Id(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            return that.Id;
+        }
+        private void set_104_Building_Id(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_105_Building_ZipCode(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            return that.ZipCode;
+        }
+        private void set_105_Building_ZipCode(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            that.ZipCode = (global::System.String)Value;
+        }
+        private object get_106_Building_Street(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            return that.Street;
+        }
+        private void set_106_Building_Street(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            that.Street = (global::System.String)Value;
+        }
+        private object get_107_Building_City(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            return that.City;
+        }
+        private void set_107_Building_City(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Building)instance;
+            that.City = (global::System.String)Value;
+        }
+        private object get_108_AddPersonVM_apartments(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.apartments;
+        }
+        private void set_108_AddPersonVM_apartments(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            that.apartments = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>)Value;
+        }
+        private object get_109_Apartment_Id(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.Id;
+        }
+        private void set_109_Apartment_Id(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_110_Apartment_BuildingId(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.BuildingId;
+        }
+        private void set_110_Apartment_BuildingId(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.BuildingId = (global::System.Int32)Value;
+        }
+        private object get_111_Apartment_Size(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.Size;
+        }
+        private void set_111_Apartment_Size(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.Size = (global::System.Int32)Value;
+        }
+        private object get_112_Apartment_Price(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.Price;
+        }
+        private void set_112_Apartment_Price(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.Price = (global::System.Int32)Value;
+        }
+        private object get_113_Apartment_NumberOfRooms(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.NumberOfRooms;
+        }
+        private void set_113_Apartment_NumberOfRooms(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.NumberOfRooms = (global::System.Int32)Value;
+        }
+        private object get_114_Apartment_Floor(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.Floor;
+        }
+        private void set_114_Apartment_Floor(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.Floor = (global::System.Int32)Value;
+        }
+        private object get_115_Apartment_ApartmentNumber(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.ApartmentNumber;
+        }
+        private void set_115_Apartment_ApartmentNumber(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.ApartmentNumber = (global::System.String)Value;
+        }
+        private object get_116_Apartment_Street(object instance)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            return that.Street;
+        }
+        private void set_116_Apartment_Street(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.Models.Apartment)instance;
+            that.Street = (global::System.String)Value;
+        }
+        private object get_117_AddPersonVM_sendPost(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.AddPersonVM)instance;
+            return that.sendPost;
+        }
+        private object get_118_ValueWhenConverter_When(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.When;
         }
-        private void set_110_ValueWhenConverter_When(object instance, object Value)
+        private void set_118_ValueWhenConverter_When(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.When = (global::System.Object)Value;
         }
-        private object get_111_ValueWhenConverter_Value(object instance)
+        private object get_119_ValueWhenConverter_Value(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Value;
         }
-        private void set_111_ValueWhenConverter_Value(object instance, object Value)
+        private void set_119_ValueWhenConverter_Value(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_112_ValueWhenConverter_Otherwise(object instance)
+        private object get_120_ValueWhenConverter_Otherwise(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Otherwise;
         }
-        private void set_112_ValueWhenConverter_Otherwise(object instance, object Value)
+        private void set_120_ValueWhenConverter_Otherwise(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Otherwise = (global::System.Object)Value;
         }
-        private object get_113_ValueWhenConverter_OtherwiseValueBack(object instance)
+        private object get_121_ValueWhenConverter_OtherwiseValueBack(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.OtherwiseValueBack;
         }
-        private void set_113_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
+        private void set_121_ValueWhenConverter_OtherwiseValueBack(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.OtherwiseValueBack = (global::System.Object)Value;
         }
-        private object get_114_ValueWhenConverter_Debug(object instance)
+        private object get_122_ValueWhenConverter_Debug(object instance)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             return that.Debug;
         }
-        private void set_114_ValueWhenConverter_Debug(object instance, object Value)
+        private void set_122_ValueWhenConverter_Debug(object instance, object Value)
         {
             var that = (global::Template10.Converters.ValueWhenConverter)instance;
             that.Debug = (global::System.Boolean)Value;
         }
-        private object get_115_ApartmentViewModel_apartment(object instance)
+        private object get_123_ApartmentViewModel_apartment(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ApartmentViewModel)instance;
             return that.apartment;
         }
-        private void set_115_ApartmentViewModel_apartment(object instance, object Value)
+        private void set_123_ApartmentViewModel_apartment(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ApartmentViewModel)instance;
             that.apartment = (global::Oestbanehus.Models.ApartmentDetails)Value;
         }
-        private object get_116_ApartmentViewModel_toConditions(object instance)
+        private object get_124_ApartmentViewModel_toConditions(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ApartmentViewModel)instance;
             return that.toConditions;
         }
-        private object get_117_ApartmentViewModel_toRequests(object instance)
+        private object get_125_ApartmentViewModel_toRequests(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ApartmentViewModel)instance;
             return that.toRequests;
         }
-        private object get_118_BuildingsRequestsVM_Buildings(object instance)
+        private object get_126_BuildingsRequestsVM_Buildings(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             return that.Buildings;
         }
-        private void set_118_BuildingsRequestsVM_Buildings(object instance, object Value)
+        private void set_126_BuildingsRequestsVM_Buildings(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             that.Buildings = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingRequests>)Value;
         }
-        private object get_119_BuildingRequests_Id(object instance)
+        private object get_127_BuildingRequests_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             return that.Id;
         }
-        private void set_119_BuildingRequests_Id(object instance, object Value)
+        private void set_127_BuildingRequests_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_120_BuildingRequests_ZipCode(object instance)
+        private object get_128_BuildingRequests_ZipCode(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             return that.ZipCode;
         }
-        private void set_120_BuildingRequests_ZipCode(object instance, object Value)
+        private void set_128_BuildingRequests_ZipCode(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             that.ZipCode = (global::System.String)Value;
         }
-        private object get_121_BuildingRequests_Street(object instance)
+        private object get_129_BuildingRequests_Street(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             return that.Street;
         }
-        private void set_121_BuildingRequests_Street(object instance, object Value)
+        private void set_129_BuildingRequests_Street(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             that.Street = (global::System.String)Value;
         }
-        private object get_122_BuildingRequests_Apartments(object instance)
+        private object get_130_BuildingRequests_Apartments(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             return that.Apartments;
         }
-        private void set_122_BuildingRequests_Apartments(object instance, object Value)
+        private void set_130_BuildingRequests_Apartments(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             that.Apartments = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithRequests>)Value;
         }
-        private object get_123_ApartmentWithRequests_Id(object instance)
+        private object get_131_ApartmentWithRequests_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.Id;
         }
-        private void set_123_ApartmentWithRequests_Id(object instance, object Value)
+        private void set_131_ApartmentWithRequests_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_124_ApartmentWithRequests_BuildingId(object instance)
+        private object get_132_ApartmentWithRequests_BuildingId(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.BuildingId;
         }
-        private void set_124_ApartmentWithRequests_BuildingId(object instance, object Value)
+        private void set_132_ApartmentWithRequests_BuildingId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.BuildingId = (global::System.Int32)Value;
         }
-        private object get_125_ApartmentWithRequests_Size(object instance)
+        private object get_133_ApartmentWithRequests_Size(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.Size;
         }
-        private void set_125_ApartmentWithRequests_Size(object instance, object Value)
+        private void set_133_ApartmentWithRequests_Size(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.Size = (global::System.Int32)Value;
         }
-        private object get_126_ApartmentWithRequests_Price(object instance)
+        private object get_134_ApartmentWithRequests_Price(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.Price;
         }
-        private void set_126_ApartmentWithRequests_Price(object instance, object Value)
+        private void set_134_ApartmentWithRequests_Price(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.Price = (global::System.Int32)Value;
         }
-        private object get_127_ApartmentWithRequests_NumberOfRooms(object instance)
+        private object get_135_ApartmentWithRequests_NumberOfRooms(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.NumberOfRooms;
         }
-        private void set_127_ApartmentWithRequests_NumberOfRooms(object instance, object Value)
+        private void set_135_ApartmentWithRequests_NumberOfRooms(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.NumberOfRooms = (global::System.Int32)Value;
         }
-        private object get_128_ApartmentWithRequests_Floor(object instance)
+        private object get_136_ApartmentWithRequests_Floor(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.Floor;
         }
-        private void set_128_ApartmentWithRequests_Floor(object instance, object Value)
+        private void set_136_ApartmentWithRequests_Floor(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.Floor = (global::System.Int32)Value;
         }
-        private object get_129_ApartmentWithRequests_ApartmentNumber(object instance)
+        private object get_137_ApartmentWithRequests_ApartmentNumber(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.ApartmentNumber;
         }
-        private void set_129_ApartmentWithRequests_ApartmentNumber(object instance, object Value)
+        private void set_137_ApartmentWithRequests_ApartmentNumber(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.ApartmentNumber = (global::System.String)Value;
         }
-        private object get_130_ApartmentWithRequests_Street(object instance)
+        private object get_138_ApartmentWithRequests_Street(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.Street;
         }
-        private void set_130_ApartmentWithRequests_Street(object instance, object Value)
+        private void set_138_ApartmentWithRequests_Street(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.Street = (global::System.String)Value;
         }
-        private object get_131_ApartmentWithRequests_Requests(object instance)
+        private object get_139_ApartmentWithRequests_Requests(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             return that.Requests;
         }
-        private void set_131_ApartmentWithRequests_Requests(object instance, object Value)
+        private void set_139_ApartmentWithRequests_Requests(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithRequests)instance;
             that.Requests = (global::System.Collections.Generic.List<global::Oestbanehus.Models.Request>)Value;
         }
-        private object get_132_Request_Id(object instance)
+        private object get_140_Request_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Id;
         }
-        private void set_132_Request_Id(object instance, object Value)
+        private void set_140_Request_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_133_Request_Author(object instance)
+        private object get_141_Request_Author(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Author;
         }
-        private void set_133_Request_Author(object instance, object Value)
+        private void set_141_Request_Author(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Author = (global::System.String)Value;
         }
-        private object get_134_Request_ApartmentId(object instance)
+        private object get_142_Request_ApartmentId(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.ApartmentId;
         }
-        private void set_134_Request_ApartmentId(object instance, object Value)
+        private void set_142_Request_ApartmentId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.ApartmentId = (global::System.Int32)Value;
         }
-        private object get_135_Request_Title(object instance)
+        private object get_143_Request_Title(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Title;
         }
-        private void set_135_Request_Title(object instance, object Value)
+        private void set_143_Request_Title(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_136_Request_Description(object instance)
+        private object get_144_Request_Description(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Description;
         }
-        private void set_136_Request_Description(object instance, object Value)
+        private void set_144_Request_Description(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_137_Request_Date(object instance)
+        private object get_145_Request_Date(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Date;
         }
-        private void set_137_Request_Date(object instance, object Value)
+        private void set_145_Request_Date(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Date = (global::System.DateTime)Value;
         }
-        private object get_138_Request_Picture(object instance)
+        private object get_146_Request_Picture(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Picture;
         }
-        private void set_138_Request_Picture(object instance, object Value)
+        private void set_146_Request_Picture(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Picture = (global::System.String)Value;
         }
-        private object get_139_Request_Person(object instance)
+        private object get_147_Request_Person(object instance)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             return that.Person;
         }
-        private void set_139_Request_Person(object instance, object Value)
+        private void set_147_Request_Person(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Request)instance;
             that.Person = (global::Oestbanehus.Models.Person)Value;
         }
-        private object get_140_BuildingRequests_City(object instance)
+        private object get_148_BuildingRequests_City(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             return that.City;
         }
-        private void set_140_BuildingRequests_City(object instance, object Value)
+        private void set_148_BuildingRequests_City(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingRequests)instance;
             that.City = (global::System.String)Value;
         }
-        private object get_141_BuildingsRequestsVM_selectedBuilding(object instance)
+        private object get_149_BuildingsRequestsVM_selectedBuilding(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             return that.selectedBuilding;
         }
-        private void set_141_BuildingsRequestsVM_selectedBuilding(object instance, object Value)
+        private void set_149_BuildingsRequestsVM_selectedBuilding(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             that.selectedBuilding = (global::Oestbanehus.Models.BuildingRequests)Value;
         }
-        private object get_142_BuildingsRequestsVM_selectedApt(object instance)
+        private object get_150_BuildingsRequestsVM_selectedApt(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             return that.selectedApt;
         }
-        private void set_142_BuildingsRequestsVM_selectedApt(object instance, object Value)
+        private void set_150_BuildingsRequestsVM_selectedApt(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             that.selectedApt = (global::Oestbanehus.Models.ApartmentWithRequests)Value;
         }
-        private object get_143_BuildingsRequestsVM_selectedRequest(object instance)
+        private object get_151_BuildingsRequestsVM_selectedRequest(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             return that.selectedRequest;
         }
-        private void set_143_BuildingsRequestsVM_selectedRequest(object instance, object Value)
+        private void set_151_BuildingsRequestsVM_selectedRequest(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsRequestsVM)instance;
             that.selectedRequest = (global::Oestbanehus.Models.Request)Value;
         }
-        private object get_144_BuildingsViewModel_buildings(object instance)
+        private object get_152_BuildingsViewModel_buildings(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             return that.buildings;
         }
-        private void set_144_BuildingsViewModel_buildings(object instance, object Value)
+        private void set_152_BuildingsViewModel_buildings(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             that.buildings = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Building>)Value;
         }
-        private object get_145_BuildingsViewModel_Apartments(object instance)
+        private object get_153_BuildingsViewModel_Apartments(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             return that.Apartments;
         }
-        private void set_145_BuildingsViewModel_Apartments(object instance, object Value)
+        private void set_153_BuildingsViewModel_Apartments(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             that.Apartments = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Apartment>)Value;
         }
-        private object get_146_BuildingsViewModel_selectedBuilding(object instance)
+        private object get_154_BuildingsViewModel_selectedBuilding(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             return that.selectedBuilding;
         }
-        private void set_146_BuildingsViewModel_selectedBuilding(object instance, object Value)
+        private void set_154_BuildingsViewModel_selectedBuilding(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             that.selectedBuilding = (global::Oestbanehus.Models.Building)Value;
         }
-        private object get_147_BuildingsViewModel_selectedApartment(object instance)
+        private object get_155_BuildingsViewModel_selectedApartment(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             return that.selectedApartment;
         }
-        private void set_147_BuildingsViewModel_selectedApartment(object instance, object Value)
+        private void set_155_BuildingsViewModel_selectedApartment(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             that.selectedApartment = (global::Oestbanehus.Models.Apartment)Value;
         }
-        private object get_148_BuildingsViewModel_ExecuteCommand(object instance)
+        private object get_156_BuildingsViewModel_ExecuteCommand(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             return that.ExecuteCommand;
         }
-        private object get_149_BuildingsViewModel_openAptCommand(object instance)
+        private object get_157_BuildingsViewModel_openAptCommand(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsViewModel)instance;
             return that.openAptCommand;
         }
-        private object get_150_BuildingsConditionsVM_Buildings(object instance)
+        private object get_158_BuildingsConditionsVM_Buildings(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             return that.Buildings;
         }
-        private void set_150_BuildingsConditionsVM_Buildings(object instance, object Value)
+        private void set_158_BuildingsConditionsVM_Buildings(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             that.Buildings = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.BuildingConditions>)Value;
         }
-        private object get_151_BuildingConditions_Id(object instance)
+        private object get_159_BuildingConditions_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             return that.Id;
         }
-        private void set_151_BuildingConditions_Id(object instance, object Value)
+        private void set_159_BuildingConditions_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_152_BuildingConditions_ZipCode(object instance)
+        private object get_160_BuildingConditions_ZipCode(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             return that.ZipCode;
         }
-        private void set_152_BuildingConditions_ZipCode(object instance, object Value)
+        private void set_160_BuildingConditions_ZipCode(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             that.ZipCode = (global::System.String)Value;
         }
-        private object get_153_BuildingConditions_Street(object instance)
+        private object get_161_BuildingConditions_Street(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             return that.Street;
         }
-        private void set_153_BuildingConditions_Street(object instance, object Value)
+        private void set_161_BuildingConditions_Street(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             that.Street = (global::System.String)Value;
         }
-        private object get_154_BuildingConditions_Apartments(object instance)
+        private object get_162_BuildingConditions_Apartments(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             return that.Apartments;
         }
-        private void set_154_BuildingConditions_Apartments(object instance, object Value)
+        private void set_162_BuildingConditions_Apartments(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             that.Apartments = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ApartmentWithConditions>)Value;
         }
-        private object get_155_ApartmentWithConditions_Id(object instance)
+        private object get_163_ApartmentWithConditions_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.Id;
         }
-        private void set_155_ApartmentWithConditions_Id(object instance, object Value)
+        private void set_163_ApartmentWithConditions_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_156_ApartmentWithConditions_BuildingId(object instance)
+        private object get_164_ApartmentWithConditions_BuildingId(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.BuildingId;
         }
-        private void set_156_ApartmentWithConditions_BuildingId(object instance, object Value)
+        private void set_164_ApartmentWithConditions_BuildingId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.BuildingId = (global::System.Int32)Value;
         }
-        private object get_157_ApartmentWithConditions_Size(object instance)
+        private object get_165_ApartmentWithConditions_Size(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.Size;
         }
-        private void set_157_ApartmentWithConditions_Size(object instance, object Value)
+        private void set_165_ApartmentWithConditions_Size(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.Size = (global::System.Int32)Value;
         }
-        private object get_158_ApartmentWithConditions_Price(object instance)
+        private object get_166_ApartmentWithConditions_Price(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.Price;
         }
-        private void set_158_ApartmentWithConditions_Price(object instance, object Value)
+        private void set_166_ApartmentWithConditions_Price(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.Price = (global::System.Int32)Value;
         }
-        private object get_159_ApartmentWithConditions_NumberOfRooms(object instance)
+        private object get_167_ApartmentWithConditions_NumberOfRooms(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.NumberOfRooms;
         }
-        private void set_159_ApartmentWithConditions_NumberOfRooms(object instance, object Value)
+        private void set_167_ApartmentWithConditions_NumberOfRooms(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.NumberOfRooms = (global::System.Int32)Value;
         }
-        private object get_160_ApartmentWithConditions_Floor(object instance)
+        private object get_168_ApartmentWithConditions_Floor(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.Floor;
         }
-        private void set_160_ApartmentWithConditions_Floor(object instance, object Value)
+        private void set_168_ApartmentWithConditions_Floor(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.Floor = (global::System.Int32)Value;
         }
-        private object get_161_ApartmentWithConditions_ApartmentNumber(object instance)
+        private object get_169_ApartmentWithConditions_ApartmentNumber(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.ApartmentNumber;
         }
-        private void set_161_ApartmentWithConditions_ApartmentNumber(object instance, object Value)
+        private void set_169_ApartmentWithConditions_ApartmentNumber(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.ApartmentNumber = (global::System.String)Value;
         }
-        private object get_162_ApartmentWithConditions_Street(object instance)
+        private object get_170_ApartmentWithConditions_Street(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.Street;
         }
-        private void set_162_ApartmentWithConditions_Street(object instance, object Value)
+        private void set_170_ApartmentWithConditions_Street(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.Street = (global::System.String)Value;
         }
-        private object get_163_ApartmentWithConditions_ConditionsOfItems(object instance)
+        private object get_171_ApartmentWithConditions_ConditionsOfItems(object instance)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             return that.ConditionsOfItems;
         }
-        private void set_163_ApartmentWithConditions_ConditionsOfItems(object instance, object Value)
+        private void set_171_ApartmentWithConditions_ConditionsOfItems(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ApartmentWithConditions)instance;
             that.ConditionsOfItems = (global::System.Collections.Generic.List<global::Oestbanehus.Models.ConditionsOfItem>)Value;
         }
-        private object get_164_ConditionsOfItem_Id(object instance)
+        private object get_172_ConditionsOfItem_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.Id;
         }
-        private void set_164_ConditionsOfItem_Id(object instance, object Value)
+        private void set_172_ConditionsOfItem_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_165_ConditionsOfItem_ApartmentId(object instance)
+        private object get_173_ConditionsOfItem_ApartmentId(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.ApartmentId;
         }
-        private void set_165_ConditionsOfItem_ApartmentId(object instance, object Value)
+        private void set_173_ConditionsOfItem_ApartmentId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.ApartmentId = (global::System.Int32)Value;
         }
-        private object get_166_ConditionsOfItem_ConditionType(object instance)
+        private object get_174_ConditionsOfItem_ConditionType(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.ConditionType;
         }
-        private void set_166_ConditionsOfItem_ConditionType(object instance, object Value)
+        private void set_174_ConditionsOfItem_ConditionType(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.ConditionType = (global::System.Int32)Value;
         }
-        private object get_167_ConditionsOfItem_Description(object instance)
+        private object get_175_ConditionsOfItem_Description(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.Description;
         }
-        private void set_167_ConditionsOfItem_Description(object instance, object Value)
+        private void set_175_ConditionsOfItem_Description(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_168_ConditionsOfItem_Picture(object instance)
+        private object get_176_ConditionsOfItem_Picture(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.Picture;
         }
-        private void set_168_ConditionsOfItem_Picture(object instance, object Value)
+        private void set_176_ConditionsOfItem_Picture(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.Picture = (global::System.String)Value;
         }
-        private object get_169_ConditionsOfItem_Status(object instance)
+        private object get_177_ConditionsOfItem_Status(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.Status;
         }
-        private void set_169_ConditionsOfItem_Status(object instance, object Value)
+        private void set_177_ConditionsOfItem_Status(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.Status = (global::System.String)Value;
         }
-        private object get_170_ConditionsOfItem_Comments(object instance)
+        private object get_178_ConditionsOfItem_Comments(object instance)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             return that.Comments;
         }
-        private void set_170_ConditionsOfItem_Comments(object instance, object Value)
+        private void set_178_ConditionsOfItem_Comments(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.ConditionsOfItem)instance;
             that.Comments = (global::System.Collections.Generic.List<global::Oestbanehus.Models.Comment>)Value;
         }
-        private object get_171_Comment_Id(object instance)
+        private object get_179_Comment_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             return that.Id;
         }
-        private void set_171_Comment_Id(object instance, object Value)
+        private void set_179_Comment_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_172_Comment_ApartmentId(object instance)
+        private object get_180_Comment_ConditionId(object instance)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
-            return that.ApartmentId;
+            return that.ConditionId;
         }
-        private void set_172_Comment_ApartmentId(object instance, object Value)
+        private void set_180_Comment_ConditionId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
-            that.ApartmentId = (global::System.Int32)Value;
+            that.ConditionId = (global::System.Int32)Value;
         }
-        private object get_173_Comment_PersonId(object instance)
+        private object get_181_Comment_PersonId(object instance)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             return that.PersonId;
         }
-        private void set_173_Comment_PersonId(object instance, object Value)
+        private void set_181_Comment_PersonId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             that.PersonId = (global::System.Int32)Value;
         }
-        private object get_174_Comment_Content(object instance)
+        private object get_182_Comment_Content(object instance)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             return that.Content;
         }
-        private void set_174_Comment_Content(object instance, object Value)
+        private void set_182_Comment_Content(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             that.Content = (global::System.String)Value;
         }
-        private object get_175_Comment_PublishedDate(object instance)
+        private object get_183_Comment_PublishedDate(object instance)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             return that.PublishedDate;
         }
-        private void set_175_Comment_PublishedDate(object instance, object Value)
+        private void set_183_Comment_PublishedDate(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
-            that.PublishedDate = (global::System.String)Value;
+            that.PublishedDate = (global::System.DateTime)Value;
         }
-        private object get_176_Comment_Person(object instance)
+        private object get_184_Comment_Person(object instance)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             return that.Person;
         }
-        private void set_176_Comment_Person(object instance, object Value)
+        private void set_184_Comment_Person(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Comment)instance;
             that.Person = (global::Oestbanehus.Models.Person)Value;
         }
-        private object get_177_BuildingConditions_City(object instance)
+        private object get_185_BuildingConditions_City(object instance)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             return that.City;
         }
-        private void set_177_BuildingConditions_City(object instance, object Value)
+        private void set_185_BuildingConditions_City(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.BuildingConditions)instance;
             that.City = (global::System.String)Value;
         }
-        private object get_178_BuildingsConditionsVM_selectedBuilding(object instance)
+        private object get_186_BuildingsConditionsVM_selectedBuilding(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             return that.selectedBuilding;
         }
-        private void set_178_BuildingsConditionsVM_selectedBuilding(object instance, object Value)
+        private void set_186_BuildingsConditionsVM_selectedBuilding(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             that.selectedBuilding = (global::Oestbanehus.Models.BuildingConditions)Value;
         }
-        private object get_179_BuildingsConditionsVM_selectedCondition(object instance)
+        private object get_187_BuildingsConditionsVM_selectedCondition(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             return that.selectedCondition;
         }
-        private void set_179_BuildingsConditionsVM_selectedCondition(object instance, object Value)
+        private void set_187_BuildingsConditionsVM_selectedCondition(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             that.selectedCondition = (global::Oestbanehus.Models.ConditionsOfItem)Value;
         }
-        private object get_180_BuildingsConditionsVM_selectedApt(object instance)
+        private object get_188_BuildingsConditionsVM_selectedApt(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             return that.selectedApt;
         }
-        private void set_180_BuildingsConditionsVM_selectedApt(object instance, object Value)
+        private void set_188_BuildingsConditionsVM_selectedApt(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.BuildingsConditionsVM)instance;
             that.selectedApt = (global::Oestbanehus.Models.ApartmentWithConditions)Value;
         }
-        private object get_181_ConditionDetailVM_condition(object instance)
+        private object get_189_ConditionDetailVM_condition(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
             return that.condition;
         }
-        private void set_181_ConditionDetailVM_condition(object instance, object Value)
+        private void set_189_ConditionDetailVM_condition(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
             that.condition = (global::Oestbanehus.Models.ConditionsOfItem)Value;
         }
-        private object get_182_ViewModelRequestDetails_request(object instance)
+        private object get_190_ConditionDetailVM_comments(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
+            return that.comments;
+        }
+        private void set_190_ConditionDetailVM_comments(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
+            that.comments = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Comment>)Value;
+        }
+        private object get_191_ConditionDetailVM_comment(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
+            return that.comment;
+        }
+        private void set_191_ConditionDetailVM_comment(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
+            that.comment = (global::System.String)Value;
+        }
+        private object get_192_ConditionDetailVM_addComment(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionDetailVM)instance;
+            return that.addComment;
+        }
+        private object get_193_ViewModelRequestDetails_request(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ViewModelRequestDetails)instance;
             return that.request;
         }
-        private void set_182_ViewModelRequestDetails_request(object instance, object Value)
+        private void set_193_ViewModelRequestDetails_request(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ViewModelRequestDetails)instance;
             that.request = (global::Oestbanehus.Models.Request)Value;
         }
-        private object get_183_Busy_BusyText(object instance)
+        private object get_194_Busy_BusyText(object instance)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             return that.BusyText;
         }
-        private void set_183_Busy_BusyText(object instance, object Value)
+        private void set_194_Busy_BusyText(object instance, object Value)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             that.BusyText = (global::System.String)Value;
         }
-        private object get_184_Busy_IsBusy(object instance)
+        private object get_195_Busy_IsBusy(object instance)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             return that.IsBusy;
         }
-        private void set_184_Busy_IsBusy(object instance, object Value)
+        private void set_195_Busy_IsBusy(object instance, object Value)
         {
             var that = (global::Oestbanehus.Views.Busy)instance;
             that.IsBusy = (global::System.Boolean)Value;
         }
-        private object get_185_ConditionViewModel_Conditions(object instance)
+        private object get_196_ConditionViewModel_Conditions(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
             return that.Conditions;
         }
-        private void set_185_ConditionViewModel_Conditions(object instance, object Value)
+        private void set_196_ConditionViewModel_Conditions(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
             that.Conditions = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.ConditionsOfItem>)Value;
         }
-        private object get_186_DetailPageViewModel_Value(object instance)
+        private object get_197_ConditionViewModel_selectedCondition(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
+            return that.selectedCondition;
+        }
+        private void set_197_ConditionViewModel_selectedCondition(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
+            that.selectedCondition = (global::Oestbanehus.Models.ConditionsOfItem)Value;
+        }
+        private object get_198_ConditionViewModel_apartmentId(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
+            return that.apartmentId;
+        }
+        private void set_198_ConditionViewModel_apartmentId(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
+            that.apartmentId = (global::System.Int32)Value;
+        }
+        private object get_199_ConditionViewModel_navToAddCondition(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ConditionViewModel)instance;
+            return that.navToAddCondition;
+        }
+        private object get_200_DetailPageViewModel_Value(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.DetailPageViewModel)instance;
             return that.Value;
         }
-        private void set_186_DetailPageViewModel_Value(object instance, object Value)
+        private void set_200_DetailPageViewModel_Value(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.DetailPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_187_ShellVM_loggedUserType(object instance)
+        private object get_201_ShellVM_loggedUserType(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             return that.loggedUserType;
         }
-        private void set_187_ShellVM_loggedUserType(object instance, object Value)
+        private void set_201_ShellVM_loggedUserType(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             that.loggedUserType = (global::System.Int32)Value;
         }
-        private object get_188_ShellVM_error(object instance)
+        private object get_202_ShellVM_error(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             return that.error;
         }
-        private void set_188_ShellVM_error(object instance, object Value)
+        private void set_202_ShellVM_error(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             that.error = (global::System.String)Value;
         }
-        private object get_189_ShellVM_email(object instance)
+        private object get_203_ShellVM_email(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             return that.email;
         }
-        private void set_189_ShellVM_email(object instance, object Value)
+        private void set_203_ShellVM_email(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             that.email = (global::System.String)Value;
         }
-        private object get_190_ShellVM_password(object instance)
+        private object get_204_ShellVM_password(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             return that.password;
         }
-        private void set_190_ShellVM_password(object instance, object Value)
+        private void set_204_ShellVM_password(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             that.password = (global::System.String)Value;
         }
-        private object get_191_ShellVM_login(object instance)
+        private object get_205_ShellVM_login(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ShellVM)instance;
             return that.login;
         }
-        private object get_192_MainPageViewModel_Value(object instance)
+        private object get_206_MainPageViewModel_Value(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.MainPageViewModel)instance;
             return that.Value;
         }
-        private void set_192_MainPageViewModel_Value(object instance, object Value)
+        private void set_206_MainPageViewModel_Value(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.MainPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_193_RequestViewModel_Requests(object instance)
+        private object get_207_RequestViewModel_Requests(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.RequestViewModel)instance;
             return that.Requests;
         }
-        private void set_193_RequestViewModel_Requests(object instance, object Value)
+        private void set_207_RequestViewModel_Requests(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.RequestViewModel)instance;
             that.Requests = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Request>)Value;
         }
-        private object get_194_ResidentViewModel_Residents(object instance)
+        private object get_208_RequestViewModel_navToAddReq(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.RequestViewModel)instance;
+            return that.navToAddReq;
+        }
+        private object get_209_RequestViewModel_currentApartmentId(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.RequestViewModel)instance;
+            return that.currentApartmentId;
+        }
+        private void set_209_RequestViewModel_currentApartmentId(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.RequestViewModel)instance;
+            that.currentApartmentId = (global::System.Int32)Value;
+        }
+        private object get_210_ResidentViewModel_Residents(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             return that.Residents;
         }
-        private void set_194_ResidentViewModel_Residents(object instance, object Value)
+        private void set_210_ResidentViewModel_Residents(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             that.Residents = (global::System.Collections.ObjectModel.ObservableCollection<global::Oestbanehus.Models.Person>)Value;
         }
-        private object get_195_Person_Id(object instance)
+        private object get_211_Person_Id(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Id;
         }
-        private void set_195_Person_Id(object instance, object Value)
+        private void set_211_Person_Id(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_196_Person_ApartmentId(object instance)
+        private object get_212_Person_ApartmentId(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.ApartmentId;
         }
-        private void set_196_Person_ApartmentId(object instance, object Value)
+        private void set_212_Person_ApartmentId(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.ApartmentId = (global::System.Int32)Value;
         }
-        private object get_197_Person_MoveInDate(object instance)
+        private object get_213_Person_MoveInDate(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.MoveInDate;
         }
-        private void set_197_Person_MoveInDate(object instance, object Value)
+        private void set_213_Person_MoveInDate(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.MoveInDate = (global::System.String)Value;
         }
-        private object get_198_Person_MoveOutDate(object instance)
+        private object get_214_Person_MoveOutDate(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.MoveOutDate;
         }
-        private void set_198_Person_MoveOutDate(object instance, object Value)
+        private void set_214_Person_MoveOutDate(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.MoveOutDate = (global::System.String)Value;
         }
-        private object get_199_Person_Name(object instance)
+        private object get_215_Person_Name(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Name;
         }
-        private void set_199_Person_Name(object instance, object Value)
+        private void set_215_Person_Name(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_200_Person_Phone(object instance)
+        private object get_216_Person_Phone(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Phone;
         }
-        private void set_200_Person_Phone(object instance, object Value)
+        private void set_216_Person_Phone(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Phone = (global::System.String)Value;
         }
-        private object get_201_Person_Email(object instance)
+        private object get_217_Person_Email(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Email;
         }
-        private void set_201_Person_Email(object instance, object Value)
+        private void set_217_Person_Email(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_202_Person_Password(object instance)
+        private object get_218_Person_Password(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Password;
         }
-        private void set_202_Person_Password(object instance, object Value)
+        private void set_218_Person_Password(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Password = (global::System.String)Value;
         }
-        private object get_203_Person_Picture(object instance)
+        private object get_219_Person_Picture(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Picture;
         }
-        private void set_203_Person_Picture(object instance, object Value)
+        private void set_219_Person_Picture(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Picture = (global::System.String)Value;
         }
-        private object get_204_Person_Type(object instance)
+        private object get_220_Person_Type(object instance)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             return that.Type;
         }
-        private void set_204_Person_Type(object instance, object Value)
+        private void set_220_Person_Type(object instance, object Value)
         {
             var that = (global::Oestbanehus.Models.Person)instance;
             that.Type = (global::System.Int32)Value;
         }
-        private object get_205_ResidentViewModel_selectedResident(object instance)
+        private object get_221_ResidentViewModel_selectedResident(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             return that.selectedResident;
         }
-        private void set_205_ResidentViewModel_selectedResident(object instance, object Value)
+        private void set_221_ResidentViewModel_selectedResident(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             that.selectedResident = (global::Oestbanehus.Models.Person)Value;
         }
-        private object get_206_ResidentViewModel_pwd(object instance)
+        private object get_222_ResidentViewModel_pwd(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             return that.pwd;
         }
-        private void set_206_ResidentViewModel_pwd(object instance, object Value)
+        private void set_222_ResidentViewModel_pwd(object instance, object Value)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             that.pwd = (global::Oestbanehus.Models.PersonWithDetails)Value;
         }
-        private object get_207_ResidentViewModel_navToAddPerson(object instance)
+        private object get_223_ResidentViewModel_navToAddPerson(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.ResidentViewModel)instance;
             return that.navToAddPerson;
         }
-        private object get_208_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_224_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_209_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_225_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::Oestbanehus.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_210_Interaction_Behaviors(object instance)
+        private object get_226_ShellVM2_loggedUserType(object instance)
+        {
+            var that = (global::Oestbanehus.ViewModels.ShellVM2)instance;
+            return that.loggedUserType;
+        }
+        private void set_226_ShellVM2_loggedUserType(object instance, object Value)
+        {
+            var that = (global::Oestbanehus.ViewModels.ShellVM2)instance;
+            that.loggedUserType = (global::System.Int32)Value;
+        }
+        private object get_227_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_210_Interaction_Behaviors(object instance, object Value)
+        private void set_227_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_211_Trigger_Actions(object instance)
+        private object get_228_Trigger_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
-        private object get_212_EventTriggerBehavior_EventName(object instance)
+        private object get_229_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_212_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_229_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_213_EventTriggerBehavior_SourceObject(object instance)
+        private object get_230_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_213_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_230_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_214_Behavior_AssociatedObject(object instance)
+        private object get_231_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_215_MessageDialogAction_Title(object instance)
+        private object get_232_MessageDialogAction_Title(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.Title;
         }
-        private void set_215_MessageDialogAction_Title(object instance, object Value)
+        private void set_232_MessageDialogAction_Title(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_216_MessageDialogAction_Content(object instance)
+        private object get_233_MessageDialogAction_Content(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.Content;
         }
-        private void set_216_MessageDialogAction_Content(object instance, object Value)
+        private void set_233_MessageDialogAction_Content(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.Content = (global::System.String)Value;
         }
-        private object get_217_MessageDialogAction_OkText(object instance)
+        private object get_234_MessageDialogAction_OkText(object instance)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             return that.OkText;
         }
-        private void set_217_MessageDialogAction_OkText(object instance, object Value)
+        private void set_234_MessageDialogAction_OkText(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.MessageDialogAction)instance;
             that.OkText = (global::System.String)Value;
@@ -4493,825 +4737,927 @@ namespace Oestbanehus.Oestbanehus_XamlTypeInfo
                 xamlMember.Getter = get_82_Resizer_GrabberSize;
                 xamlMember.Setter = set_82_Resizer_GrabberSize;
                 break;
-            case "Oestbanehus.ViewModels.AddPersonVM.newPerson":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "newPerson", "Oestbanehus.Models.Person");
-                xamlMember.Getter = get_83_AddPersonVM_newPerson;
-                xamlMember.Setter = set_83_AddPersonVM_newPerson;
+            case "Oestbanehus.ViewModels.AddRequestVM.apartmentId":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddRequestVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "apartmentId", "Int32");
+                xamlMember.Getter = get_83_AddRequestVM_apartmentId;
+                xamlMember.Setter = set_83_AddRequestVM_apartmentId;
                 break;
-            case "Oestbanehus.ViewModels.AddPersonVM.name":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "name", "String");
-                xamlMember.Getter = get_84_AddPersonVM_name;
-                xamlMember.Setter = set_84_AddPersonVM_name;
+            case "Oestbanehus.ViewModels.AddRequestVM.title":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddRequestVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "title", "String");
+                xamlMember.Getter = get_84_AddRequestVM_title;
+                xamlMember.Setter = set_84_AddRequestVM_title;
                 break;
-            case "Oestbanehus.ViewModels.AddPersonVM.email":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "email", "String");
-                xamlMember.Getter = get_85_AddPersonVM_email;
-                xamlMember.Setter = set_85_AddPersonVM_email;
+            case "Oestbanehus.ViewModels.AddRequestVM.description":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddRequestVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "description", "String");
+                xamlMember.Getter = get_85_AddRequestVM_description;
+                xamlMember.Setter = set_85_AddRequestVM_description;
                 break;
-            case "Oestbanehus.ViewModels.AddPersonVM.password":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "password", "String");
-                xamlMember.Getter = get_86_AddPersonVM_password;
-                xamlMember.Setter = set_86_AddPersonVM_password;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.phone":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "phone", "String");
-                xamlMember.Getter = get_87_AddPersonVM_phone;
-                xamlMember.Setter = set_87_AddPersonVM_phone;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.type":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "type", "Int32");
-                xamlMember.Getter = get_88_AddPersonVM_type;
-                xamlMember.Setter = set_88_AddPersonVM_type;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.selectedBuilding":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedBuilding", "Oestbanehus.Models.Building");
-                xamlMember.Getter = get_89_AddPersonVM_selectedBuilding;
-                xamlMember.Setter = set_89_AddPersonVM_selectedBuilding;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.selectedApartment":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedApartment", "Oestbanehus.Models.Apartment");
-                xamlMember.Getter = get_90_AddPersonVM_selectedApartment;
-                xamlMember.Setter = set_90_AddPersonVM_selectedApartment;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.movein":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "movein", "System.DateTimeOffset");
-                xamlMember.Getter = get_91_AddPersonVM_movein;
-                xamlMember.Setter = set_91_AddPersonVM_movein;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.buildings":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "buildings", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>");
-                xamlMember.Getter = get_92_AddPersonVM_buildings;
-                xamlMember.Setter = set_92_AddPersonVM_buildings;
-                break;
-            case "Oestbanehus.Models.Building.Id":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_93_Building_Id;
-                xamlMember.Setter = set_93_Building_Id;
-                break;
-            case "Oestbanehus.Models.Building.ZipCode":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ZipCode", "String");
-                xamlMember.Getter = get_94_Building_ZipCode;
-                xamlMember.Setter = set_94_Building_ZipCode;
-                break;
-            case "Oestbanehus.Models.Building.Street":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
-                xamlMember.Getter = get_95_Building_Street;
-                xamlMember.Setter = set_95_Building_Street;
-                break;
-            case "Oestbanehus.Models.Building.City":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "City", "String");
-                xamlMember.Getter = get_96_Building_City;
-                xamlMember.Setter = set_96_Building_City;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.apartments":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "apartments", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>");
-                xamlMember.Getter = get_97_AddPersonVM_apartments;
-                xamlMember.Setter = set_97_AddPersonVM_apartments;
-                break;
-            case "Oestbanehus.Models.Apartment.Id":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_98_Apartment_Id;
-                xamlMember.Setter = set_98_Apartment_Id;
-                break;
-            case "Oestbanehus.Models.Apartment.BuildingId":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "BuildingId", "Int32");
-                xamlMember.Getter = get_99_Apartment_BuildingId;
-                xamlMember.Setter = set_99_Apartment_BuildingId;
-                break;
-            case "Oestbanehus.Models.Apartment.Size":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Size", "Int32");
-                xamlMember.Getter = get_100_Apartment_Size;
-                xamlMember.Setter = set_100_Apartment_Size;
-                break;
-            case "Oestbanehus.Models.Apartment.Price":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Price", "Int32");
-                xamlMember.Getter = get_101_Apartment_Price;
-                xamlMember.Setter = set_101_Apartment_Price;
-                break;
-            case "Oestbanehus.Models.Apartment.NumberOfRooms":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "NumberOfRooms", "Int32");
-                xamlMember.Getter = get_102_Apartment_NumberOfRooms;
-                xamlMember.Setter = set_102_Apartment_NumberOfRooms;
-                break;
-            case "Oestbanehus.Models.Apartment.Floor":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Floor", "Int32");
-                xamlMember.Getter = get_103_Apartment_Floor;
-                xamlMember.Setter = set_103_Apartment_Floor;
-                break;
-            case "Oestbanehus.Models.Apartment.ApartmentNumber":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentNumber", "String");
-                xamlMember.Getter = get_104_Apartment_ApartmentNumber;
-                xamlMember.Setter = set_104_Apartment_ApartmentNumber;
-                break;
-            case "Oestbanehus.Models.Apartment.Street":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
-                xamlMember.Getter = get_105_Apartment_Street;
-                xamlMember.Setter = set_105_Apartment_Street;
-                break;
-            case "Oestbanehus.ViewModels.AddPersonVM.sendPost":
-                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "sendPost", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_106_AddPersonVM_sendPost;
+            case "Oestbanehus.ViewModels.AddRequestVM.addRequest":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddRequestVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "addRequest", "Template10.Mvvm.DelegateCommand");
+                xamlMember.Getter = get_86_AddRequestVM_addRequest;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Mvvm.ViewModelBase.NavigationService":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "NavigationService", "Template10.Services.NavigationService.INavigationService");
-                xamlMember.Getter = get_107_ViewModelBase_NavigationService;
-                xamlMember.Setter = set_107_ViewModelBase_NavigationService;
+                xamlMember.Getter = get_87_ViewModelBase_NavigationService;
+                xamlMember.Setter = set_87_ViewModelBase_NavigationService;
                 break;
             case "Template10.Mvvm.ViewModelBase.Dispatcher":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Dispatcher", "Template10.Common.IDispatcherWrapper");
-                xamlMember.Getter = get_108_ViewModelBase_Dispatcher;
-                xamlMember.Setter = set_108_ViewModelBase_Dispatcher;
+                xamlMember.Getter = get_88_ViewModelBase_Dispatcher;
+                xamlMember.Setter = set_88_ViewModelBase_Dispatcher;
                 break;
             case "Template10.Mvvm.ViewModelBase.SessionState":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "SessionState", "Template10.Common.IStateItems");
-                xamlMember.Getter = get_109_ViewModelBase_SessionState;
-                xamlMember.Setter = set_109_ViewModelBase_SessionState;
+                xamlMember.Getter = get_89_ViewModelBase_SessionState;
+                xamlMember.Setter = set_89_ViewModelBase_SessionState;
+                break;
+            case "Oestbanehus.ViewModels.AddConditionVM.apartmentId":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddConditionVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "apartmentId", "Int32");
+                xamlMember.Getter = get_90_AddConditionVM_apartmentId;
+                xamlMember.Setter = set_90_AddConditionVM_apartmentId;
+                break;
+            case "Oestbanehus.ViewModels.AddConditionVM.conditionType":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddConditionVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "conditionType", "Int32");
+                xamlMember.Getter = get_91_AddConditionVM_conditionType;
+                xamlMember.Setter = set_91_AddConditionVM_conditionType;
+                break;
+            case "Oestbanehus.ViewModels.AddConditionVM.description":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddConditionVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "description", "String");
+                xamlMember.Getter = get_92_AddConditionVM_description;
+                xamlMember.Setter = set_92_AddConditionVM_description;
+                break;
+            case "Oestbanehus.ViewModels.AddConditionVM.addCondition":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddConditionVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "addCondition", "Template10.Mvvm.DelegateCommand");
+                xamlMember.Getter = get_93_AddConditionVM_addCondition;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.newPerson":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "newPerson", "Oestbanehus.Models.Person");
+                xamlMember.Getter = get_94_AddPersonVM_newPerson;
+                xamlMember.Setter = set_94_AddPersonVM_newPerson;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.name":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "name", "String");
+                xamlMember.Getter = get_95_AddPersonVM_name;
+                xamlMember.Setter = set_95_AddPersonVM_name;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.email":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "email", "String");
+                xamlMember.Getter = get_96_AddPersonVM_email;
+                xamlMember.Setter = set_96_AddPersonVM_email;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.password":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "password", "String");
+                xamlMember.Getter = get_97_AddPersonVM_password;
+                xamlMember.Setter = set_97_AddPersonVM_password;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.phone":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "phone", "String");
+                xamlMember.Getter = get_98_AddPersonVM_phone;
+                xamlMember.Setter = set_98_AddPersonVM_phone;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.type":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "type", "Int32");
+                xamlMember.Getter = get_99_AddPersonVM_type;
+                xamlMember.Setter = set_99_AddPersonVM_type;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.selectedBuilding":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedBuilding", "Oestbanehus.Models.Building");
+                xamlMember.Getter = get_100_AddPersonVM_selectedBuilding;
+                xamlMember.Setter = set_100_AddPersonVM_selectedBuilding;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.selectedApartment":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedApartment", "Oestbanehus.Models.Apartment");
+                xamlMember.Getter = get_101_AddPersonVM_selectedApartment;
+                xamlMember.Setter = set_101_AddPersonVM_selectedApartment;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.movein":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "movein", "System.DateTimeOffset");
+                xamlMember.Getter = get_102_AddPersonVM_movein;
+                xamlMember.Setter = set_102_AddPersonVM_movein;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.buildings":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "buildings", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>");
+                xamlMember.Getter = get_103_AddPersonVM_buildings;
+                xamlMember.Setter = set_103_AddPersonVM_buildings;
+                break;
+            case "Oestbanehus.Models.Building.Id":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_104_Building_Id;
+                xamlMember.Setter = set_104_Building_Id;
+                break;
+            case "Oestbanehus.Models.Building.ZipCode":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ZipCode", "String");
+                xamlMember.Getter = get_105_Building_ZipCode;
+                xamlMember.Setter = set_105_Building_ZipCode;
+                break;
+            case "Oestbanehus.Models.Building.Street":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
+                xamlMember.Getter = get_106_Building_Street;
+                xamlMember.Setter = set_106_Building_Street;
+                break;
+            case "Oestbanehus.Models.Building.City":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Building");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "City", "String");
+                xamlMember.Getter = get_107_Building_City;
+                xamlMember.Setter = set_107_Building_City;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.apartments":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "apartments", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>");
+                xamlMember.Getter = get_108_AddPersonVM_apartments;
+                xamlMember.Setter = set_108_AddPersonVM_apartments;
+                break;
+            case "Oestbanehus.Models.Apartment.Id":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_109_Apartment_Id;
+                xamlMember.Setter = set_109_Apartment_Id;
+                break;
+            case "Oestbanehus.Models.Apartment.BuildingId":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "BuildingId", "Int32");
+                xamlMember.Getter = get_110_Apartment_BuildingId;
+                xamlMember.Setter = set_110_Apartment_BuildingId;
+                break;
+            case "Oestbanehus.Models.Apartment.Size":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Size", "Int32");
+                xamlMember.Getter = get_111_Apartment_Size;
+                xamlMember.Setter = set_111_Apartment_Size;
+                break;
+            case "Oestbanehus.Models.Apartment.Price":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Price", "Int32");
+                xamlMember.Getter = get_112_Apartment_Price;
+                xamlMember.Setter = set_112_Apartment_Price;
+                break;
+            case "Oestbanehus.Models.Apartment.NumberOfRooms":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "NumberOfRooms", "Int32");
+                xamlMember.Getter = get_113_Apartment_NumberOfRooms;
+                xamlMember.Setter = set_113_Apartment_NumberOfRooms;
+                break;
+            case "Oestbanehus.Models.Apartment.Floor":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Floor", "Int32");
+                xamlMember.Getter = get_114_Apartment_Floor;
+                xamlMember.Setter = set_114_Apartment_Floor;
+                break;
+            case "Oestbanehus.Models.Apartment.ApartmentNumber":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentNumber", "String");
+                xamlMember.Getter = get_115_Apartment_ApartmentNumber;
+                xamlMember.Setter = set_115_Apartment_ApartmentNumber;
+                break;
+            case "Oestbanehus.Models.Apartment.Street":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Apartment");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
+                xamlMember.Getter = get_116_Apartment_Street;
+                xamlMember.Setter = set_116_Apartment_Street;
+                break;
+            case "Oestbanehus.ViewModels.AddPersonVM.sendPost":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.AddPersonVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "sendPost", "Template10.Mvvm.DelegateCommand");
+                xamlMember.Getter = get_117_AddPersonVM_sendPost;
+                xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Converters.ValueWhenConverter.When":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "When", "Object");
-                xamlMember.Getter = get_110_ValueWhenConverter_When;
-                xamlMember.Setter = set_110_ValueWhenConverter_When;
+                xamlMember.Getter = get_118_ValueWhenConverter_When;
+                xamlMember.Setter = set_118_ValueWhenConverter_When;
                 break;
             case "Template10.Converters.ValueWhenConverter.Value":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Value", "Object");
-                xamlMember.Getter = get_111_ValueWhenConverter_Value;
-                xamlMember.Setter = set_111_ValueWhenConverter_Value;
+                xamlMember.Getter = get_119_ValueWhenConverter_Value;
+                xamlMember.Setter = set_119_ValueWhenConverter_Value;
                 break;
             case "Template10.Converters.ValueWhenConverter.Otherwise":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Otherwise", "Object");
-                xamlMember.Getter = get_112_ValueWhenConverter_Otherwise;
-                xamlMember.Setter = set_112_ValueWhenConverter_Otherwise;
+                xamlMember.Getter = get_120_ValueWhenConverter_Otherwise;
+                xamlMember.Setter = set_120_ValueWhenConverter_Otherwise;
                 break;
             case "Template10.Converters.ValueWhenConverter.OtherwiseValueBack":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "OtherwiseValueBack", "Object");
-                xamlMember.Getter = get_113_ValueWhenConverter_OtherwiseValueBack;
-                xamlMember.Setter = set_113_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Getter = get_121_ValueWhenConverter_OtherwiseValueBack;
+                xamlMember.Setter = set_121_ValueWhenConverter_OtherwiseValueBack;
                 break;
             case "Template10.Converters.ValueWhenConverter.Debug":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Converters.ValueWhenConverter");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Debug", "Boolean");
-                xamlMember.Getter = get_114_ValueWhenConverter_Debug;
-                xamlMember.Setter = set_114_ValueWhenConverter_Debug;
+                xamlMember.Getter = get_122_ValueWhenConverter_Debug;
+                xamlMember.Setter = set_122_ValueWhenConverter_Debug;
                 break;
             case "Oestbanehus.ViewModels.ApartmentViewModel.apartment":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ApartmentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "apartment", "Oestbanehus.Models.ApartmentDetails");
-                xamlMember.Getter = get_115_ApartmentViewModel_apartment;
-                xamlMember.Setter = set_115_ApartmentViewModel_apartment;
+                xamlMember.Getter = get_123_ApartmentViewModel_apartment;
+                xamlMember.Setter = set_123_ApartmentViewModel_apartment;
                 break;
             case "Oestbanehus.ViewModels.ApartmentViewModel.toConditions":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ApartmentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "toConditions", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_116_ApartmentViewModel_toConditions;
+                xamlMember.Getter = get_124_ApartmentViewModel_toConditions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.ApartmentViewModel.toRequests":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ApartmentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "toRequests", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_117_ApartmentViewModel_toRequests;
+                xamlMember.Getter = get_125_ApartmentViewModel_toRequests;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.BuildingsRequestsVM.Buildings":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsRequestsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Buildings", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingRequests>");
-                xamlMember.Getter = get_118_BuildingsRequestsVM_Buildings;
-                xamlMember.Setter = set_118_BuildingsRequestsVM_Buildings;
+                xamlMember.Getter = get_126_BuildingsRequestsVM_Buildings;
+                xamlMember.Setter = set_126_BuildingsRequestsVM_Buildings;
                 break;
             case "Oestbanehus.Models.BuildingRequests.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_119_BuildingRequests_Id;
-                xamlMember.Setter = set_119_BuildingRequests_Id;
+                xamlMember.Getter = get_127_BuildingRequests_Id;
+                xamlMember.Setter = set_127_BuildingRequests_Id;
                 break;
             case "Oestbanehus.Models.BuildingRequests.ZipCode":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ZipCode", "String");
-                xamlMember.Getter = get_120_BuildingRequests_ZipCode;
-                xamlMember.Setter = set_120_BuildingRequests_ZipCode;
+                xamlMember.Getter = get_128_BuildingRequests_ZipCode;
+                xamlMember.Setter = set_128_BuildingRequests_ZipCode;
                 break;
             case "Oestbanehus.Models.BuildingRequests.Street":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
-                xamlMember.Getter = get_121_BuildingRequests_Street;
-                xamlMember.Setter = set_121_BuildingRequests_Street;
+                xamlMember.Getter = get_129_BuildingRequests_Street;
+                xamlMember.Setter = set_129_BuildingRequests_Street;
                 break;
             case "Oestbanehus.Models.BuildingRequests.Apartments":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Apartments", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithRequests>");
-                xamlMember.Getter = get_122_BuildingRequests_Apartments;
-                xamlMember.Setter = set_122_BuildingRequests_Apartments;
+                xamlMember.Getter = get_130_BuildingRequests_Apartments;
+                xamlMember.Setter = set_130_BuildingRequests_Apartments;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_123_ApartmentWithRequests_Id;
-                xamlMember.Setter = set_123_ApartmentWithRequests_Id;
+                xamlMember.Getter = get_131_ApartmentWithRequests_Id;
+                xamlMember.Setter = set_131_ApartmentWithRequests_Id;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.BuildingId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "BuildingId", "Int32");
-                xamlMember.Getter = get_124_ApartmentWithRequests_BuildingId;
-                xamlMember.Setter = set_124_ApartmentWithRequests_BuildingId;
+                xamlMember.Getter = get_132_ApartmentWithRequests_BuildingId;
+                xamlMember.Setter = set_132_ApartmentWithRequests_BuildingId;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Size":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Size", "Int32");
-                xamlMember.Getter = get_125_ApartmentWithRequests_Size;
-                xamlMember.Setter = set_125_ApartmentWithRequests_Size;
+                xamlMember.Getter = get_133_ApartmentWithRequests_Size;
+                xamlMember.Setter = set_133_ApartmentWithRequests_Size;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Price":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Price", "Int32");
-                xamlMember.Getter = get_126_ApartmentWithRequests_Price;
-                xamlMember.Setter = set_126_ApartmentWithRequests_Price;
+                xamlMember.Getter = get_134_ApartmentWithRequests_Price;
+                xamlMember.Setter = set_134_ApartmentWithRequests_Price;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.NumberOfRooms":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "NumberOfRooms", "Int32");
-                xamlMember.Getter = get_127_ApartmentWithRequests_NumberOfRooms;
-                xamlMember.Setter = set_127_ApartmentWithRequests_NumberOfRooms;
+                xamlMember.Getter = get_135_ApartmentWithRequests_NumberOfRooms;
+                xamlMember.Setter = set_135_ApartmentWithRequests_NumberOfRooms;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Floor":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Floor", "Int32");
-                xamlMember.Getter = get_128_ApartmentWithRequests_Floor;
-                xamlMember.Setter = set_128_ApartmentWithRequests_Floor;
+                xamlMember.Getter = get_136_ApartmentWithRequests_Floor;
+                xamlMember.Setter = set_136_ApartmentWithRequests_Floor;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.ApartmentNumber":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentNumber", "String");
-                xamlMember.Getter = get_129_ApartmentWithRequests_ApartmentNumber;
-                xamlMember.Setter = set_129_ApartmentWithRequests_ApartmentNumber;
+                xamlMember.Getter = get_137_ApartmentWithRequests_ApartmentNumber;
+                xamlMember.Setter = set_137_ApartmentWithRequests_ApartmentNumber;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Street":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
-                xamlMember.Getter = get_130_ApartmentWithRequests_Street;
-                xamlMember.Setter = set_130_ApartmentWithRequests_Street;
+                xamlMember.Getter = get_138_ApartmentWithRequests_Street;
+                xamlMember.Setter = set_138_ApartmentWithRequests_Street;
                 break;
             case "Oestbanehus.Models.ApartmentWithRequests.Requests":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Requests", "System.Collections.Generic.List`1<Oestbanehus.Models.Request>");
-                xamlMember.Getter = get_131_ApartmentWithRequests_Requests;
-                xamlMember.Setter = set_131_ApartmentWithRequests_Requests;
+                xamlMember.Getter = get_139_ApartmentWithRequests_Requests;
+                xamlMember.Setter = set_139_ApartmentWithRequests_Requests;
                 break;
             case "Oestbanehus.Models.Request.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_132_Request_Id;
-                xamlMember.Setter = set_132_Request_Id;
+                xamlMember.Getter = get_140_Request_Id;
+                xamlMember.Setter = set_140_Request_Id;
                 break;
             case "Oestbanehus.Models.Request.Author":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Author", "String");
-                xamlMember.Getter = get_133_Request_Author;
-                xamlMember.Setter = set_133_Request_Author;
+                xamlMember.Getter = get_141_Request_Author;
+                xamlMember.Setter = set_141_Request_Author;
                 break;
             case "Oestbanehus.Models.Request.ApartmentId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentId", "Int32");
-                xamlMember.Getter = get_134_Request_ApartmentId;
-                xamlMember.Setter = set_134_Request_ApartmentId;
+                xamlMember.Getter = get_142_Request_ApartmentId;
+                xamlMember.Setter = set_142_Request_ApartmentId;
                 break;
             case "Oestbanehus.Models.Request.Title":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_135_Request_Title;
-                xamlMember.Setter = set_135_Request_Title;
+                xamlMember.Getter = get_143_Request_Title;
+                xamlMember.Setter = set_143_Request_Title;
                 break;
             case "Oestbanehus.Models.Request.Description":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_136_Request_Description;
-                xamlMember.Setter = set_136_Request_Description;
+                xamlMember.Getter = get_144_Request_Description;
+                xamlMember.Setter = set_144_Request_Description;
                 break;
             case "Oestbanehus.Models.Request.Date":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Date", "System.DateTime");
-                xamlMember.Getter = get_137_Request_Date;
-                xamlMember.Setter = set_137_Request_Date;
+                xamlMember.Getter = get_145_Request_Date;
+                xamlMember.Setter = set_145_Request_Date;
                 break;
             case "Oestbanehus.Models.Request.Picture":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Picture", "String");
-                xamlMember.Getter = get_138_Request_Picture;
-                xamlMember.Setter = set_138_Request_Picture;
+                xamlMember.Getter = get_146_Request_Picture;
+                xamlMember.Setter = set_146_Request_Picture;
                 break;
             case "Oestbanehus.Models.Request.Person":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Request");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Person", "Oestbanehus.Models.Person");
-                xamlMember.Getter = get_139_Request_Person;
-                xamlMember.Setter = set_139_Request_Person;
+                xamlMember.Getter = get_147_Request_Person;
+                xamlMember.Setter = set_147_Request_Person;
                 break;
             case "Oestbanehus.Models.BuildingRequests.City":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingRequests");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "City", "String");
-                xamlMember.Getter = get_140_BuildingRequests_City;
-                xamlMember.Setter = set_140_BuildingRequests_City;
+                xamlMember.Getter = get_148_BuildingRequests_City;
+                xamlMember.Setter = set_148_BuildingRequests_City;
                 break;
             case "Oestbanehus.ViewModels.BuildingsRequestsVM.selectedBuilding":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsRequestsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedBuilding", "Oestbanehus.Models.BuildingRequests");
-                xamlMember.Getter = get_141_BuildingsRequestsVM_selectedBuilding;
-                xamlMember.Setter = set_141_BuildingsRequestsVM_selectedBuilding;
+                xamlMember.Getter = get_149_BuildingsRequestsVM_selectedBuilding;
+                xamlMember.Setter = set_149_BuildingsRequestsVM_selectedBuilding;
                 break;
             case "Oestbanehus.ViewModels.BuildingsRequestsVM.selectedApt":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsRequestsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedApt", "Oestbanehus.Models.ApartmentWithRequests");
-                xamlMember.Getter = get_142_BuildingsRequestsVM_selectedApt;
-                xamlMember.Setter = set_142_BuildingsRequestsVM_selectedApt;
+                xamlMember.Getter = get_150_BuildingsRequestsVM_selectedApt;
+                xamlMember.Setter = set_150_BuildingsRequestsVM_selectedApt;
                 break;
             case "Oestbanehus.ViewModels.BuildingsRequestsVM.selectedRequest":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsRequestsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedRequest", "Oestbanehus.Models.Request");
-                xamlMember.Getter = get_143_BuildingsRequestsVM_selectedRequest;
-                xamlMember.Setter = set_143_BuildingsRequestsVM_selectedRequest;
+                xamlMember.Getter = get_151_BuildingsRequestsVM_selectedRequest;
+                xamlMember.Setter = set_151_BuildingsRequestsVM_selectedRequest;
                 break;
             case "Oestbanehus.ViewModels.BuildingsViewModel.buildings":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "buildings", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Building>");
-                xamlMember.Getter = get_144_BuildingsViewModel_buildings;
-                xamlMember.Setter = set_144_BuildingsViewModel_buildings;
+                xamlMember.Getter = get_152_BuildingsViewModel_buildings;
+                xamlMember.Setter = set_152_BuildingsViewModel_buildings;
                 break;
             case "Oestbanehus.ViewModels.BuildingsViewModel.Apartments":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Apartments", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Apartment>");
-                xamlMember.Getter = get_145_BuildingsViewModel_Apartments;
-                xamlMember.Setter = set_145_BuildingsViewModel_Apartments;
+                xamlMember.Getter = get_153_BuildingsViewModel_Apartments;
+                xamlMember.Setter = set_153_BuildingsViewModel_Apartments;
                 break;
             case "Oestbanehus.ViewModels.BuildingsViewModel.selectedBuilding":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedBuilding", "Oestbanehus.Models.Building");
-                xamlMember.Getter = get_146_BuildingsViewModel_selectedBuilding;
-                xamlMember.Setter = set_146_BuildingsViewModel_selectedBuilding;
+                xamlMember.Getter = get_154_BuildingsViewModel_selectedBuilding;
+                xamlMember.Setter = set_154_BuildingsViewModel_selectedBuilding;
                 break;
             case "Oestbanehus.ViewModels.BuildingsViewModel.selectedApartment":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedApartment", "Oestbanehus.Models.Apartment");
-                xamlMember.Getter = get_147_BuildingsViewModel_selectedApartment;
-                xamlMember.Setter = set_147_BuildingsViewModel_selectedApartment;
+                xamlMember.Getter = get_155_BuildingsViewModel_selectedApartment;
+                xamlMember.Setter = set_155_BuildingsViewModel_selectedApartment;
                 break;
             case "Oestbanehus.ViewModels.BuildingsViewModel.ExecuteCommand":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ExecuteCommand", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_148_BuildingsViewModel_ExecuteCommand;
+                xamlMember.Getter = get_156_BuildingsViewModel_ExecuteCommand;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.BuildingsViewModel.openAptCommand":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "openAptCommand", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_149_BuildingsViewModel_openAptCommand;
+                xamlMember.Getter = get_157_BuildingsViewModel_openAptCommand;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.BuildingsConditionsVM.Buildings":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsConditionsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Buildings", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.BuildingConditions>");
-                xamlMember.Getter = get_150_BuildingsConditionsVM_Buildings;
-                xamlMember.Setter = set_150_BuildingsConditionsVM_Buildings;
+                xamlMember.Getter = get_158_BuildingsConditionsVM_Buildings;
+                xamlMember.Setter = set_158_BuildingsConditionsVM_Buildings;
                 break;
             case "Oestbanehus.Models.BuildingConditions.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_151_BuildingConditions_Id;
-                xamlMember.Setter = set_151_BuildingConditions_Id;
+                xamlMember.Getter = get_159_BuildingConditions_Id;
+                xamlMember.Setter = set_159_BuildingConditions_Id;
                 break;
             case "Oestbanehus.Models.BuildingConditions.ZipCode":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ZipCode", "String");
-                xamlMember.Getter = get_152_BuildingConditions_ZipCode;
-                xamlMember.Setter = set_152_BuildingConditions_ZipCode;
+                xamlMember.Getter = get_160_BuildingConditions_ZipCode;
+                xamlMember.Setter = set_160_BuildingConditions_ZipCode;
                 break;
             case "Oestbanehus.Models.BuildingConditions.Street":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
-                xamlMember.Getter = get_153_BuildingConditions_Street;
-                xamlMember.Setter = set_153_BuildingConditions_Street;
+                xamlMember.Getter = get_161_BuildingConditions_Street;
+                xamlMember.Setter = set_161_BuildingConditions_Street;
                 break;
             case "Oestbanehus.Models.BuildingConditions.Apartments":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Apartments", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ApartmentWithConditions>");
-                xamlMember.Getter = get_154_BuildingConditions_Apartments;
-                xamlMember.Setter = set_154_BuildingConditions_Apartments;
+                xamlMember.Getter = get_162_BuildingConditions_Apartments;
+                xamlMember.Setter = set_162_BuildingConditions_Apartments;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_155_ApartmentWithConditions_Id;
-                xamlMember.Setter = set_155_ApartmentWithConditions_Id;
+                xamlMember.Getter = get_163_ApartmentWithConditions_Id;
+                xamlMember.Setter = set_163_ApartmentWithConditions_Id;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.BuildingId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "BuildingId", "Int32");
-                xamlMember.Getter = get_156_ApartmentWithConditions_BuildingId;
-                xamlMember.Setter = set_156_ApartmentWithConditions_BuildingId;
+                xamlMember.Getter = get_164_ApartmentWithConditions_BuildingId;
+                xamlMember.Setter = set_164_ApartmentWithConditions_BuildingId;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.Size":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Size", "Int32");
-                xamlMember.Getter = get_157_ApartmentWithConditions_Size;
-                xamlMember.Setter = set_157_ApartmentWithConditions_Size;
+                xamlMember.Getter = get_165_ApartmentWithConditions_Size;
+                xamlMember.Setter = set_165_ApartmentWithConditions_Size;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.Price":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Price", "Int32");
-                xamlMember.Getter = get_158_ApartmentWithConditions_Price;
-                xamlMember.Setter = set_158_ApartmentWithConditions_Price;
+                xamlMember.Getter = get_166_ApartmentWithConditions_Price;
+                xamlMember.Setter = set_166_ApartmentWithConditions_Price;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.NumberOfRooms":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "NumberOfRooms", "Int32");
-                xamlMember.Getter = get_159_ApartmentWithConditions_NumberOfRooms;
-                xamlMember.Setter = set_159_ApartmentWithConditions_NumberOfRooms;
+                xamlMember.Getter = get_167_ApartmentWithConditions_NumberOfRooms;
+                xamlMember.Setter = set_167_ApartmentWithConditions_NumberOfRooms;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.Floor":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Floor", "Int32");
-                xamlMember.Getter = get_160_ApartmentWithConditions_Floor;
-                xamlMember.Setter = set_160_ApartmentWithConditions_Floor;
+                xamlMember.Getter = get_168_ApartmentWithConditions_Floor;
+                xamlMember.Setter = set_168_ApartmentWithConditions_Floor;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.ApartmentNumber":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentNumber", "String");
-                xamlMember.Getter = get_161_ApartmentWithConditions_ApartmentNumber;
-                xamlMember.Setter = set_161_ApartmentWithConditions_ApartmentNumber;
+                xamlMember.Getter = get_169_ApartmentWithConditions_ApartmentNumber;
+                xamlMember.Setter = set_169_ApartmentWithConditions_ApartmentNumber;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.Street":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Street", "String");
-                xamlMember.Getter = get_162_ApartmentWithConditions_Street;
-                xamlMember.Setter = set_162_ApartmentWithConditions_Street;
+                xamlMember.Getter = get_170_ApartmentWithConditions_Street;
+                xamlMember.Setter = set_170_ApartmentWithConditions_Street;
                 break;
             case "Oestbanehus.Models.ApartmentWithConditions.ConditionsOfItems":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ApartmentWithConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ConditionsOfItems", "System.Collections.Generic.List`1<Oestbanehus.Models.ConditionsOfItem>");
-                xamlMember.Getter = get_163_ApartmentWithConditions_ConditionsOfItems;
-                xamlMember.Setter = set_163_ApartmentWithConditions_ConditionsOfItems;
+                xamlMember.Getter = get_171_ApartmentWithConditions_ConditionsOfItems;
+                xamlMember.Setter = set_171_ApartmentWithConditions_ConditionsOfItems;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_164_ConditionsOfItem_Id;
-                xamlMember.Setter = set_164_ConditionsOfItem_Id;
+                xamlMember.Getter = get_172_ConditionsOfItem_Id;
+                xamlMember.Setter = set_172_ConditionsOfItem_Id;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.ApartmentId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentId", "Int32");
-                xamlMember.Getter = get_165_ConditionsOfItem_ApartmentId;
-                xamlMember.Setter = set_165_ConditionsOfItem_ApartmentId;
+                xamlMember.Getter = get_173_ConditionsOfItem_ApartmentId;
+                xamlMember.Setter = set_173_ConditionsOfItem_ApartmentId;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.ConditionType":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ConditionType", "Int32");
-                xamlMember.Getter = get_166_ConditionsOfItem_ConditionType;
-                xamlMember.Setter = set_166_ConditionsOfItem_ConditionType;
+                xamlMember.Getter = get_174_ConditionsOfItem_ConditionType;
+                xamlMember.Setter = set_174_ConditionsOfItem_ConditionType;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.Description":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_167_ConditionsOfItem_Description;
-                xamlMember.Setter = set_167_ConditionsOfItem_Description;
+                xamlMember.Getter = get_175_ConditionsOfItem_Description;
+                xamlMember.Setter = set_175_ConditionsOfItem_Description;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.Picture":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Picture", "String");
-                xamlMember.Getter = get_168_ConditionsOfItem_Picture;
-                xamlMember.Setter = set_168_ConditionsOfItem_Picture;
+                xamlMember.Getter = get_176_ConditionsOfItem_Picture;
+                xamlMember.Setter = set_176_ConditionsOfItem_Picture;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.Status":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Status", "String");
-                xamlMember.Getter = get_169_ConditionsOfItem_Status;
-                xamlMember.Setter = set_169_ConditionsOfItem_Status;
+                xamlMember.Getter = get_177_ConditionsOfItem_Status;
+                xamlMember.Setter = set_177_ConditionsOfItem_Status;
                 break;
             case "Oestbanehus.Models.ConditionsOfItem.Comments":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.ConditionsOfItem");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Comments", "System.Collections.Generic.List`1<Oestbanehus.Models.Comment>");
-                xamlMember.Getter = get_170_ConditionsOfItem_Comments;
-                xamlMember.Setter = set_170_ConditionsOfItem_Comments;
+                xamlMember.Getter = get_178_ConditionsOfItem_Comments;
+                xamlMember.Setter = set_178_ConditionsOfItem_Comments;
                 break;
             case "Oestbanehus.Models.Comment.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Comment");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_171_Comment_Id;
-                xamlMember.Setter = set_171_Comment_Id;
+                xamlMember.Getter = get_179_Comment_Id;
+                xamlMember.Setter = set_179_Comment_Id;
                 break;
-            case "Oestbanehus.Models.Comment.ApartmentId":
+            case "Oestbanehus.Models.Comment.ConditionId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Comment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentId", "Int32");
-                xamlMember.Getter = get_172_Comment_ApartmentId;
-                xamlMember.Setter = set_172_Comment_ApartmentId;
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ConditionId", "Int32");
+                xamlMember.Getter = get_180_Comment_ConditionId;
+                xamlMember.Setter = set_180_Comment_ConditionId;
                 break;
             case "Oestbanehus.Models.Comment.PersonId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Comment");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "PersonId", "Int32");
-                xamlMember.Getter = get_173_Comment_PersonId;
-                xamlMember.Setter = set_173_Comment_PersonId;
+                xamlMember.Getter = get_181_Comment_PersonId;
+                xamlMember.Setter = set_181_Comment_PersonId;
                 break;
             case "Oestbanehus.Models.Comment.Content":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Comment");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Content", "String");
-                xamlMember.Getter = get_174_Comment_Content;
-                xamlMember.Setter = set_174_Comment_Content;
+                xamlMember.Getter = get_182_Comment_Content;
+                xamlMember.Setter = set_182_Comment_Content;
                 break;
             case "Oestbanehus.Models.Comment.PublishedDate":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Comment");
-                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "PublishedDate", "String");
-                xamlMember.Getter = get_175_Comment_PublishedDate;
-                xamlMember.Setter = set_175_Comment_PublishedDate;
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "PublishedDate", "System.DateTime");
+                xamlMember.Getter = get_183_Comment_PublishedDate;
+                xamlMember.Setter = set_183_Comment_PublishedDate;
                 break;
             case "Oestbanehus.Models.Comment.Person":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Comment");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Person", "Oestbanehus.Models.Person");
-                xamlMember.Getter = get_176_Comment_Person;
-                xamlMember.Setter = set_176_Comment_Person;
+                xamlMember.Getter = get_184_Comment_Person;
+                xamlMember.Setter = set_184_Comment_Person;
                 break;
             case "Oestbanehus.Models.BuildingConditions.City":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.BuildingConditions");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "City", "String");
-                xamlMember.Getter = get_177_BuildingConditions_City;
-                xamlMember.Setter = set_177_BuildingConditions_City;
+                xamlMember.Getter = get_185_BuildingConditions_City;
+                xamlMember.Setter = set_185_BuildingConditions_City;
                 break;
             case "Oestbanehus.ViewModels.BuildingsConditionsVM.selectedBuilding":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsConditionsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedBuilding", "Oestbanehus.Models.BuildingConditions");
-                xamlMember.Getter = get_178_BuildingsConditionsVM_selectedBuilding;
-                xamlMember.Setter = set_178_BuildingsConditionsVM_selectedBuilding;
+                xamlMember.Getter = get_186_BuildingsConditionsVM_selectedBuilding;
+                xamlMember.Setter = set_186_BuildingsConditionsVM_selectedBuilding;
                 break;
             case "Oestbanehus.ViewModels.BuildingsConditionsVM.selectedCondition":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsConditionsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedCondition", "Oestbanehus.Models.ConditionsOfItem");
-                xamlMember.Getter = get_179_BuildingsConditionsVM_selectedCondition;
-                xamlMember.Setter = set_179_BuildingsConditionsVM_selectedCondition;
+                xamlMember.Getter = get_187_BuildingsConditionsVM_selectedCondition;
+                xamlMember.Setter = set_187_BuildingsConditionsVM_selectedCondition;
                 break;
             case "Oestbanehus.ViewModels.BuildingsConditionsVM.selectedApt":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.BuildingsConditionsVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedApt", "Oestbanehus.Models.ApartmentWithConditions");
-                xamlMember.Getter = get_180_BuildingsConditionsVM_selectedApt;
-                xamlMember.Setter = set_180_BuildingsConditionsVM_selectedApt;
+                xamlMember.Getter = get_188_BuildingsConditionsVM_selectedApt;
+                xamlMember.Setter = set_188_BuildingsConditionsVM_selectedApt;
                 break;
             case "Oestbanehus.ViewModels.ConditionDetailVM.condition":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionDetailVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "condition", "Oestbanehus.Models.ConditionsOfItem");
-                xamlMember.Getter = get_181_ConditionDetailVM_condition;
-                xamlMember.Setter = set_181_ConditionDetailVM_condition;
+                xamlMember.Getter = get_189_ConditionDetailVM_condition;
+                xamlMember.Setter = set_189_ConditionDetailVM_condition;
+                break;
+            case "Oestbanehus.ViewModels.ConditionDetailVM.comments":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionDetailVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "comments", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Comment>");
+                xamlMember.Getter = get_190_ConditionDetailVM_comments;
+                xamlMember.Setter = set_190_ConditionDetailVM_comments;
+                break;
+            case "Oestbanehus.ViewModels.ConditionDetailVM.comment":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionDetailVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "comment", "String");
+                xamlMember.Getter = get_191_ConditionDetailVM_comment;
+                xamlMember.Setter = set_191_ConditionDetailVM_comment;
+                break;
+            case "Oestbanehus.ViewModels.ConditionDetailVM.addComment":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionDetailVM");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "addComment", "Template10.Mvvm.DelegateCommand");
+                xamlMember.Getter = get_192_ConditionDetailVM_addComment;
+                xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.ViewModelRequestDetails.request":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ViewModelRequestDetails");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "request", "Oestbanehus.Models.Request");
-                xamlMember.Getter = get_182_ViewModelRequestDetails_request;
-                xamlMember.Setter = set_182_ViewModelRequestDetails_request;
+                xamlMember.Getter = get_193_ViewModelRequestDetails_request;
+                xamlMember.Setter = set_193_ViewModelRequestDetails_request;
                 break;
             case "Oestbanehus.Views.Busy.BusyText":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Views.Busy");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "BusyText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_183_Busy_BusyText;
-                xamlMember.Setter = set_183_Busy_BusyText;
+                xamlMember.Getter = get_194_Busy_BusyText;
+                xamlMember.Setter = set_194_Busy_BusyText;
                 break;
             case "Oestbanehus.Views.Busy.IsBusy":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Views.Busy");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "IsBusy", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_Busy_IsBusy;
-                xamlMember.Setter = set_184_Busy_IsBusy;
+                xamlMember.Getter = get_195_Busy_IsBusy;
+                xamlMember.Setter = set_195_Busy_IsBusy;
                 break;
             case "Oestbanehus.ViewModels.ConditionViewModel.Conditions":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Conditions", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.ConditionsOfItem>");
-                xamlMember.Getter = get_185_ConditionViewModel_Conditions;
-                xamlMember.Setter = set_185_ConditionViewModel_Conditions;
+                xamlMember.Getter = get_196_ConditionViewModel_Conditions;
+                xamlMember.Setter = set_196_ConditionViewModel_Conditions;
+                break;
+            case "Oestbanehus.ViewModels.ConditionViewModel.selectedCondition":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionViewModel");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedCondition", "Oestbanehus.Models.ConditionsOfItem");
+                xamlMember.Getter = get_197_ConditionViewModel_selectedCondition;
+                xamlMember.Setter = set_197_ConditionViewModel_selectedCondition;
+                break;
+            case "Oestbanehus.ViewModels.ConditionViewModel.apartmentId":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionViewModel");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "apartmentId", "Int32");
+                xamlMember.Getter = get_198_ConditionViewModel_apartmentId;
+                xamlMember.Setter = set_198_ConditionViewModel_apartmentId;
+                break;
+            case "Oestbanehus.ViewModels.ConditionViewModel.navToAddCondition":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ConditionViewModel");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "navToAddCondition", "Template10.Mvvm.DelegateCommand");
+                xamlMember.Getter = get_199_ConditionViewModel_navToAddCondition;
+                xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.DetailPageViewModel.Value":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.DetailPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Value", "String");
-                xamlMember.Getter = get_186_DetailPageViewModel_Value;
-                xamlMember.Setter = set_186_DetailPageViewModel_Value;
+                xamlMember.Getter = get_200_DetailPageViewModel_Value;
+                xamlMember.Setter = set_200_DetailPageViewModel_Value;
                 break;
             case "Oestbanehus.ViewModels.ShellVM.loggedUserType":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ShellVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "loggedUserType", "Int32");
-                xamlMember.Getter = get_187_ShellVM_loggedUserType;
-                xamlMember.Setter = set_187_ShellVM_loggedUserType;
+                xamlMember.Getter = get_201_ShellVM_loggedUserType;
+                xamlMember.Setter = set_201_ShellVM_loggedUserType;
                 break;
             case "Oestbanehus.ViewModels.ShellVM.error":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ShellVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "error", "String");
-                xamlMember.Getter = get_188_ShellVM_error;
-                xamlMember.Setter = set_188_ShellVM_error;
+                xamlMember.Getter = get_202_ShellVM_error;
+                xamlMember.Setter = set_202_ShellVM_error;
                 break;
             case "Oestbanehus.ViewModels.ShellVM.email":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ShellVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "email", "String");
-                xamlMember.Getter = get_189_ShellVM_email;
-                xamlMember.Setter = set_189_ShellVM_email;
+                xamlMember.Getter = get_203_ShellVM_email;
+                xamlMember.Setter = set_203_ShellVM_email;
                 break;
             case "Oestbanehus.ViewModels.ShellVM.password":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ShellVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "password", "String");
-                xamlMember.Getter = get_190_ShellVM_password;
-                xamlMember.Setter = set_190_ShellVM_password;
+                xamlMember.Getter = get_204_ShellVM_password;
+                xamlMember.Setter = set_204_ShellVM_password;
                 break;
             case "Oestbanehus.ViewModels.ShellVM.login":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ShellVM");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "login", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_191_ShellVM_login;
+                xamlMember.Getter = get_205_ShellVM_login;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.MainPageViewModel.Value":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.MainPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Value", "String");
-                xamlMember.Getter = get_192_MainPageViewModel_Value;
-                xamlMember.Setter = set_192_MainPageViewModel_Value;
+                xamlMember.Getter = get_206_MainPageViewModel_Value;
+                xamlMember.Setter = set_206_MainPageViewModel_Value;
                 break;
             case "Oestbanehus.ViewModels.RequestViewModel.Requests":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.RequestViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Requests", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Request>");
-                xamlMember.Getter = get_193_RequestViewModel_Requests;
-                xamlMember.Setter = set_193_RequestViewModel_Requests;
+                xamlMember.Getter = get_207_RequestViewModel_Requests;
+                xamlMember.Setter = set_207_RequestViewModel_Requests;
+                break;
+            case "Oestbanehus.ViewModels.RequestViewModel.navToAddReq":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.RequestViewModel");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "navToAddReq", "Template10.Mvvm.DelegateCommand");
+                xamlMember.Getter = get_208_RequestViewModel_navToAddReq;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Oestbanehus.ViewModels.RequestViewModel.currentApartmentId":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.RequestViewModel");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "currentApartmentId", "Int32");
+                xamlMember.Getter = get_209_RequestViewModel_currentApartmentId;
+                xamlMember.Setter = set_209_RequestViewModel_currentApartmentId;
                 break;
             case "Oestbanehus.ViewModels.ResidentViewModel.Residents":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ResidentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Residents", "System.Collections.ObjectModel.ObservableCollection`1<Oestbanehus.Models.Person>");
-                xamlMember.Getter = get_194_ResidentViewModel_Residents;
-                xamlMember.Setter = set_194_ResidentViewModel_Residents;
+                xamlMember.Getter = get_210_ResidentViewModel_Residents;
+                xamlMember.Setter = set_210_ResidentViewModel_Residents;
                 break;
             case "Oestbanehus.Models.Person.Id":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_195_Person_Id;
-                xamlMember.Setter = set_195_Person_Id;
+                xamlMember.Getter = get_211_Person_Id;
+                xamlMember.Setter = set_211_Person_Id;
                 break;
             case "Oestbanehus.Models.Person.ApartmentId":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "ApartmentId", "Int32");
-                xamlMember.Getter = get_196_Person_ApartmentId;
-                xamlMember.Setter = set_196_Person_ApartmentId;
+                xamlMember.Getter = get_212_Person_ApartmentId;
+                xamlMember.Setter = set_212_Person_ApartmentId;
                 break;
             case "Oestbanehus.Models.Person.MoveInDate":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "MoveInDate", "String");
-                xamlMember.Getter = get_197_Person_MoveInDate;
-                xamlMember.Setter = set_197_Person_MoveInDate;
+                xamlMember.Getter = get_213_Person_MoveInDate;
+                xamlMember.Setter = set_213_Person_MoveInDate;
                 break;
             case "Oestbanehus.Models.Person.MoveOutDate":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "MoveOutDate", "String");
-                xamlMember.Getter = get_198_Person_MoveOutDate;
-                xamlMember.Setter = set_198_Person_MoveOutDate;
+                xamlMember.Getter = get_214_Person_MoveOutDate;
+                xamlMember.Setter = set_214_Person_MoveOutDate;
                 break;
             case "Oestbanehus.Models.Person.Name":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_199_Person_Name;
-                xamlMember.Setter = set_199_Person_Name;
+                xamlMember.Getter = get_215_Person_Name;
+                xamlMember.Setter = set_215_Person_Name;
                 break;
             case "Oestbanehus.Models.Person.Phone":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Phone", "String");
-                xamlMember.Getter = get_200_Person_Phone;
-                xamlMember.Setter = set_200_Person_Phone;
+                xamlMember.Getter = get_216_Person_Phone;
+                xamlMember.Setter = set_216_Person_Phone;
                 break;
             case "Oestbanehus.Models.Person.Email":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_201_Person_Email;
-                xamlMember.Setter = set_201_Person_Email;
+                xamlMember.Getter = get_217_Person_Email;
+                xamlMember.Setter = set_217_Person_Email;
                 break;
             case "Oestbanehus.Models.Person.Password":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Password", "String");
-                xamlMember.Getter = get_202_Person_Password;
-                xamlMember.Setter = set_202_Person_Password;
+                xamlMember.Getter = get_218_Person_Password;
+                xamlMember.Setter = set_218_Person_Password;
                 break;
             case "Oestbanehus.Models.Person.Picture":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Picture", "String");
-                xamlMember.Getter = get_203_Person_Picture;
-                xamlMember.Setter = set_203_Person_Picture;
+                xamlMember.Getter = get_219_Person_Picture;
+                xamlMember.Setter = set_219_Person_Picture;
                 break;
             case "Oestbanehus.Models.Person.Type":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.Models.Person");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Type", "Int32");
-                xamlMember.Getter = get_204_Person_Type;
-                xamlMember.Setter = set_204_Person_Type;
+                xamlMember.Getter = get_220_Person_Type;
+                xamlMember.Setter = set_220_Person_Type;
                 break;
             case "Oestbanehus.ViewModels.ResidentViewModel.selectedResident":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ResidentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "selectedResident", "Oestbanehus.Models.Person");
-                xamlMember.Getter = get_205_ResidentViewModel_selectedResident;
-                xamlMember.Setter = set_205_ResidentViewModel_selectedResident;
+                xamlMember.Getter = get_221_ResidentViewModel_selectedResident;
+                xamlMember.Setter = set_221_ResidentViewModel_selectedResident;
                 break;
             case "Oestbanehus.ViewModels.ResidentViewModel.pwd":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ResidentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "pwd", "Oestbanehus.Models.PersonWithDetails");
-                xamlMember.Getter = get_206_ResidentViewModel_pwd;
-                xamlMember.Setter = set_206_ResidentViewModel_pwd;
+                xamlMember.Getter = get_222_ResidentViewModel_pwd;
+                xamlMember.Setter = set_222_ResidentViewModel_pwd;
                 break;
             case "Oestbanehus.ViewModels.ResidentViewModel.navToAddPerson":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ResidentViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "navToAddPerson", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_207_ResidentViewModel_navToAddPerson;
+                xamlMember.Getter = get_223_ResidentViewModel_navToAddPerson;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "Oestbanehus.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_208_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_224_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Oestbanehus.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "Oestbanehus.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_209_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_225_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "Oestbanehus.ViewModels.ShellVM2.loggedUserType":
+                userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Oestbanehus.ViewModels.ShellVM2");
+                xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "loggedUserType", "Int32");
+                xamlMember.Getter = get_226_ShellVM2_loggedUserType;
+                xamlMember.Setter = set_226_ShellVM2_loggedUserType;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_210_Interaction_Behaviors;
-                xamlMember.Setter = set_210_Interaction_Behaviors;
+                xamlMember.Getter = get_227_Interaction_Behaviors;
+                xamlMember.Setter = set_227_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactivity.Trigger.Actions":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_211_Trigger_Actions;
+                xamlMember.Getter = get_228_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_212_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_212_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_229_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_229_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_213_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_213_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_230_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_230_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_214_Behavior_AssociatedObject;
+                xamlMember.Getter = get_231_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.MessageDialogAction.Title":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Title", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_215_MessageDialogAction_Title;
-                xamlMember.Setter = set_215_MessageDialogAction_Title;
+                xamlMember.Getter = get_232_MessageDialogAction_Title;
+                xamlMember.Setter = set_232_MessageDialogAction_Title;
                 break;
             case "Template10.Behaviors.MessageDialogAction.Content":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "Content", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_216_MessageDialogAction_Content;
-                xamlMember.Setter = set_216_MessageDialogAction_Content;
+                xamlMember.Getter = get_233_MessageDialogAction_Content;
+                xamlMember.Setter = set_233_MessageDialogAction_Content;
                 break;
             case "Template10.Behaviors.MessageDialogAction.OkText":
                 userType = (global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.MessageDialogAction");
                 xamlMember = new global::Oestbanehus.Oestbanehus_XamlTypeInfo.XamlMember(this, "OkText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_217_MessageDialogAction_OkText;
-                xamlMember.Setter = set_217_MessageDialogAction_OkText;
+                xamlMember.Getter = get_234_MessageDialogAction_OkText;
+                xamlMember.Setter = set_234_MessageDialogAction_OkText;
                 break;
             }
             return xamlMember;

@@ -42,7 +42,6 @@
           <TextBlock Text="{Binding request.Description}" />
         </StackPanel>
       </Grid>
-
     </StackPanel>
 
   </Grid>

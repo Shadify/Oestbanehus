@@ -1,24 +1,30 @@
 ﻿using Oestbanehus.Models;
+using Oestbanehus.Services;
 using Oestbanehus.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Template10.Mvvm;
+using Template10.Services.SettingsService;
+using Windows.Storage;
 
 namespace Oestbanehus.ViewModels
 {
-    class ShellVM: ViewModelBase
+    class ShellVM: ViewModelBase, INotifyPropertyChanged
     {
 
-        public ShellVM()
+        public void SendMessage(string userType)
         {
-            loggedUserType = ShellSingleton.Instance.loggedUserType;
+            Aggregate.BroadCast(userType);
         }
 
-        private Int32 _loggedUserType;
-        public Int32 loggedUserType
+
+        private int _loggedUserType;
+        public int loggedUserType
         {
             get
             {
@@ -27,9 +33,31 @@ namespace Oestbanehus.ViewModels
             set
             {
                 Set(ref _loggedUserType, value);
+                SendMessage(value.ToString());
             }
         }
 
+
+        public ShellVM()
+        {
+            
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void Set<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+        {
+            if (!Equals(storage, value))
+            {
+                storage = value;
+                RaisePropertyChanged(propertyName);
+            }
+        }
+
+        public void RaisePropertyChanged([CallerMemberName] string propertyName = null) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+        
         private string _error;
         public string error
         {
@@ -105,7 +133,7 @@ namespace Oestbanehus.ViewModels
                         }
                     case 2:
                         {
-                            NavigationService.Navigate(typeof(Buildings));
+                            NavigationService.Navigate(typeof(ApartmentPage), a.ApartmentId);
                             break;
                         }
                     default:

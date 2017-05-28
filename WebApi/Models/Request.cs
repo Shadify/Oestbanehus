@@ -8,7 +8,8 @@ namespace WebApi.Models
 
     public partial class Request
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public int AuthorId { get; set; }
@@ -22,7 +23,7 @@ namespace WebApi.Models
         [Required]
         public string Description { get; set; }
 
-        [Column(TypeName = "date")]
+        [Column(TypeName = "datetime")]
         public DateTime Date { get; set; }
 
         public string Picture { get; set; }

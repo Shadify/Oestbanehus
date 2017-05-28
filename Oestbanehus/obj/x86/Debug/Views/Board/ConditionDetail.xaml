@@ -37,7 +37,15 @@
         <TextBlock Text="{Binding condition.ConditionType}" />
         <TextBlock Text="{Binding condition.Description}" />
         <TextBlock Text="{Binding condition.Status}" />
-        <ListView ItemsSource="{Binding condition.Comments}">
+          <StackPanel Orientation="Horizontal">
+            <TextBox Width="200"
+                     Height="80"
+                     Text="{Binding comment,Mode=TwoWay}" />
+            <Button Command="{Binding addComment}">Add comment</Button>
+          </StackPanel>
+          
+          
+          <ListView ItemsSource="{Binding comments}">
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>

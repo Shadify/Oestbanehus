@@ -117,7 +117,7 @@ namespace WebApi.Controllers
             {
                 db.SaveChanges();
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException e)
             {
                 if (ConditionsOfItemExists(conditionsOfItem.Id))
                 {

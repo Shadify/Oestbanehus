@@ -32,7 +32,8 @@
       </controls:PageHeader.SecondaryCommands>
 
     </controls:PageHeader>
-      <ListView ItemsSource="{Binding Requests}">
+      <ListView ItemsSource="{Binding Requests}"
+                SelectedItem="{Binding selectedRequest,Mode=TwoWay}">
         <ListView.ItemTemplate>
           <DataTemplate>
             <StackPanel>
@@ -43,6 +44,7 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
+      <Button Command="{Binding navToAddReq}">Add Request</Button>
     </StackPanel>
   </Grid>
 </Page>

@@ -880,3 +880,14 @@ C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\Req
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\RequestWithDetails.g.cs
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\RequestWithDetails.xaml
 C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\RequestWithDetails.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddCondition.g.i.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddCondition.g.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddCondition.xaml
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddCondition.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Views\Board\AddCondition.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\bin\x86\Debug\Views\Board\AddRequest.xbf
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Oestbanehus.csprojResolveAssemblyReference.cache
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddRequest.g.i.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddRequest.g.cs
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddRequest.xaml
+C:\Users\Andy\Source\Repos\Oestbanehus\Oestbanehus\obj\x86\Debug\Views\Board\AddRequest.xbf

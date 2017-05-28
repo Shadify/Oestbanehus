@@ -14,7 +14,8 @@ namespace WebApi.Models
             Comments = new HashSet<Comment>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public int ApartmentId { get; set; }

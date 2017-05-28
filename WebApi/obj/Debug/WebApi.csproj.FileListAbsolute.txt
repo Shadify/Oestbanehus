@@ -195,3 +195,4 @@ C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\bin\roslyn\System.Xml.ReaderWriter
 C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\bin\roslyn\System.Xml.XPath.dll
 C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Andy\Source\Repos\Oestbanehus\WebApi\obj\Debug\WebApi.csprojResolveAssemblyReference.cache

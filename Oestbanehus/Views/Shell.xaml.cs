@@ -8,6 +8,7 @@ using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Template10.Mvvm;
+using Oestbanehus.Services;
 
 namespace Oestbanehus.Views
 {
@@ -22,6 +23,40 @@ namespace Oestbanehus.Views
             Instance = this;
             InitializeComponent();
             _settings = Services.SettingsServices.SettingsService.Instance;
+            Aggregate.OnMessageTransmitted += OnMessageReceived;
+            Buildings.Visibility = Visibility.Collapsed;
+            Residents.Visibility = Visibility.Collapsed;
+            Conditions.Visibility = Visibility.Collapsed;
+            Requests.Visibility = Visibility.Collapsed;
+            Apartment.Visibility = Visibility.Collapsed;
+        }
+
+        private void OnMessageReceived(string userType)
+        {
+            switch (Int32.Parse(userType))
+            {
+                case 0:
+                    {
+                        Buildings.Visibility = Visibility.Visible;
+                        Residents.Visibility = Visibility.Visible;
+                        Conditions.Visibility = Visibility.Visible;
+                        Requests.Visibility = Visibility.Visible;
+                        
+                        break;
+                    }
+                case 1:
+                    {
+                        Conditions.Visibility = Visibility.Visible;
+                        break;
+                    }
+                case 2:
+                    {
+                        Apartment.Visibility = Visibility.Visible;
+                        break;
+                    }
+                default:
+                    break;
+            }
         }
 
         public Shell(INavigationService navigationService) : this()

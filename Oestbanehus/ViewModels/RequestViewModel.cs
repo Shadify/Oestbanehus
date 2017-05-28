@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Template10.Mvvm;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
+using Oestbanehus.Views.Board;
 
 namespace Oestbanehus.ViewModels
 {
@@ -26,7 +27,36 @@ namespace Oestbanehus.ViewModels
             {
                 Requests.Add(c);
             }
+
+            currentApartmentId = (int)parameter;
         }
+
+        DelegateCommand _navToAddReq;
+        public DelegateCommand navToAddReq
+            => _navToAddReq ?? (_navToAddReq = new DelegateCommand(() =>
+            {
+
+                NavigationService.Navigate(typeof(AddRequest), currentApartmentId);
+
+            }, () => true));
+
+
+        private int _currentApartmentId;
+        public int currentApartmentId
+        {
+            get
+            {
+                return _currentApartmentId;
+            }
+            set
+            {
+                Set(ref _currentApartmentId, value);
+
+            }
+        }
+
+        
+
 
         public void GotoSettings() =>
            NavigationService.Navigate(typeof(Views.SettingsPage), 0);

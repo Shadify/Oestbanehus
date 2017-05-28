@@ -52,7 +52,7 @@
   </Page.Resources>
   
   <Page.DataContext>
-  <vm:ShellVM x:ConnectionId='1' x:Name="ViewModel" />
+  <vm:ShellVM2 x:ConnectionId='1' x:Name="ViewModel" />
   </Page.DataContext>
 
     <Controls:HamburgerMenu x:ConnectionId='2' x:Name="MyHamburgerMenu">
@@ -63,7 +63,7 @@
         <StackPanel Orientation="Horizontal">
           <SymbolIcon Width="48"
                       Height="48"
-                      Symbol="Calculator" />
+                      Symbol="Home" />
           <TextBlock Margin="12,0,0,0"
                      VerticalAlignment="Center"
                      Text="Home" />
@@ -71,8 +71,9 @@
         </StackPanel>
       </Controls:HamburgerButtonInfo>
 
-      <Controls:HamburgerButtonInfo ClearHistory="True"
-                                   
+      <Controls:HamburgerButtonInfo x:ConnectionId='3' x:Name="Buildings" ClearHistory="True"
+                                    Visibility="{Binding  loggedUserType,Converter={StaticResource ShowBoardMember}}"       
+
                                     PageType="views:Buildings">
         <StackPanel Orientation="Horizontal">
           <SymbolIcon Width="48"
@@ -85,8 +86,8 @@
         </StackPanel>
       </Controls:HamburgerButtonInfo>
 
-      <Controls:HamburgerButtonInfo ClearHistory="True"
-                                   
+      <Controls:HamburgerButtonInfo x:ConnectionId='4' ClearHistory="True"
+                                   x:Name="Residents"
                                     PageType="views:Residents">
         <StackPanel Orientation="Horizontal">
           <SymbolIcon Width="48"
@@ -100,8 +101,8 @@
 
       
 
-      <Controls:HamburgerButtonInfo ClearHistory="True"
-                                   
+      <Controls:HamburgerButtonInfo x:ConnectionId='5' ClearHistory="True"
+                                    x:Name="Conditions"
                                     PageType="views:BuildingsWithConditions">
         <StackPanel Orientation="Horizontal">
           <SymbolIcon Width="48"
@@ -113,8 +114,8 @@
         </StackPanel>
       </Controls:HamburgerButtonInfo>
 
-      <Controls:HamburgerButtonInfo ClearHistory="True"
-                                   
+      <Controls:HamburgerButtonInfo x:ConnectionId='6' ClearHistory="True"
+                                    x:Name="Requests"
                                     PageType="views:BuildingRequests">
           <StackPanel Orientation="Horizontal">
             <SymbolIcon Width="48"
@@ -126,7 +127,20 @@
           </StackPanel>
         </Controls:HamburgerButtonInfo>
 
-      </Controls:HamburgerMenu.PrimaryButtons>
+      <Controls:HamburgerButtonInfo x:ConnectionId='7' ClearHistory="True"
+                                    x:Name="Apartment"
+                                    PageType="views:ApartmentPage">
+        <StackPanel Orientation="Horizontal">
+          <SymbolIcon Width="48"
+                      Height="48"
+                      Symbol="NewWindow" />
+          <TextBlock Margin="12,0,0,0"
+                     VerticalAlignment="Center"
+                     Text="My apartment" />
+        </StackPanel>
+      </Controls:HamburgerButtonInfo>
+
+    </Controls:HamburgerMenu.PrimaryButtons>
 
       <Controls:HamburgerMenu.SecondaryButtons>
         <!--  profile button  -->
@@ -152,7 +166,7 @@
           </StackPanel>
         </Controls:HamburgerButtonInfo>
         <!--  settingspage button  -->
-        <Controls:HamburgerButtonInfo x:ConnectionId='3' x:Name="SettingsButton"
+        <Controls:HamburgerButtonInfo x:ConnectionId='8' x:Name="SettingsButton"
                                       PageParameter="0"
                                       PageType="views:SettingsPage">
           <Controls:HamburgerButtonInfo.NavigationTransitionInfo>

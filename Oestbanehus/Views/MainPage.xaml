@@ -50,18 +50,6 @@
           <TextBox Text="{Binding password,Mode=TwoWay}"></TextBox>
           <Button Command="{Binding login}">Login</Button>
           <TextBlock Text="{Binding error}" />
-          <TextBlock Text="{Binding loggedUserType}" />
-          <ComboBox SelectedIndex="{Binding loggedUserType, Mode=TwoWay}">
-            <ComboBoxItem>
-              <TextBlock Text="1" />
-            </ComboBoxItem>
-            <ComboBoxItem>
-              <TextBlock Text="1" />
-            </ComboBoxItem>
-            <ComboBoxItem>
-              <TextBlock Text="1" />
-            </ComboBoxItem>
-          </ComboBox>
         </StackPanel >
       </Grid>
     </StackPanel>

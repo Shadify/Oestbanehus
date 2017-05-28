@@ -38,13 +38,10 @@
           <ColumnDefinition />
           <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="5*" />
-          <RowDefinition Height="1*" />
-        </Grid.RowDefinitions>
+
 
         <StackPanel Grid.Column="0"
-                    Grid.Row="0">
+                    >
                     <TextBlock Text="Address:  "  FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding Path=apartment.Street}" />
@@ -75,10 +72,15 @@
                         <TextBlock Text="Price: " FontSize="20" FontWeight="Bold" />
                         <TextBlock Text="{Binding Path=apartment.Price}" />
           </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Grid.Column="0">
+              <Button Command="{Binding toConditions}">Conditions</Button>
+              <Button Margin="10,0,0,0"
+                      Command="{Binding toRequests}">Requests</Button>
+            </StackPanel>
+          </StackPanel>
 
-        </StackPanel>
-
-        <ListView ItemsSource="{Binding apartment.Residents}" Grid.Column="1" Grid.Row="0">
+        <ListView ItemsSource="{Binding apartment.Residents}" Grid.Column="1" >
           <ListView.ItemTemplate>
             <DataTemplate>
               <StackPanel>
@@ -98,14 +100,8 @@
          
           
         </ListView>
-        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
-          <Button
-                  Command="{Binding toConditions}">Conditions</Button>
-          <Button Margin="10,0,0,0"
-                  Command="{Binding toRequests}">Requests</Button>
-        </StackPanel>
-       
-      </Grid>
+         
+        </Grid>
     
     </StackPanel>
     </ScrollViewer>
